@@ -12,7 +12,7 @@ Scop (din `DEVELOPMENT_PLAN.md`, cu decizia din 21 octombrie 2026): pagina San F
 | MapLibre | **6.13.0**, găzduit local în `vendor/` (licență BSD-3) |
 | Poze | încărcate **direct de pe Wikimedia** (miniaturi), verificate offline de script |
 | Poza principală (hero) | **cea mai bună poză cu downtown-ul orașului**: scriptul propune candidate clasate, un om alege (detalii la 1c) |
-| Hero SF | „San Francisco from Twin Peaks September 2013 panorama 5 edit.jpg" (Featured picture, 7800×3250, CC BY-SA 3.0, King of Hearts) |
+| Hero SF | „View of the Ferry Building from Pier 1, San Francisco dllu.jpg" (Featured picture, 2020, 8146×4582, CC BY-SA 4.0, Dllu); găsită de `suggest-hero.js`, aleasă de proprietar în locul panoramei Twin Peaks 2013 |
 | Carduri SF | **4 repere**: Golden Gate Bridge, Alcatraz Island, cable cars, Bay Bridge |
 | Contact MET Norway | `CityExplorer/0.2 city-explorer-pro.netlify.app github.com/andreimi2002-rgb/CIty-Explorer` (fără email) |
 
@@ -25,8 +25,8 @@ Nicio listă de orașe în cod. Ce oraș primește ce date stă într-un fișier
 ```
 data/curation/ca/san-francisco.json
 { "geoid": "0667000", "wikidata": "Q62",
-  "hero": { "file": "San Francisco from Twin Peaks September 2013 panorama 5 edit.jpg",
-            "focus": [0.45, 0.5], "chosenBy": "owner", "chosenOn": "2026-10-21" },
+  "hero": { "file": "View of the Ferry Building from Pier 1, San Francisco dllu.jpg",
+            "focus": [0.7, 0.45], "chosenBy": "owner", "chosenOn": "2026-10-21" },
   "highlights": ["Q44440", "Q131354", "Q374956", "Q771404"] }
 ```
 
@@ -55,9 +55,9 @@ Identificatori exacți, nu căutare după nume: la cercetare, căutarea „Paint
 - Clasează: **Featured picture > Quality image > Valued image > restul**, apoi rezoluție, apoi an (mai nouă e mai bună).
 - Scrie o pagină de previzualizare locală (miniaturi + autor + licență + link) cu primele candidate. Un om alege și trece fișierul + `focus` în fișierul de curare. Scriptul **nu scrie singur** în curare.
 - Fără nicio candidată → rămâne imaginea Wikidata; dacă nici aceea nu există → panoul de rezervă.
-- Pentru SF a fost rulat manual la cercetare: 5 Featured + 16 Quality în „San Francisco skylines"; proprietarul a ales Twin Peaks 2013.
+- Pentru SF a fost rulat manual la cercetare: 5 Featured + 16 Quality în „San Francisco skylines"; proprietarul a ales întâi Twin Peaks 2013, apoi, după rularea scriptului, Ferry Building 2020.
 
-Rezultatul curent verificat: Golden Gate Bridge (CC BY 2.5, Rich Niewiroski Jr.), Alcatraz (CC BY-SA 4.0, Frank Schulenburg), cable car pe Hyde Street (CC BY-SA 4.0, 2023), Bay Bridge (CC BY-SA 3.0, Frank Schulenburg); hero: Twin Peaks 2013 (CC BY-SA 3.0, King of Hearts, Featured picture).
+Rezultatul curent verificat: Golden Gate Bridge (CC BY 2.5, Rich Niewiroski Jr.), Alcatraz (CC BY-SA 4.0, Frank Schulenburg), cable car pe Hyde Street (CC BY-SA 4.0, 2023), Bay Bridge („Oakland Bay Bridge Western Part.jpg", CC BY-SA 3.0, ChristianSchd: imaginea marcată „preferată" în Wikidata); hero: Ferry Building 2020 (CC BY-SA 4.0, Dllu, Featured picture).
 
 ## 2. Pagina orașului
 

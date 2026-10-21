@@ -1,0 +1,135 @@
+{
+  "city": {
+    "qid": "Q62",
+    "label": "San Francisco",
+    "description": "city and county in California, United States"
+  },
+  "hero": {
+    "file": "View of the Ferry Building from Pier 1, San Francisco dllu.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:View_of_the_Ferry_Building_from_Pier_1,_San_Francisco_dllu.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/View_of_the_Ferry_Building_from_Pier_1%2C_San_Francisco_dllu.jpg/1920px-View_of_the_Ferry_Building_from_Pier_1%2C_San_Francisco_dllu.jpg",
+    "width": 1920,
+    "height": 1080,
+    "originalWidth": 8146,
+    "originalHeight": 4582,
+    "author": "Dllu",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": "featured",
+    "focus": [
+      0.7,
+      0.45
+    ],
+    "chosenBy": "owner",
+    "chosenOn": "2026-10-21"
+  },
+  "highlights": [
+    {
+      "qid": "Q44440",
+      "label": "Golden Gate Bridge",
+      "description": "suspension bridge on the San Francisco Bay",
+      "coords": [
+        -122.47861,
+        37.81972
+      ],
+      "photo": {
+        "file": "GoldenGateBridge-001.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:GoldenGateBridge-001.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/960px-GoldenGateBridge-001.jpg",
+        "width": 960,
+        "height": 720,
+        "originalWidth": 3264,
+        "originalHeight": 2448,
+        "author": "Rich Niewiroski Jr.",
+        "licence": "CC BY 2.5",
+        "licenceCode": "cc-by-2.5",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.5",
+        "assessment": "featured"
+      }
+    },
+    {
+      "qid": "Q131354",
+      "label": "Alcatraz Island",
+      "description": "island in San Francisco, California, United States of America",
+      "coords": [
+        -122.42283,
+        37.82672
+      ],
+      "photo": {
+        "file": "Alcatraz Island as seen from the East.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Alcatraz_Island_as_seen_from_the_East.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Alcatraz_Island_as_seen_from_the_East.jpg/960px-Alcatraz_Island_as_seen_from_the_East.jpg",
+        "width": 960,
+        "height": 600,
+        "originalWidth": 4708,
+        "originalHeight": 2942,
+        "author": "Frank Schulenburg",
+        "licence": "CC BY-SA 4.0",
+        "licenceCode": "cc-by-sa-4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "assessment": "quality"
+      }
+    },
+    {
+      "qid": "Q374956",
+      "label": "San Francisco cable car system",
+      "description": "cable car system in San Francisco, California, United States",
+      "coords": [
+        -122.4075,
+        37.79556
+      ],
+      "photo": {
+        "file": "Cable car 19 on Hyde Street, July 2023.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Cable_car_19_on_Hyde_Street,_July_2023.JPG",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Cable_car_19_on_Hyde_Street%2C_July_2023.JPG/960px-Cable_car_19_on_Hyde_Street%2C_July_2023.JPG",
+        "width": 960,
+        "height": 720,
+        "originalWidth": 5184,
+        "originalHeight": 3888,
+        "author": "Pi.1415926535",
+        "licence": "CC BY-SA 4.0",
+        "licenceCode": "cc-by-sa-4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "assessment": null
+      }
+    },
+    {
+      "qid": "Q771404",
+      "label": "San Francisco–Oakland Bay Bridge",
+      "description": "suspension bridge connecting San Francisco and Oakland, California, USA",
+      "coords": [
+        -122.34667,
+        37.81806
+      ],
+      "photo": {
+        "file": "Oakland Bay Bridge Western Part.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Oakland_Bay_Bridge_Western_Part.jpg",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Oakland_Bay_Bridge_Western_Part.jpg/960px-Oakland_Bay_Bridge_Western_Part.jpg",
+        "width": 960,
+        "height": 640,
+        "originalWidth": 4211,
+        "originalHeight": 2807,
+        "author": "ChristianSchd",
+        "licence": "CC BY-SA 3.0",
+        "licenceCode": "cc-by-sa-3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "assessment": null
+      }
+    }
+  ],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}
