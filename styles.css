@@ -184,7 +184,7 @@ section[id] { scroll-margin-top: 72px; }
 /* ---------- Panels ---------- */
 .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 22px; }
 .ph { display: flex; justify-content: space-between; align-items: flex-end; gap: 14px; flex-wrap: wrap; margin-bottom: 16px; }
-.ph h2 { font-size: 21px; letter-spacing: -.02em; margin: 0; }
+.ph h1, .ph h2 { font-size: 21px; letter-spacing: -.02em; margin: 0; }
 .ph p { margin: 2px 0 0; color: var(--muted); font-size: 13.5px; }
 .empty {
   border: 1px dashed var(--line); border-radius: 12px; padding: 18px; background: var(--surface-2);
@@ -241,6 +241,7 @@ footer { color: var(--muted); font-size: 12.5px; padding: 4px 4px 20px; }
 }
 @media (max-width: 560px) {
   .kpis, .hl { grid-template-columns: minmax(0, 1fr); }
+  .card .photo-fallback { aspect-ratio: 2 / 1; }
   .hero, .hero-in { min-height: 380px; }
   .hero-in { padding: 26px 18px 20px; }
   .panel { padding: 16px; }
