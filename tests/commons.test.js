@@ -129,6 +129,7 @@ test('wikidata entities: preferred claims, deprecated ignored, coordinates as [l
   });
   assert.deepEqual(e, { qid: 'Q1', label: 'Bridge', description: 'a bridge', image: 'best.jpg', coords: [-122.47826, 37.81993], commonsCategory: 'Bridges' });
   assert.equal(parseEntity({ id: 'Q2', missing: '' }), null);
+  assert.equal(parseEntity({ id: 'Q4', labels: { mul: { value: 'Campbell' } }, claims: {} }).label, 'Campbell');
   assert.equal(parseEntity({ id: 'Q3', claims: {} }).image, null);
   assert.throws(() => entitiesUrl(['Q1', 'X2']));
   assert.throws(() => entitiesUrl([]));

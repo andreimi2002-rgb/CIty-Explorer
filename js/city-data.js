@@ -14,10 +14,11 @@ async function getJson(path) {
 export const loadIndex = () => getJson('/data/index.json');
 
 export async function loadCityData({ state, slug }) {
-  const [boundary, photos, states] = await Promise.all([
+  const [boundary, photos, states, city] = await Promise.all([
     getJson(`/data/boundaries/${state}/${slug}.geojson`),
     getJson(`/data/photos/${state}/${slug}.json`),
     getJson('/data/reference/states.json'),
+    getJson(`/data/cities/${state}/${slug}.json`),
   ]);
-  return { boundary, photos, state: states?.states.find((s) => s.code === state) ?? null };
+  return { boundary, photos, city, state: states?.states.find((s) => s.code === state) ?? null };
 }
