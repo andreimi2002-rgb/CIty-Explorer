@@ -1,7 +1,7 @@
 // Parsers and rules for the stage 2 sources: Census API/files, USGS elevation, time zones, NOAA normals.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { apiRows, acsValue, csvLine, parsePep, gazetteerAreas, ACS_VARS } from '../scripts/lib/census-data.js';
+import { apiRows, acsValue, csvLine, parsePep, gazetteerAreas, wasCdpIn2020, ACS_VARS } from '../scripts/lib/census-data.js';
 import { parseGazetteer } from '../scripts/lib/places.js';
 import { parseEpqs, epqsUrl } from '../scripts/lib/elevation.js';
 import { zonesIn, zoneAt } from '../scripts/lib/timezone.js';
@@ -53,7 +53,11 @@ test('Population Estimates: incorporated places of the state only', () => {
 
 test('Gazetteer areas', () => {
   const m = gazetteerAreas(parseGazetteer('GEOID|ALAND_SQMI|AWATER_SQMI\n0667000|46.685|185.214\n'));
-  assert.deepEqual(m.get('0667000'), { landSqMi: 46.685, waterSqMi: 185.214 });
+  assert.deepEqual(m.get('0667000'), { landSqMi: 46.685, waterSqMi: 185.214, lsad: undefined });
+  const g20 = gazetteerAreas(parseGazetteer('GEOID\tLSAD\tALAND_SQMI\tAWATER_SQMI\n0649582\t57\t4.558\t0.\n0667000\t25\t46.914\t185.\n'));
+  assert.ok(wasCdpIn2020(g20.get('0649582')));
+  assert.ok(!wasCdpIn2020(g20.get('0667000')));
+  assert.ok(!wasCdpIn2020(undefined));
 });
 
 test('USGS elevation responses', () => {

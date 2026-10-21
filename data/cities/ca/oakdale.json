@@ -1,0 +1,330 @@
+{
+  "id": {
+    "state": "ca",
+    "slug": "oakdale",
+    "geoid": "0652694",
+    "gnisCivil": "2411291",
+    "gnisPlace": "277564",
+    "wikidata": "Q984607"
+  },
+  "name": "Oakdale",
+  "censusName": "Oakdale city",
+  "type": "city",
+  "referencePoint": {
+    "lon": -120.84715,
+    "lat": 37.76659,
+    "source": "gnis",
+    "level": "sourced"
+  },
+  "facts": {
+    "population.census2020": {
+      "value": 23181,
+      "unit": "people",
+      "level": "sourced",
+      "source": "census2020",
+      "period": "2020-04-01"
+    },
+    "population.estimate2025": {
+      "value": 23246,
+      "unit": "people",
+      "level": "sourced",
+      "source": "pep2025",
+      "period": "2025-07-01"
+    },
+    "population.base2020": {
+      "value": 23177,
+      "unit": "people",
+      "level": "sourced",
+      "source": "pep2025",
+      "period": "2020-04-01",
+      "note": "Estimates base (the starting point of the Census Bureau estimates series), not the Census count."
+    },
+    "population.change": {
+      "value": 0.3,
+      "unit": "%",
+      "level": "computed",
+      "formula": "(estimate 2025 − estimates base 2020) ÷ estimates base 2020 × 100",
+      "inputs": [
+        "population.estimate2025",
+        "population.base2020"
+      ],
+      "period": "2020-04-01/2025-07-01"
+    },
+    "area.land2025": {
+      "value": 6.225,
+      "unit": "mi2",
+      "level": "sourced",
+      "source": "gaz2025",
+      "period": "2025-01-01"
+    },
+    "area.water2025": {
+      "value": 0.039,
+      "unit": "mi2",
+      "level": "sourced",
+      "source": "gaz2025",
+      "period": "2025-01-01"
+    },
+    "area.land2020": {
+      "value": 6.225,
+      "unit": "mi2",
+      "level": "sourced",
+      "source": "gaz2020",
+      "period": "2020-01-01"
+    },
+    "density.2020": {
+      "value": 3723.9,
+      "unit": "people/mi2",
+      "level": "computed",
+      "formula": "Census 2020 population ÷ land area 2020",
+      "inputs": [
+        "population.census2020",
+        "area.land2020"
+      ],
+      "period": "2020"
+    },
+    "density.2025": {
+      "value": 3734.3,
+      "unit": "people/mi2",
+      "level": "computed",
+      "formula": "population estimate 2025 ÷ land area 2025",
+      "inputs": [
+        "population.estimate2025",
+        "area.land2025"
+      ],
+      "period": "2025"
+    },
+    "elevation": {
+      "value": 47.6,
+      "unit": "m",
+      "level": "sourced",
+      "source": "usgs3dep",
+      "note": "Ground elevation at the city reference point."
+    },
+    "timezone": {
+      "value": "America/Los_Angeles",
+      "level": "sourced",
+      "source": "tz"
+    },
+    "acs.medianHouseholdIncome": {
+      "value": 83091,
+      "unit": "USD",
+      "period": "2020–2024",
+      "dollarYear": 2024,
+      "currency": "USD",
+      "level": "sourced",
+      "source": "acs",
+      "moe": 13252
+    },
+    "acs.medianHomeValue": {
+      "value": 457900,
+      "unit": "USD",
+      "period": "2020–2024",
+      "dollarYear": 2024,
+      "currency": "USD",
+      "level": "sourced",
+      "source": "acs",
+      "moe": 14424
+    },
+    "acs.bachelorsOrHigher": {
+      "value": 22.2,
+      "unit": "%",
+      "period": "2020–2024",
+      "level": "sourced",
+      "source": "acs",
+      "moe": 4.1
+    },
+    "acs.foreignBorn": {
+      "value": 13.5,
+      "unit": "%",
+      "period": "2020–2024",
+      "level": "sourced",
+      "source": "acs",
+      "moe": 3.2
+    },
+    "acs.poverty": {
+      "value": 14.8,
+      "unit": "%",
+      "period": "2020–2024",
+      "level": "sourced",
+      "source": "acs",
+      "moe": 5.1
+    },
+    "acs.meanCommute": {
+      "value": 35.4,
+      "unit": "min",
+      "period": "2020–2024",
+      "level": "sourced",
+      "source": "acs",
+      "moe": 6
+    },
+    "climate.monthly": {
+      "value": {
+        "tmaxF": [
+          56.1,
+          62.2,
+          68.1,
+          73.8,
+          82,
+          89.7,
+          95,
+          93.5,
+          89.1,
+          79,
+          65.7,
+          56.2
+        ],
+        "tminF": [
+          38.8,
+          41.8,
+          45.2,
+          48.4,
+          53.7,
+          59.2,
+          62.7,
+          62,
+          58.6,
+          51.5,
+          43.2,
+          38.6
+        ],
+        "prcpIn": [
+          2.57,
+          2.22,
+          1.78,
+          1,
+          0.65,
+          0.15,
+          0,
+          0.01,
+          0.06,
+          0.55,
+          1.07,
+          2.21
+        ]
+      },
+      "unit": {
+        "tmaxF": "degF",
+        "tminF": "degF",
+        "prcpIn": "in"
+      },
+      "level": "sourced",
+      "source": "noaa",
+      "period": "1991–2020"
+    },
+    "climate.annual": {
+      "value": {
+        "tmaxF": 75.9,
+        "tminF": 50.3,
+        "prcpIn": 12.27,
+        "warmestMonth": 7,
+        "wettestMonth": 1
+      },
+      "unit": {
+        "tmaxF": "degF",
+        "tminF": "degF",
+        "prcpIn": "in"
+      },
+      "level": "computed",
+      "formula": "average of the 12 monthly normal highs and lows; sum of the 12 monthly precipitation normals",
+      "inputs": [
+        "climate.monthly"
+      ],
+      "period": "1991–2020"
+    },
+    "climate.station": {
+      "value": {
+        "id": "USW00023258",
+        "name": "MODESTO CITY CO AP",
+        "lat": 37.6242,
+        "lon": -120.9506,
+        "elevationM": 22.3
+      },
+      "level": "sourced",
+      "source": "noaa"
+    },
+    "climate.stationDistance": {
+      "value": 18.3,
+      "unit": "km",
+      "level": "computed",
+      "formula": "great-circle distance from the city reference point to the station",
+      "inputs": [
+        "referencePoint",
+        "climate.station"
+      ]
+    }
+  },
+  "sources": {
+    "census2020": {
+      "name": "U.S. Census Bureau, 2020 Census Demographic and Housing Characteristics (DHC), P1_001N",
+      "url": "https://api.census.gov/data/2020/dec/dhc?get=NAME,P1_001N&for=place:*&in=state:06",
+      "period": "2020-04-01",
+      "retrieved": "2026-10-21",
+      "licence": "Public domain (U.S. government work)"
+    },
+    "pep2025": {
+      "name": "U.S. Census Bureau, Population Estimates Program, Vintage 2025, cities and towns",
+      "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/cities/totals/sub-est2025_6.csv",
+      "period": "2025-07-01",
+      "retrieved": "2026-10-21",
+      "licence": "Public domain (U.S. government work)"
+    },
+    "acs": {
+      "name": "U.S. Census Bureau, American Community Survey 5-year estimates 2020–2024, Data Profiles",
+      "url": "https://api.census.gov/data/2024/acs/acs5/profile?get=NAME,DP03_0062E,DP03_0062M,DP04_0089E,DP04_0089M,DP02_0068PE,DP02_0068PM,DP02_0094PE,DP02_0094PM,DP03_0128PE,DP03_0128PM,DP03_0025E,DP03_0025M&for=place:*&in=state:06",
+      "period": "2020–2024",
+      "retrieved": "2026-10-21",
+      "licence": "Public domain (U.S. government work)"
+    },
+    "gaz2020": {
+      "name": "U.S. Census Bureau, 2020 Gazetteer Files, places",
+      "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2020_Gazetteer/2020_gaz_place_06.txt",
+      "retrieved": "2026-10-21",
+      "licence": "Public domain (U.S. government work)"
+    },
+    "gaz2025": {
+      "name": "U.S. Census Bureau, 2025 Gazetteer Files, places",
+      "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2025_Gazetteer/2025_gaz_place_06.txt",
+      "retrieved": "2026-10-21",
+      "licence": "Public domain (U.S. government work)"
+    },
+    "gnis": {
+      "name": "USGS Geographic Names Information System (GNIS), Domestic Names",
+      "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/DomesticNames/DomesticNames_CA_Text.zip",
+      "retrieved": "2026-10-21",
+      "licence": "Public domain (U.S. government work)"
+    },
+    "wikidata": {
+      "name": "Wikidata (GNIS ID, P590)",
+      "url": "https://query.wikidata.org/sparql",
+      "retrieved": "2026-10-21",
+      "licence": "CC0 1.0"
+    },
+    "usgs3dep": {
+      "name": "USGS 3D Elevation Program (3DEP), Elevation Point Query Service",
+      "url": "https://epqs.nationalmap.gov/v1/json",
+      "retrieved": "2026-10-21",
+      "licence": "Public domain (U.S. government work)",
+      "note": "Elevation of the ground at the city reference point (GNIS Populated Place), not the highest or lowest point of the city."
+    },
+    "tz": {
+      "name": "timezone-boundary-builder 2026e (time zone boundaries from OpenStreetMap)",
+      "url": "https://github.com/evansiroky/timezone-boundary-builder/releases/download/2026e/timezones.geojson.zip",
+      "retrieved": "2026-10-21",
+      "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+    },
+    "noaa": {
+      "name": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, monthly",
+      "url": "https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals",
+      "period": "1991–2020",
+      "retrieved": "2026-10-21",
+      "licence": "Public domain (U.S. government work)"
+    },
+    "tigerweb": {
+      "name": "U.S. Census Bureau, TIGERweb Generalized ACS2025, Incorporated Places 500K (internal point)",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Generalized_ACS2025/Places_CouSub_ConCity_SubMCD/MapServer/10",
+      "vintage": "2025-01-01",
+      "licence": "Public domain (U.S. government work)"
+    }
+  },
+  "conflicts": []
+}

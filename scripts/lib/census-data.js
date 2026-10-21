@@ -83,7 +83,13 @@ export function parsePep(text, fips) {
   return map;
 }
 
-/** Gazetteer rows -> Map GEOID -> { landSqMi, waterSqMi }. */
+/** Gazetteer rows -> Map GEOID -> { landSqMi, waterSqMi, lsad }. LSAD 57 = census designated place (not incorporated). */
 export function gazetteerAreas(rows) {
-  return new Map(rows.map((r) => [r.GEOID, { landSqMi: Number(r.ALAND_SQMI), waterSqMi: Number(r.AWATER_SQMI) }]));
+  return new Map(rows.map((r) => [r.GEOID, { landSqMi: Number(r.ALAND_SQMI), waterSqMi: Number(r.AWATER_SQMI), lsad: r.LSAD }]));
 }
+
+/**
+ * True when a place was a census designated place (CDP) in the 2020 files: the same GEOID then
+ * described another geography than today's city limits (e.g. Mountain House, incorporated in 2024).
+ */
+export const wasCdpIn2020 = (area2020) => area2020?.lsad === '57';

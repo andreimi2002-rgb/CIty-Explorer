@@ -6,7 +6,7 @@ import { getJson, getText } from './lib/http.js';
 import { stateFromArg, citiesFor, writeJson, today, refuse } from './lib/files.js';
 import { requireSecret } from './lib/env.js';
 import { parseGazetteer } from './lib/places.js';
-import { ACS_YEAR, ACS_VARS, apiRows, acsValue, parsePep, gazetteerAreas } from './lib/census-data.js';
+import { ACS_YEAR, ACS_VARS, apiRows, acsValue, parsePep, gazetteerAreas, wasCdpIn2020 } from './lib/census-data.js';
 
 const state = stateFromArg(process.argv[2]);
 const key = requireSecret('CENSUS_API_KEY');
@@ -39,11 +39,16 @@ for (const c of cities) {
   const g25 = gaz2025.get(c.geoid);
   if (!g25) problems.push(`${c.slug}: not in the 2025 Gazetteer`);
   if (!p) problems.push(`${c.slug}: no Population Estimates row`);
+  // A place incorporated after 2020 kept the GEOID of the former CDP: its 2020 count and area
+  // describe that CDP, not the city limits, so they are not used.
+  const cdp2020 = wasCdpIn2020(gaz2020.get(c.geoid));
+  if (cdp2020) console.log(`  ${c.slug}: was a census designated place in 2020; 2020 count and area not used`);
   places[c.slug] = {
     geoid: c.geoid,
-    census2020: d ? Number(d.P1_001N) : null, // places incorporated after 2020 have no 2020 count
+    census2020: d && !cdp2020 ? Number(d.P1_001N) : null,
+    cdp2020,
     estimates: p ?? null,
-    area2020: gaz2020.get(c.geoid) ?? null,
+    area2020: cdp2020 ? null : gaz2020.get(c.geoid) ?? null,
     area2025: g25 ?? null,
     acs: a
       ? Object.fromEntries(Object.entries(ACS_VARS).map(([k, { v }]) => [k, acsValue(a[`${v}E`], a[`${v}M`], v)]))
