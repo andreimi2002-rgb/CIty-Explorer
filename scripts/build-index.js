@@ -4,7 +4,8 @@
 import { readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { ROOT, readJson, writeJson, refuse } from './lib/files.js';
-import { buildIndex } from './lib/index.js';
+import { buildIndex, buildSearch } from './lib/index.js';
+import { alternateNames } from './lib/places.js';
 
 const { states } = readJson('data/reference/states.json');
 const dir = join(ROOT, 'data/boundaries');
@@ -27,4 +28,13 @@ for (const code of existsSync(dir) ? readdirSync(dir).sort() : []) {
 const { index, problems } = buildIndex(entries, states);
 if (problems.length) refuse('data/index.json', problems);
 writeJson('data/index.json', index);
+// Search list: places of every state that has a place list and city files.
+const searchEntries = [];
+for (const code of [...new Set(entries.map((e) => e.state))]) {
+  const places = new Map(readJson(`data/reference/places-${code}.json`).places.map((p) => [p.slug, p]));
+  for (const e of entries.filter((x) => x.state === code)) if (places.has(e.slug)) searchEntries.push({ state: code, place: places.get(e.slug), city: e.city });
+}
+const search = buildSearch(searchEntries, alternateNames);
+writeJson('data/search.json', search, { compact: true });
+console.log(`Wrote data/search.json: ${search.length} cities`);
 console.log(`Wrote data/index.json: ${index.states.map((s) => `${s.name} (${s.cities.length})`).join(', ') || 'no cities'}`);

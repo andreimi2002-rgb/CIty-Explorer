@@ -2,16 +2,27 @@ import { el } from '../dom.js';
 import { formatQuantity, UNIT_KEYS } from '../units.js';
 import { weatherSymbol } from '../weather-symbols.js';
 
-/** Fetches current weather for a point through our Netlify function. Returns null on any failure. */
-export async function fetchWeather([lon, lat]) {
+async function fetchOnce(url) {
   try {
-    const res = await fetch(`/api/weather?lat=${lat.toFixed(4)}&lon=${lon.toFixed(4)}`);
+    const res = await fetch(url, { cache: 'no-store' });
     if (!res.ok) return null;
     const data = await res.json();
     return Number.isFinite(data.temperatureC) ? data : null;
   } catch {
     return null;
   }
+}
+
+/**
+ * Fetches current weather for a point through our Netlify function; one more try after a short
+ * pause if the first fails (the forecast service is sometimes slow). Returns null on failure.
+ */
+export async function fetchWeather([lon, lat], { retryDelayMs = 4000 } = {}) {
+  const url = `/api/weather?lat=${lat.toFixed(4)}&lon=${lon.toFixed(4)}`;
+  const first = await fetchOnce(url);
+  if (first || retryDelayMs === null) return first;
+  await new Promise((r) => setTimeout(r, retryDelayMs));
+  return fetchOnce(url);
 }
 
 const withUnit = (q, t) => t('value.withUnit', { n: q.text, unit: t(UNIT_KEYS[q.unit]) });

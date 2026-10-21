@@ -33,6 +33,13 @@ test('money with dollar qualifier, percent, minutes, margins of error', () => {
   assert.equal(formatMoe({ value: 5, moe: null, unit: '%' }, us), null);
 });
 
+test('temperature and precipitation values', () => {
+  assert.deepEqual(formatFact({ value: 64.1, unit: 'degF' }, us), { text: '64 °F', converted: false });
+  assert.deepEqual(formatFact({ value: 64.1, unit: 'degF' }, metric), { text: '17.8 °C', converted: true });
+  assert.deepEqual(formatFact({ value: 22.89, unit: 'in' }, us), { text: '22.9 in', converted: false });
+  assert.deepEqual(formatFact({ value: 22.89, unit: 'in' }, metric), { text: '581 mm', converted: true });
+});
+
 test('missing values are null, never zero', () => {
   assert.equal(formatFact({ value: null, unit: 'people', reason: 'x' }, us), null);
   assert.equal(formatFact(undefined, us), null);

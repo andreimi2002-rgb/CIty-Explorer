@@ -10,6 +10,11 @@
   to = "/city.html"
   status = 200
 
+[[redirects]]
+  from = "/compare"
+  to = "/compare.html"
+  status = 200
+
 [[headers]]
   for = "/fonts/*"
   [headers.values]

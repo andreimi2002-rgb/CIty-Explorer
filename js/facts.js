@@ -37,6 +37,12 @@ export function formatFact(fact, { t, system, locale = 'en-US', exact = false })
       return { text: t('value.percent', { n: num(v, 1) }), converted: false };
     case 'min':
       return { text: t('value.minutes', { n: num(v, 1) }), converted: false };
+    case 'degF':
+    case 'in': {
+      const target = unitFor(QUANTITY[fact.unit], system);
+      const digits = target === 'degC' ? 1 : target === 'in' ? 1 : 0;
+      return { text: t('value.withUnit', { n: num(convert(v, fact.unit, target), digits), unit: t(UNIT_KEYS[target]) }), converted: target !== fact.unit };
+    }
     case 'km': {
       const target = unitFor('distance', system);
       return { text: t('value.withUnit', { n: num(convert(v, 'km', target), 1), unit: t(UNIT_KEYS[target]) }), converted: target !== 'km' };

@@ -7,23 +7,38 @@ const json = (body, status, headers = {}) =>
 
 const NO_STORE = { 'Cache-Control': 'no-store' };
 
+// Two tries, both within Netlify's 10-second limit for a function: a slow or failing first answer
+// from MET (timeout, 5xx, 429) gets one more chance.
+const ATTEMPT_TIMEOUTS_MS = [4500, 4000];
+
+async function fetchMet(url) {
+  let last = null;
+  for (const timeout of ATTEMPT_TIMEOUTS_MS) {
+    try {
+      const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(timeout) });
+      if (res.ok || (res.status < 500 && res.status !== 429)) return res;
+      last = res;
+    } catch {
+      last = null;
+    }
+  }
+  return last; // null: no answer at all
+}
+
 export default async function handler(req) {
   const coords = parseCoords(new URL(req.url).searchParams);
   if (coords.error) return json({ error: coords.error }, 400, NO_STORE);
 
-  let res;
-  try {
-    res = await fetch(metUrl(coords), { headers: { 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(8000) });
-  } catch (err) {
-    return json({ error: 'weather service did not answer' }, 504, { 'Cache-Control': 'public, max-age=30' });
-  }
-  if (!res.ok) return json({ error: `weather service answered ${res.status}` }, 502, { 'Cache-Control': 'public, max-age=60' });
+  const res = await fetchMet(metUrl(coords));
+  // Errors are never cached, so a retry a few seconds later reaches MET again.
+  if (!res) return json({ error: 'weather service did not answer' }, 504, NO_STORE);
+  if (!res.ok) return json({ error: `weather service answered ${res.status}` }, 502, NO_STORE);
 
   let summary;
   try {
     summary = summarize(await res.json());
   } catch (err) {
-    return json({ error: 'unexpected weather data' }, 502, { 'Cache-Control': 'public, max-age=60' });
+    return json({ error: 'unexpected weather data' }, 502, NO_STORE);
   }
 
   const ttl = cacheSeconds(res.headers.get('expires'));
