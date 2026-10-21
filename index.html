@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title data-i18n="title.home"></title>
+<link rel="preload" href="/fonts/plus-jakarta-sans-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/styles.css">
+<script src="/js/theme-boot.js"></script>
+<script type="module" src="/js/app.js"></script>
+</head>
+<body data-page="home">
+<a class="skip" href="#main" data-i18n="a11y.skip"></a>
+<div class="app">
+  <aside class="side">
+    <a class="brand" href="/" data-i18n-attr="aria-label:brand.home">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#2d58e6"/><path d="M7 25V15l5-3v13M14 25V9l6-3v19M22 25V13l5 2v10" stroke="#fff" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
+      <div><b data-i18n="app.name"></b><span data-i18n="app.tagline"></span></div>
+    </a>
+    <div class="side-card"><b data-i18n="coverage.title"></b><span data-i18n="coverage.text"></span></div>
+  </aside>
+
+  <main id="main">
+    <div class="top">
+      <label class="search">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11l3.5 3.5"/></svg>
+        <input id="q" type="search" disabled autocomplete="off" data-i18n-attr="placeholder:search.soon;aria-label:search.label">
+      </label>
+      <div class="seg" role="group" data-i18n-attr="aria-label:units.label">
+        <button type="button" data-units="us" aria-pressed="true" data-i18n="units.us"></button>
+        <button type="button" data-units="metric" aria-pressed="false" data-i18n="units.metric"></button>
+      </div>
+      <button class="btn themebtn" id="theme" type="button" data-i18n-attr="aria-label:theme.toggle;title:theme.toggle">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.6M8 13.4V15M1 8h1.6M13.4 8H15M3 3l1.1 1.1M11.9 11.9L13 13M3 13l1.1-1.1M11.9 4.1L13 3"/></svg>
+      </button>
+    </div>
+
+    <section class="hero">
+      <div class="hero-bg photo-fallback"></div>
+      <div class="hero-in">
+        <div>
+          <div class="crumbs"><span data-i18n="home.eyebrow"></span></div>
+          <h1 data-i18n="home.title"></h1>
+          <p class="lede" data-i18n="home.lede"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="empty"><b data-i18n="home.statusTitle"></b><p data-i18n="home.status"></p></div>
+    </section>
+
+    <footer data-i18n="footer.text"></footer>
+  </main>
+</div>
+</body>
+</html>

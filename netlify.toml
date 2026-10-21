@@ -1,0 +1,16 @@
+# Static site published from the repository root. No build step.
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+# Every city page is served by one template. Status 200 is a rewrite:
+# the address bar keeps /city/<state>/<slug> and city.html reads it.
+[[redirects]]
+  from = "/city/:state/:slug"
+  to = "/city.html"
+  status = 200
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
