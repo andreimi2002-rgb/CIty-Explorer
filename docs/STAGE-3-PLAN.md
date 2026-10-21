@@ -1,6 +1,6 @@
 # Etapa 3 — plan
 
-Stare: **de aprobat de proprietar**. Branch: `feature/stage-3`. Versiune țintă: 0.4.0.
+Stare: **aprobat de proprietar pe 21 octombrie 2026**. Branch: `feature/stage-3`. Versiune țintă: 0.4.0.
 
 Scop (din `DEVELOPMENT_PLAN.md`): căutare (`/`, Ctrl+K), comparație cu orice oraș, „City DNA", liste salvate local. Rezultat vizibil: **comparații între oricare orașe**.
 

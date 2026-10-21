@@ -246,5 +246,21 @@
   "climate.stationLine": "NOAA station {name} ({id}), {distance} from the city center",
   "home.population": "{n} people (2025 estimate)",
   "home.largest": "{state}: the {n} largest cities",
-  "home.allCities": "All {n} cities in {state}, A–Z"
+  "home.allCities": "All {n} cities in {state}, A–Z",
+  "compare.row.pop2025": "Population, July 1, 2025 (estimate)",
+  "compare.row.pop2020": "Population, 2020 Census",
+  "compare.row.change": "Population change, 2020–2025",
+  "compare.row.land": "Land area, 2025",
+  "compare.row.density": "Density, 2025",
+  "compare.row.elevation": "Elevation at the city center",
+  "compare.row.income": "Median household income (2024 dollars)",
+  "compare.row.home": "Median home value (2024 dollars)",
+  "compare.row.degree": "Bachelor’s degree or higher (25+)",
+  "compare.row.foreign": "Born outside the U.S.",
+  "compare.row.poverty": "Below the poverty level",
+  "compare.row.commute": "Mean travel time to work",
+  "compare.row.high": "Average high, 1991–2020",
+  "compare.row.low": "Average low, 1991–2020",
+  "compare.row.rain": "Precipitation per year, 1991–2020",
+  "compare.row.station": "Distance to the weather station"
 }

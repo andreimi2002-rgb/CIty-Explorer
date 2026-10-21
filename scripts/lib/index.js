@@ -45,3 +45,25 @@ export function buildIndex(entries, states) {
   for (const s of list) s.cities.sort((a, b) => a.name.localeCompare(b.name));
   return { index: { states: list }, problems };
 }
+
+/**
+ * The small search list (data/search.json): every city with a page, its alternate names,
+ * county, 2025 population and center. entries: [{ state, place, city }] (place from places-<state>.json).
+ */
+export function buildSearch(entries, alternateNames) {
+  const round = (v) => Math.round(v * 1000) / 1000;
+  return entries
+    .filter((e) => e.city)
+    .map(({ state, place, city }) => {
+      const point = city.referencePoint;
+      return {
+        s: `${state}/${place.slug}`,
+        n: city.name,
+        a: alternateNames(city.name).filter((x) => x !== city.name),
+        c: place.county ?? null,
+        p: city.facts['population.estimate2025']?.value ?? null,
+        ll: point ? [round(point.lat), round(point.lon)] : null,
+      };
+    })
+    .sort((x, y) => x.s.localeCompare(y.s));
+}

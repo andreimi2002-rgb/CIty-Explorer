@@ -40,11 +40,11 @@ export function parseGnis(text) {
   const lines = String(text).replace(/^﻿/, '').trim().split(/\r?\n/);
   const head = lines[0].split('|');
   const idx = (k) => head.indexOf(k);
-  const [id, name, cls, county, lat, lon] = ['feature_id', 'feature_name', 'feature_class', 'county_numeric', 'prim_lat_dec', 'prim_long_dec'].map(idx);
+  const [id, name, cls, county, countyName, lat, lon] = ['feature_id', 'feature_name', 'feature_class', 'county_numeric', 'county_name', 'prim_lat_dec', 'prim_long_dec'].map(idx);
   const map = new Map();
   for (const l of lines.slice(1)) {
     const f = l.split('|');
-    map.set(String(Number(f[id])), { id: String(Number(f[id])), name: f[name], cls: f[cls], county: f[county], lat: Number(f[lat]), lon: Number(f[lon]) });
+    map.set(String(Number(f[id])), { id: String(Number(f[id])), name: f[name], cls: f[cls], county: f[county], countyName: f[countyName], lat: Number(f[lat]), lon: Number(f[lon]) });
   }
   return map;
 }
@@ -125,6 +125,8 @@ export function buildPlaces(rows, gnis, wikidataByGnis, state) {
       name,
       censusName: row.NAME,
       type: placeType(row),
+      // County of the city's GNIS Civil record (the seat of its government for multi-county cities).
+      county: civil?.countyName ? `${civil.countyName} County` : null,
       gnisCivil: civilId,
       gnisPlace: place?.id ?? null,
       wikidata: qids.length === 1 ? qids[0] : null,
