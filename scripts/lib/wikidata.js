@@ -4,7 +4,7 @@ export const WIKIDATA_API = 'https://www.wikidata.org/w/api.php';
 
 export function entitiesUrl(ids) {
   if (!ids.length || ids.length > 50 || !ids.every((id) => /^Q\d+$/.test(id))) throw new Error(`Invalid Wikidata ids: ${ids}`);
-  const q = new URLSearchParams({ action: 'wbgetentities', format: 'json', ids: ids.join('|'), props: 'labels|descriptions|claims', languages: 'en' });
+  const q = new URLSearchParams({ action: 'wbgetentities', format: 'json', ids: ids.join('|'), props: 'labels|descriptions|claims', languages: 'en|mul' });
   return `${WIKIDATA_API}?${q}`;
 }
 
@@ -20,7 +20,8 @@ export function parseEntity(entity) {
   const coord = claimValue(entity, 'P625');
   return {
     qid: entity.id,
-    label: entity.labels?.en?.value ?? null,
+    // "mul" is Wikidata's label shared by many languages; some items only have that one.
+    label: entity.labels?.en?.value ?? entity.labels?.mul?.value ?? null,
     description: entity.descriptions?.en?.value ?? null,
     image: claimValue(entity, 'P18'),
     coords: coord ? [Number(coord.longitude.toFixed(5)), Number(coord.latitude.toFixed(5))] : null,

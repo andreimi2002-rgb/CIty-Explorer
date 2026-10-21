@@ -24,5 +24,5 @@ for (const [i, city] of cities.entries()) {
 
 // Written only after every city passed.
 if (problems.length) refuse(`${state.code} boundaries`, problems);
-for (const [slug, boundary] of results) writeJson(`data/boundaries/${state.code}/${slug}.geojson`, boundary);
+for (const [slug, boundary] of results) writeJson(`data/boundaries/${state.code}/${slug}.geojson`, boundary, { compact: true });
 console.log(`Wrote ${results.length} boundaries to data/boundaries/${state.code}/`);

@@ -9,10 +9,11 @@ export function readJson(path) {
   return JSON.parse(readFileSync(join(ROOT, path), 'utf8'));
 }
 
-export function writeJson(path, value) {
+/** Writes JSON; compact for large files the browser downloads (boundaries), indented otherwise. */
+export function writeJson(path, value, { compact = false } = {}) {
   const abs = join(ROOT, path);
   mkdirSync(dirname(abs), { recursive: true });
-  writeFileSync(abs, JSON.stringify(value, null, 2) + '\n');
+  writeFileSync(abs, (compact ? JSON.stringify(value) : JSON.stringify(value, null, 2)) + '\n');
 }
 
 export function writeText(path, text) {
