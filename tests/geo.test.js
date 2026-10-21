@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  polygons, countPoints, bbox, pointInPolygon, pointInGeometry, ringArea, mainPolygonBbox, roundGeometry, bboxContains,
+  polygons, countPoints, bbox, pointInPolygon, pointInGeometry, ringArea, mainPolygonBbox, roundGeometry, bboxContains, extendBbox,
 } from '../js/geo.js';
 
 const square = (x, y, s) => [[[x, y], [x + s, y], [x + s, y + s], [x, y + s], [x, y]]];
@@ -49,6 +49,11 @@ test('rounding coordinates', () => {
   assert.deepEqual(g.coordinates[0][0], [1.12346, 2.98765]);
   const m = roundGeometry({ type: 'MultiPolygon', coordinates: [[[[1.000004, 2.000006], [0, 0], [1, 1], [1.000004, 2.000006]]]] });
   assert.deepEqual(m.coordinates[0][0][0], [1, 2.00001]);
+});
+
+test('extending a bbox with places', () => {
+  assert.deepEqual(extendBbox([0, 0, 10, 10], [[12, 5], null, [-1, 11]]), [-1, 0, 12, 11]);
+  assert.deepEqual(extendBbox([0, 0, 10, 10], []), [0, 0, 10, 10]);
 });
 
 test('bbox containment with tolerance', () => {

@@ -14,11 +14,13 @@ function keysInHtml(html) {
   return keys;
 }
 
-// String literals in JS that look like i18n keys ("nav.overview", 'unit.mi2').
+// String literals in JS that look like i18n keys ("nav.overview", 'unit.mi2'). Only namespaces
+// that exist in en.json count, so strings like the map event 'style.load' are not keys.
+const namespaces = new Set(Object.keys(dict).map((k) => k.split('.')[0]));
 function keysInJs(src) {
   return [...src.matchAll(/['"`]([a-z][a-zA-Z0-9]*(?:\.[a-zA-Z0-9]+)+)['"`]/g)]
     .map((m) => m[1])
-    .filter((k) => !/\.(js|json|css|html|woff2)$/.test(k));
+    .filter((k) => !/\.(js|mjs|json|css|html|woff2|svg)$/.test(k) && namespaces.has(k.split('.')[0]));
 }
 
 const used = new Set([...PAGES.flatMap((p) => keysInHtml(read(p))), ...jsFiles.flatMap((f) => keysInJs(read(f)))]);

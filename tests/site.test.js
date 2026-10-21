@@ -40,12 +40,30 @@ test('local assets use absolute paths (city pages live at /city/<state>/<slug>)'
   }
 });
 
-test('no external resources (fonts, CDNs, APIs) in pages, styles or scripts', () => {
+// The only external addresses allowed in site code: the SVG namespace, the OpenFreeMap map styles
+// (tiles cannot be self-hosted), and plain links to source and licence pages.
+// Photos come from data files (Wikimedia URLs checked by scripts/fetch-photos.js).
+const ALLOWED_EXTERNAL = new Set([
+  'http://www.w3.org/2000/svg',
+  'https://tiles.openfreemap.org/styles/liberty',
+  'https://tiles.openfreemap.org/styles/dark',
+  'https://openfreemap.org/',
+  'https://www.openstreetmap.org/copyright',
+  'https://api.met.no/weatherapi/locationforecast/2.0/documentation',
+]);
+
+test('no external resources (fonts, CDNs, APIs) in pages, styles or scripts except the allowed list', () => {
   const files = [...PAGES, 'styles.css', ...listFiles('js', '.js')];
   for (const f of files) {
     const urls = [...read(f).matchAll(/https?:\/\/[^\s"'`)]+/g)].map((m) => m[0]);
-    const external = urls.filter((u) => u !== 'http://www.w3.org/2000/svg');
+    const external = urls.filter((u) => !ALLOWED_EXTERNAL.has(u));
     assert.deepEqual(external, [], f);
+  }
+});
+
+test('the browser never calls MET Norway, Census or Wikidata directly', () => {
+  for (const f of listFiles('js', '.js')) {
+    assert.doesNotMatch(read(f), /locationforecast\/2\.0\/compact|tigerweb|wikidata\.org\/w\/api/, f);
   }
 });
 

@@ -75,6 +75,13 @@ export function roundGeometry(geometry, decimals = 5) {
   };
 }
 
+/** Grows a bbox to include the given [lon, lat] points (null points are ignored). */
+export function extendBbox(box, points) {
+  return points
+    .filter(Boolean)
+    .reduce((b, [x, y]) => [Math.min(b[0], x), Math.min(b[1], y), Math.max(b[2], x), Math.max(b[3], y)], box);
+}
+
 export function bboxContains(outer, inner, tolerance = 0) {
   return (
     inner[0] >= outer[0] - tolerance &&
