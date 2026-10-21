@@ -1,0 +1,607 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>City Explorer San Francisco</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: dark atlas sidebar + light working canvas; photographic hero, then data sections, each with its source. */
+:root{
+  --bg:#f2f4f8; --surface:#ffffff; --surface-2:#f6f8fb; --ink:#101a2c; --muted:#5d6a82; --line:#e2e7ef;
+  --side:#0c1424; --side-2:#16213a; --side-ink:#c5cfe2; --side-mute:#7f8ba3;
+  --accent:#2d58e6; --accent-ink:#ffffff; --accent-soft:#e7edff;
+  --gg:#c4402d; --hi:#e0484e; --lo:#3a74f2; --green:#2f9a63; --amber:#d48a17; --water:#d7e6f3; --land:#f7f5ef; --land-2:#ece9df; --park:#cfe6cf;
+  --font:"Plus Jakarta Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --r:14px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0a101b; --surface:#111a2a; --surface-2:#0e1624; --ink:#e7ecf5; --muted:#93a0b7; --line:#1f2b40;
+  --side:#070c16; --side-2:#121c30; --accent:#6f8dff; --accent-ink:#0a101b; --accent-soft:#1b2747;
+  --water:#13243a; --land:#1a2232; --land-2:#151c29; --park:#1d3a2b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0a101b; --surface:#111a2a; --surface-2:#0e1624; --ink:#e7ecf5; --muted:#93a0b7; --line:#1f2b40;
+  --side:#070c16; --side-2:#121c30; --accent:#6f8dff; --accent-ink:#0a101b; --accent-soft:#1b2747;
+  --water:#13243a; --land:#1a2232; --land-2:#151c29; --park:#1d3a2b; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--font);-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.app{display:grid;grid-template-columns:232px minmax(0,1fr);gap:20px;padding-block:16px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));max-width:1500px;margin:0 auto}
+/* Sidebar */
+.side{position:sticky;top:16px;align-self:start;background:var(--side);color:var(--side-ink);border-radius:18px;padding:18px 12px;display:flex;flex-direction:column;gap:14px;max-height:calc(100vh - 32px);overflow:auto}
+.brand{display:flex;gap:10px;align-items:center;padding:4px 8px 10px}
+.brand svg{flex:none}
+.brand b{display:block;color:#fff;font-size:17px;letter-spacing:-.01em}
+.brand span{font-size:11.5px;color:var(--side-mute)}
+.nav{display:flex;flex-direction:column;gap:2px}
+.nav a{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:9px;color:var(--side-ink);text-decoration:none;font-size:13.5px}
+.nav a:hover{background:var(--side-2);color:#fff}
+.nav a.on{background:#1d2b4d;color:#fff;box-shadow:inset 0 0 0 1px #2a3c66}
+.nav svg{width:16px;height:16px;flex:none;opacity:.85}
+.side-card{margin-top:auto;background:var(--side-2);border-radius:14px;padding:14px;font-size:12.5px;color:var(--side-mute)}
+.side-card b{color:#fff;font-size:13.5px;display:block;margin-bottom:4px}
+.side-card .scope{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.side-card .scope span{background:#22304f;color:#cfd8ea;border-radius:99px;padding:2px 9px;font-size:11.5px}
+.side-card .scope span.now{background:var(--accent);color:#fff}
+/* Main */
+main{min-width:0;display:flex;flex-direction:column;gap:20px}
+.top{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.search{flex:1;min-width:220px;display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:9px 14px;color:var(--muted)}
+.search input{border:0;background:transparent;outline:0;font:inherit;color:var(--ink);width:100%}
+.search kbd{font:11px var(--mono);border:1px solid var(--line);border-radius:5px;padding:1px 6px;color:var(--muted)}
+.btn{font:600 13.5px var(--font);border-radius:10px;padding:9px 14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;display:inline-flex;gap:8px;align-items:center}
+.btn:hover{border-color:var(--accent)}
+.btn:focus-visible,.chip:focus-visible,.nav a:focus-visible,.place:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.themebtn{width:40px;justify-content:center;padding:9px 0}
+/* Hero */
+.hero{position:relative;border-radius:22px;overflow:hidden;min-height:430px;color:#fff;isolation:isolate;background:#1a2440}
+.hero svg.scene{position:absolute;inset:0;width:100%;height:100%;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(6,10,22,.78) 0%,rgba(6,10,22,.35) 48%,rgba(6,10,22,0) 70%),linear-gradient(0deg,rgba(6,10,22,.65),rgba(6,10,22,0) 45%)}
+.hero-in{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end;padding:40px 34px 30px;min-height:430px}
+.crumbs{font-size:12.5px;opacity:.85;display:flex;gap:8px;flex-wrap:wrap}
+.crumbs span{background:rgba(255,255,255,.14);backdrop-filter:blur(6px);border-radius:99px;padding:3px 10px}
+.hero h1{font-size:clamp(44px,7vw,84px);line-height:.95;letter-spacing:-.035em;margin:14px 0 8px;font-weight:800;text-wrap:balance}
+.hero .sub{font-size:17px;font-weight:600;opacity:.95}
+.hero p.lede{max-width:56ch;margin:10px 0 18px;opacity:.9}
+.hero .actions{display:flex;gap:10px;flex-wrap:wrap}
+.hero .btn{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.35);color:#fff;backdrop-filter:blur(6px)}
+.hero .btn:hover{background:rgba(255,255,255,.22)}
+.hero .btn.saved{background:#fff;color:#111}
+.wx{background:rgba(10,16,32,.62);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:16px 18px;min-width:230px;font-size:13px}
+.wx .clock{font:500 30px/1 var(--mono);letter-spacing:-.02em}
+.wx .tz{opacity:.75;margin-top:4px}
+.wx hr{border:0;border-top:1px solid rgba(255,255,255,.18);margin:12px 0}
+.wx .norm{display:flex;gap:14px;align-items:baseline}
+.wx .norm b{font-size:22px}
+.wx small{opacity:.7;display:block;margin-top:6px;line-height:1.35}
+.illus{position:absolute;right:14px;top:12px;font-size:11px;opacity:.7;background:rgba(0,0,0,.3);padding:2px 8px;border-radius:99px}
+/* Tabs */
+.tabs{display:flex;gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:5px;overflow-x:auto;position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+.tabs a{white-space:nowrap;text-decoration:none;color:var(--muted);font-weight:600;font-size:13.5px;padding:7px 12px;border-radius:8px}
+.tabs a:hover{color:var(--ink);background:var(--surface-2)}
+.tabs a.on{color:var(--accent);background:var(--accent-soft)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+/* Panels */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}
+.ph{display:flex;justify-content:space-between;align-items:flex-end;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+.ph h2{font-size:21px;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.ph p{margin:2px 0 0;color:var(--muted);font-size:13.5px}
+.src{font-size:12px;color:var(--muted);margin-top:14px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.src .tag{font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.06em;border:1px solid var(--line);border-radius:5px;padding:1px 6px}
+.tag.sourced{color:var(--green);border-color:color-mix(in srgb,var(--green) 45%,transparent)}
+.tag.computed{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
+.tag.schematic{color:var(--amber);border-color:color-mix(in srgb,var(--amber) 45%,transparent)}
+/* KPIs */
+.kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:flex;gap:12px;min-width:0}
+.kpi .ic{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;flex:none}
+.kpi .ic svg{width:18px;height:18px}
+.kpi .l{font-size:12px;color:var(--muted)}
+.kpi .v{font-size:19px;font-weight:700;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.kpi .n{font-size:11.5px;color:var(--muted)}
+/* Highlights */
+.hl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.card svg{display:block;width:100%;height:auto;aspect-ratio:16/9}
+.card .b{padding:12px 14px 14px}
+.card h3{margin:0 0 3px;font-size:15px}
+.card p{margin:0;color:var(--muted);font-size:13px}
+/* Map */
+.mapwrap{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:18px}
+.map{background:var(--water);border-radius:14px;overflow:hidden;border:1px solid var(--line);position:relative}
+.map svg{display:block;width:100%;height:auto}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font:600 12.5px var(--font);border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:8px;padding:6px 11px;cursor:pointer}
+.chip[aria-pressed="true"],.chip[aria-selected="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.places{display:flex;flex-direction:column;gap:6px;max-height:560px;overflow:auto}
+.place{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;align-items:center;padding:9px;border-radius:12px;border:1px solid transparent;cursor:pointer;background:none;text-align:left;font:inherit;color:inherit}
+.place:hover,.place.on{background:var(--surface-2);border-color:var(--line)}
+.place .pin{width:44px;height:44px;border-radius:11px;display:grid;place-items:center;color:#fff;font-weight:700}
+.place b{display:block;font-size:14px}
+.place span{font-size:12.5px;color:var(--muted)}
+.place em{font-style:normal;font-size:11px;font-weight:600;border-radius:99px;padding:1px 8px;background:var(--accent-soft);color:var(--accent);margin-left:6px}
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.stat{border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--surface-2)}
+.stat .v{font-size:24px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.stat .l{font-size:13px;color:var(--muted)}
+.trend{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:18px;align-items:center;margin-top:16px}
+/* Climate */
+.climate{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:20px}
+.chart svg{width:100%;height:auto;display:block}
+.chart text{fill:var(--muted);font:11px var(--font)}
+.legend{display:flex;gap:16px;font-size:12.5px;color:var(--muted);margin:6px 0}
+.legend i{display:inline-block;width:14px;height:3px;border-radius:2px;vertical-align:middle;margin-right:6px}
+.summary{background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:12px;font-size:13px;color:var(--muted)}
+.summary .row{display:flex;gap:12px;align-items:center}
+.summary .row b{display:block;color:var(--ink);font-size:17px;font-variant-numeric:tabular-nums}
+.dot{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;flex:none}
+/* Transport */
+.tgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.line{display:grid;grid-template-columns:38px minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px;border:1px solid var(--line);border-radius:12px}
+.line .bd{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;color:#fff;font:700 12px var(--mono)}
+.line b{display:block;font-size:14px}
+.line span{font-size:12.5px;color:var(--muted)}
+.line .num{font:600 13px var(--mono);color:var(--ink);text-align:right}
+.tl{display:flex;flex-direction:column;gap:8px}
+/* History */
+.timeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.ev{border-left:3px solid var(--accent);padding:4px 0 4px 12px}
+.ev .y{font:600 13px var(--mono);color:var(--accent)}
+.ev p{margin:2px 0 0;font-size:13.5px}
+/* Compare */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:13.5px;font-variant-numeric:tabular-nums}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left;color:var(--muted);font-weight:500}
+thead th{font-size:13px;background:var(--surface-2);color:var(--ink)}
+thead th.cur{color:var(--accent)}
+td.cur{font-weight:700}
+tbody tr:last-child td{border-bottom:0}
+.dna{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:18px}
+.dna h4{margin:0 0 8px;font-size:13px}
+.bar{display:grid;grid-template-columns:72px minmax(0,1fr) 68px;gap:8px;align-items:center;font-size:12px;margin:5px 0}
+.bar .t{height:8px;border-radius:99px;background:var(--surface-2);border:1px solid var(--line);overflow:hidden}
+.bar .t i{display:block;height:100%;background:var(--muted);border-radius:99px}
+.bar.cur .t i{background:var(--accent)}
+.bar .val{text-align:right;font-variant-numeric:tabular-nums}
+.notes{font-size:13px;color:var(--muted)}
+.notes li{margin:4px 0}
+footer{color:var(--muted);font-size:12.5px;padding:4px 4px 20px}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:10px;font-size:13px;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.show{opacity:1}
+@media (max-width:1180px){.kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.hl{grid-template-columns:repeat(2,minmax(0,1fr))}.timeline{grid-template-columns:repeat(2,minmax(0,1fr))}.dna{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:960px){.app{grid-template-columns:minmax(0,1fr)}.side{position:static;max-height:none}.nav{flex-direction:row;overflow-x:auto}.nav a{white-space:nowrap}.side-card{display:none}
+ .mapwrap,.climate,.tgrid,.trend{grid-template-columns:minmax(0,1fr)}.hero-in{grid-template-columns:minmax(0,1fr)}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.kpis,.hl,.stats,.timeline,.dna{grid-template-columns:minmax(0,1fr)}.hero-in{padding:26px 18px 20px}.panel{padding:16px}.wx{min-width:0}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.fog{animation:drift 40s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateX(-30px)}to{transform:translateX(40px)}}
+</style>
+
+<div class="app">
+  <aside class="side">
+    <div class="brand">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#2d58e6"/><path d="M7 25V15l5-3v13M14 25V9l6-3v19M22 25V13l5 2v10" stroke="#fff" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
+      <div><b>City Explorer</b><span>Explore. Compare. Understand.</span></div>
+    </div>
+    <nav class="nav" id="nav">
+      <a href="#overview" class="on"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg>Overview</a>
+      <a href="#map"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1.5 3.5l4-1.5 5 2 4-1.5v10l-4 1.5-5-2-4 1.5z"/><path d="M5.5 2v10M10.5 4v10"/></svg>Map &amp; places</a>
+      <a href="#people"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="5" r="2.5"/><path d="M1.5 14c.5-3 2.3-4.5 4.5-4.5S10 11 10.5 14"/><circle cx="11.5" cy="5.5" r="2"/><path d="M11 9.5c2 0 3.2 1.5 3.5 4"/></svg>People &amp; economy</a>
+      <a href="#climate"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 11a3 3 0 0 1 .5-6A4 4 0 0 1 12 6a2.5 2.5 0 0 1 0 5z"/><path d="M5 13.5l-.5 1.5M8 13.5l-.5 1.5M11 13.5l-.5 1.5"/></svg>Climate</a>
+      <a href="#transport"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="1.5" width="10" height="10" rx="2.5"/><path d="M3 7h10M5.5 14l1-2.5M10.5 14l-1-2.5"/><circle cx="5.7" cy="9.3" r=".6" fill="currentColor"/><circle cx="10.3" cy="9.3" r=".6" fill="currentColor"/></svg>Transport</a>
+      <a href="#history"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4.5V8l2.5 1.5"/></svg>History</a>
+      <a href="#compare"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2.5 14V8M6.5 14V3M10.5 14V6M14 14V10"/></svg>Compare</a>
+      <a href="#sources"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="8" cy="3.5" rx="5.5" ry="2"/><path d="M2.5 3.5v9c0 1.1 2.5 2 5.5 2s5.5-.9 5.5-2v-9M2.5 8c0 1.1 2.5 2 5.5 2s5.5-.9 5.5-2"/></svg>Data &amp; sources</a>
+    </nav>
+    <div class="side-card">
+      <b>Coverage</b>
+      Prototype scope: California cities, compared on the same Census definitions.
+      <div class="scope"><span class="now">San Francisco</span><span>Los Angeles</span><span>San Diego</span><span>San Jose</span><span>Oakland</span></div>
+    </div>
+  </aside>
+
+  <main>
+    <div class="top">
+      <label class="search" for="q">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11l3.5 3.5"/></svg>
+        <input id="q" placeholder="Search a city in California…" autocomplete="off" list="cities">
+        <kbd>/</kbd>
+      </label>
+      <datalist id="cities"><option value="San Francisco"><option value="Los Angeles"><option value="San Diego"><option value="San Jose"><option value="Oakland"></datalist>
+      <button class="btn themebtn" id="theme" aria-label="Switch light or dark theme" title="Theme">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.6M8 13.4V15M1 8h1.6M13.4 8H15M3 3l1.1 1.1M11.9 11.9L13 13M3 13l1.1-1.1M11.9 4.1L13 3"/></svg>
+      </button>
+    </div>
+
+    <section class="hero" id="overview" aria-label="San Francisco">
+      <svg class="scene" viewBox="0 0 1200 460" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14203d"/><stop offset=".45" stop-color="#4b4f7a"/><stop offset=".75" stop-color="#d98a6a"/><stop offset="1" stop-color="#f3c08a"/></linearGradient>
+          <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5b6c93"/><stop offset="1" stop-color="#18223d"/></linearGradient>
+          <radialGradient id="sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffe2b0" stop-opacity=".95"/><stop offset="1" stop-color="#ffb877" stop-opacity="0"/></radialGradient>
+          <filter id="blur"><feGaussianBlur stdDeviation="14"/></filter>
+        </defs>
+        <rect width="1200" height="460" fill="url(#sky)"/>
+        <circle cx="300" cy="300" r="170" fill="url(#sun)"/>
+        <path d="M0 300 C120 250 220 262 330 282 C420 298 470 270 560 262 L560 330 L0 330Z" fill="#3a3558"/>
+        <rect y="318" width="1200" height="142" fill="url(#sea)"/>
+        <g class="fog" filter="url(#blur)" opacity=".75"><ellipse cx="260" cy="300" rx="260" ry="26" fill="#f4e6dc"/><ellipse cx="620" cy="312" rx="200" ry="18" fill="#f1e2d8"/></g>
+        <!-- bridge -->
+        <g stroke="#c4402d" fill="#c4402d">
+          <path d="M-20 335 L640 335" stroke-width="7"/>
+          <path d="M-20 252 Q 70 330 150 182 Q 300 300 450 182 Q 530 300 640 262" fill="none" stroke-width="3"/>
+          <g stroke-width="1.2" opacity=".85">
+            <path d="M180 214V335M210 240V335M240 262V335M270 278V335M300 286V335M330 280V335M360 266V335M390 246V335M420 218V335"/>
+            <path d="M40 300V335M80 309V335M110 270V335M480 230V335M510 262V335M540 282V335M580 291V335M610 283V335"/>
+          </g>
+          <g stroke="none"><rect x="141" y="176" width="7" height="160"/><rect x="155" y="176" width="7" height="160"/><rect x="141" y="190" width="21" height="5"/><rect x="141" y="232" width="21" height="5"/><rect x="141" y="276" width="21" height="5"/>
+          <rect x="441" y="176" width="7" height="160"/><rect x="455" y="176" width="7" height="160"/><rect x="441" y="190" width="21" height="5"/><rect x="441" y="232" width="21" height="5"/><rect x="441" y="276" width="21" height="5"/></g>
+        </g>
+        <!-- city -->
+        <path d="M640 330 C700 300 760 296 820 288 C900 280 960 300 1040 286 C1100 276 1160 290 1200 286 L1200 340 L640 340Z" fill="#232848"/>
+        <g fill="#2b3156">
+          <rect x="770" y="240" width="22" height="60"/><rect x="796" y="222" width="18" height="78"/><rect x="818" y="250" width="26" height="50"/>
+          <rect x="880" y="205" width="24" height="95"/><rect x="908" y="230" width="20" height="70"/><rect x="960" y="214" width="22" height="86"/>
+          <rect x="1010" y="236" width="30" height="64"/><rect x="1046" y="250" width="22" height="50"/><rect x="1100" y="246" width="24" height="54"/>
+        </g>
+        <path d="M846 300 L858 168 L862 150 L866 168 L878 300Z" fill="#30375f"/>
+        <path d="M930 300 V150 Q942 128 954 150 V300Z" fill="#343c66"/>
+        <g fill="#f7d79a" opacity=".55"><rect x="884" y="220" width="3" height="3"/><rect x="892" y="236" width="3" height="3"/><rect x="936" y="170" width="3" height="3"/><rect x="944" y="200" width="3" height="3"/><rect x="966" y="240" width="3" height="3"/><rect x="1016" y="252" width="3" height="3"/><rect x="800" y="250" width="3" height="3"/></g>
+        <rect x="1078" y="252" width="8" height="34" fill="#30375f"/><rect x="1076" y="248" width="12" height="5" fill="#30375f"/>
+        <path d="M0 360 L1200 360" stroke="#ffd7a8" stroke-opacity=".12" stroke-width="2"/>
+      </svg>
+      <span class="illus">Illustration · photos come from Wikimedia Commons in the app</span>
+      <div class="hero-in">
+        <div>
+          <div class="crumbs"><span>California</span><span>City and County</span><span>Bay Area</span></div>
+          <h1>San Francisco</h1>
+          <div class="sub">California, United States</div>
+          <p class="lede">A consolidated city and county on the tip of a peninsula, with ocean on one side and the bay on the other. Most of its official area is water: 121.5 km² of land inside 600.6 km².</p>
+          <div class="actions">
+            <button class="btn" id="save"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 13.5S2 10 2 6a3 3 0 0 1 6-1 3 3 0 0 1 6 1c0 4-6 7.5-6 7.5z"/></svg><span>Save city</span></button>
+            <button class="btn" id="share"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="3.5" r="2"/><circle cx="4" cy="8" r="2"/><circle cx="12" cy="12.5" r="2"/><path d="M5.8 7l4.4-2.5M5.8 9l4.4 2.5"/></svg>Copy link</button>
+            <a class="btn" href="#compare"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2.5 14V8M6.5 14V3M10.5 14V6M14 14V10"/></svg>Compare</a>
+          </div>
+        </div>
+        <div class="wx" aria-live="polite">
+          <div style="opacity:.75;font-size:12px">Local time</div>
+          <div class="clock" id="clock">--:--</div>
+          <div class="tz" id="tzline">America/Los_Angeles</div>
+          <hr>
+          <div style="opacity:.75;font-size:12px" id="normLabel">Typical day this month</div>
+          <div class="norm"><b id="normHi">--</b><span id="normLo">--</span></div>
+          <small>NOAA climate normals, downtown station. Live weather (MET Norway) loads in the published app.</small>
+          <a href="#climate" style="color:#fff;font-weight:600;display:inline-block;margin-top:8px">Full climate →</a>
+        </div>
+      </div>
+    </section>
+
+    <nav class="tabs" id="tabs" aria-label="Sections">
+      <a href="#overview" class="on">Overview</a><a href="#map">Map</a><a href="#people">People</a><a href="#climate">Climate</a><a href="#transport">Transport</a><a href="#history">History</a><a href="#compare">Compare</a><a href="#sources">Sources</a>
+    </nav>
+
+    <div class="kpis" id="kpis"></div>
+
+    <div class="hl">
+      <article class="card">
+        <svg viewBox="0 0 320 180" aria-hidden="true"><rect width="320" height="180" fill="#f0b48a"/><rect y="0" width="320" height="110" fill="#e9a07f"/><rect y="118" width="320" height="62" fill="#3c4f78"/><path d="M0 128H320" stroke="#c4402d" stroke-width="5"/><path d="M0 92Q50 128 90 50Q160 112 230 50Q270 112 320 98" stroke="#c4402d" stroke-width="2.5" fill="none"/><rect x="84" y="44" width="12" height="86" fill="#c4402d"/><rect x="224" y="44" width="12" height="86" fill="#c4402d"/><ellipse cx="160" cy="112" rx="190" ry="12" fill="#fff" opacity=".45"/></svg>
+        <div class="b"><h3>Golden Gate Bridge</h3><p>Opened 27 May 1937. Links the city to Marin County across the strait.</p></div>
+      </article>
+      <article class="card">
+        <svg viewBox="0 0 320 180" aria-hidden="true"><rect width="320" height="180" fill="#9fb5cf"/><ellipse cx="160" cy="70" rx="220" ry="40" fill="#e7edf4"/><ellipse cx="80" cy="96" rx="140" ry="22" fill="#f4f6f9"/><path d="M0 130C60 110 120 118 180 104S280 98 320 108V180H0Z" fill="#5f7a5e"/><path d="M0 150C80 140 160 146 320 136V180H0Z" fill="#4a634b"/></svg>
+        <div class="b"><h3>Fog and cool summers</h3><p>September is the warmest month (average high 21.2 °C); July averages 19.1 °C.</p></div>
+      </article>
+      <article class="card">
+        <svg viewBox="0 0 320 180" aria-hidden="true"><rect width="320" height="180" fill="#d7e6f3"/><path d="M40 160V60l40-30 40 30v100zM130 160V70l35-28 35 28v90zM210 160V64l38-30 38 30v96z" fill="#f2c7a8" stroke="#7a5a4a" stroke-width="2"/><path d="M40 60l40-30 40 30M130 70l35-28 35 28M210 64l38-30 38 30" stroke="#5a7aa8" stroke-width="5" fill="none"/><g fill="#fff" stroke="#7a5a4a"><rect x="60" y="80" width="14" height="22"/><rect x="86" y="80" width="14" height="22"/><rect x="148" y="88" width="12" height="20"/><rect x="170" y="88" width="12" height="20"/><rect x="230" y="84" width="14" height="22"/><rect x="254" y="84" width="14" height="22"/></g><rect y="160" width="320" height="20" fill="#7aa36d"/></svg>
+        <div class="b"><h3>Dense on a small footprint</h3><p>873,965 people in 2020 on 121.5 km² of land: about 7,190 per km².</p></div>
+      </article>
+      <article class="card">
+        <svg viewBox="0 0 320 180" aria-hidden="true"><rect width="320" height="180" fill="#efe3cf"/><path d="M90 150V70h140v80z" fill="#fbf6ec" stroke="#8b6d4c" stroke-width="2"/><path d="M80 72L160 30l80 42z" fill="#b5643c"/><rect x="146" y="104" width="28" height="46" fill="#8b6d4c"/><circle cx="160" cy="64" r="8" fill="#fbf6ec" stroke="#8b6d4c" stroke-width="2"/><rect y="150" width="320" height="30" fill="#c9b48f"/></svg>
+        <div class="b"><h3>Founded in 1776</h3><p>The Presidio and Mission Dolores were established by Spanish settlers in 1776.</p></div>
+      </article>
+    </div>
+
+    <section class="panel" id="map">
+      <div class="ph">
+        <div><h2>City map</h2><p>Landmarks, neighborhoods and BART stations inside city limits.</p></div>
+        <div class="chips" role="group" aria-label="Map layers">
+          <button class="chip" aria-pressed="true" data-layer="places">Places</button>
+          <button class="chip" aria-pressed="true" data-layer="hoods">Neighborhoods</button>
+          <button class="chip" aria-pressed="true" data-layer="bart">BART</button>
+        </div>
+      </div>
+      <div class="mapwrap">
+        <div class="map"><svg id="mapsvg" viewBox="0 0 760 690" role="img" aria-label="Schematic map of San Francisco"></svg></div>
+        <div>
+          <h3 style="margin:0 0 8px;font-size:15px">Featured places</h3>
+          <div class="places" id="places"></div>
+        </div>
+      </div>
+      <div class="src"><span class="tag schematic">schematic</span> Coastline simplified by hand for this prototype. Landmark and station positions are real coordinates. The app uses MapLibre with OpenFreeMap tiles, as in FOS.</div>
+    </section>
+
+    <section class="panel" id="people">
+      <div class="ph"><div><h2>People &amp; economy</h2><p>City limits only. American Community Survey 2020–2024, money in 2024 dollars.</p></div></div>
+      <div class="stats" id="stats"></div>
+      <div class="trend">
+        <div>
+          <h3 style="margin:0 0 4px;font-size:15px">Population change</h3>
+          <p class="notes" style="margin:0">Census count on 1 April 2020 against the Census Bureau estimate for 1 July 2025.</p>
+        </div>
+        <div id="trend"></div>
+      </div>
+      <div class="src"><span class="tag sourced">sourced</span> U.S. Census Bureau, QuickFacts (V2025 estimates, 2020 Census, ACS 5-year 2020–2024)</div>
+    </section>
+
+    <section class="panel" id="climate">
+      <div class="ph">
+        <div><h2>Climate</h2><p>Monthly normals for downtown San Francisco.</p></div>
+        <div class="chips" role="tablist" aria-label="Climate view">
+          <button class="chip" role="tab" aria-selected="true" data-cv="temp">Temperature</button>
+          <button class="chip" role="tab" aria-selected="false" data-cv="rain">Precipitation</button>
+        </div>
+      </div>
+      <div class="climate">
+        <div class="chart">
+          <div class="legend" id="legend"></div>
+          <div id="chart"></div>
+        </div>
+        <div class="summary" id="csum"></div>
+      </div>
+      <div class="src"><span class="tag sourced">sourced</span> NOAA climate normals, NWS downtown San Francisco station, as tabulated in Wikipedia's San Francisco article. <span class="tag computed">computed</span> wet-season share and °C conversions.</div>
+    </section>
+
+    <section class="panel" id="transport">
+      <div class="ph"><div><h2>Transport</h2><p>Rail, Muni, ferries and the airport.</p></div></div>
+      <div class="tgrid">
+        <div class="tl" id="lines1"></div>
+        <div class="tl" id="lines2"></div>
+      </div>
+      <div class="src"><span class="tag sourced">sourced</span> BART and Muni system figures from Wikipedia (ridership Q1 2026). <span class="tag computed">computed</span> straight-line distance to SFO.</div>
+    </section>
+
+    <section class="panel" id="history">
+      <div class="ph"><div><h2>History</h2><p>Key dates, from the first mission to the first BART trains.</p></div></div>
+      <div class="timeline" id="timeline"></div>
+      <div class="src"><span class="tag sourced">sourced</span> Wikipedia, San Francisco (history section) and the linked articles</div>
+    </section>
+
+    <section class="panel" id="compare">
+      <div class="ph">
+        <div><h2>Compare California cities</h2><p>Same definitions for every city: city limits, Census land area, ACS 2020–2024.</p></div>
+        <div class="chips" id="cmpchips" role="group" aria-label="Cities to compare"></div>
+      </div>
+      <div class="tablewrap"><table id="cmp"></table></div>
+      <h3 style="margin:22px 0 0;font-size:15px">City DNA</h3>
+      <p class="notes" style="margin:2px 0 0">Each bar is scaled to the highest value among the selected cities.</p>
+      <div class="dna" id="dna"></div>
+      <div class="src"><span class="tag sourced">sourced</span> U.S. Census Bureau QuickFacts for each city. <span class="tag computed">computed</span> km² and density per km² from square miles (1 mi² = 2.58999 km²).</div>
+    </section>
+
+    <section class="panel" id="sources">
+      <div class="ph"><div><h2>Data &amp; sources</h2><p>Where every number on this page comes from, and what still needs checking.</p></div></div>
+      <ul class="notes">
+        <li><a href="https://www.census.gov/quickfacts/fact/table/sanfranciscocitycalifornia/PST045224" target="_blank" rel="noopener">U.S. Census Bureau QuickFacts: San Francisco city</a>, plus <a href="https://www.census.gov/quickfacts/fact/table/losangelescitycalifornia/PST045224" target="_blank" rel="noopener">Los Angeles</a>, <a href="https://www.census.gov/quickfacts/fact/table/sandiegocitycalifornia/PST045224" target="_blank" rel="noopener">San Diego</a>, <a href="https://www.census.gov/quickfacts/fact/table/sanjosecitycalifornia/PST045224" target="_blank" rel="noopener">San Jose</a>, <a href="https://www.census.gov/quickfacts/fact/table/oaklandcitycalifornia/PST045224" target="_blank" rel="noopener">Oakland</a>. Public domain (U.S. government work).</li>
+        <li><a href="https://en.wikipedia.org/wiki/San_Francisco" target="_blank" rel="noopener">Wikipedia: San Francisco</a> for area, elevation, history and the NOAA climate table. CC BY-SA 4.0.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Bay_Area_Rapid_Transit" target="_blank" rel="noopener">Wikipedia: BART</a> and <a href="https://en.wikipedia.org/wiki/San_Francisco_Municipal_Railway" target="_blank" rel="noopener">Wikipedia: Muni</a> for lines, stations and ridership.</li>
+        <li><b>To check:</b> Mount Davidson is 283 m in the article text and 285 m in its infobox. The page uses 283 m until the USGS value is confirmed.</li>
+        <li><b>To check:</b> the monthly precipitation values add up to about 582 mm, while the article text quotes 601 mm a year. In the app, normals come straight from NOAA's 1991–2020 dataset.</li>
+        <li><b>Not in this prototype:</b> photos (the published page cannot load outside images, so the pictures here are drawings), live weather, metro-area population and neighborhood boundaries.</li>
+      </ul>
+    </section>
+    <footer>City Explorer prototype · San Francisco · data checked 21 October 2026</footer>
+  </main>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+const $=s=>document.querySelector(s);
+const nf=new Intl.NumberFormat('en-US');
+const SQMI=2.58999;
+function toast(t){const el=$('#toast');el.textContent=t;el.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(()=>el.classList.remove('show'),1800)}
+
+/* ---------- Data ---------- */
+const CITIES={
+  sf:{name:'San Francisco',pop25:826079,pop20:873965,landMi:46.91,inc:140970,home:1394500,ba:60.3,pov:11.2,commute:30.4,fb:34.0},
+  la:{name:'Los Angeles',pop25:3869089,pop20:3898747,landMi:469.49,inc:81939,home:921200,ba:38.5,pov:16.5,commute:30.7,fb:35.7},
+  sd:{name:'San Diego',pop25:1406106,pop20:1386932,landMi:325.88,inc:108077,home:906700,ba:51.0,pov:11.0,commute:23.5,fb:25.1},
+  sj:{name:'San Jose',pop25:989814,pop20:1013240,landMi:178.26,inc:146427,home:1233200,ba:47.3,pov:8.1,commute:27.3,fb:42.0},
+  oak:{name:'Oakland',pop25:440838,pop20:440646,landMi:55.93,inc:101600,home:929900,ba:48.7,pov:13.4,commute:29.8,fb:27.5}
+};
+for(const c of Object.values(CITIES)){c.landKm=c.landMi*SQMI;c.dens=c.pop20/c.landKm}
+const SF=CITIES.sf;
+const CLIM={m:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+  hi:[14.3,15.8,16.7,17.2,17.8,19.2,19.1,19.9,21.2,21.0,17.6,14.4],
+  lo:[8.1,8.8,9.4,9.8,10.8,11.7,12.4,13.1,13.1,12.4,10.4,8.3],
+  pr:[112,111,80,41,18,5.1,0.25,1.5,2.5,24,66,121]};
+
+/* ---------- KPIs ---------- */
+const ic=(bg,fg,path)=>`<div class="ic" style="background:color-mix(in srgb,${bg} 16%,transparent);color:${bg}"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6">${path}</svg></div>`;
+const kpis=[
+  ['Population',nf.format(SF.pop25),'1 Jul 2025 estimate · 2020 Census '+nf.format(SF.pop20),ic('#7a55e0','',`<circle cx="7" cy="6" r="2.6"/><path d="M2 15c.4-3 2.4-4.6 5-4.6s4.6 1.6 5 4.6"/><circle cx="13" cy="6.5" r="2"/><path d="M12.5 10.6c2 .2 3.2 1.8 3.5 4"/>`)],
+  ['Land area',SF.landKm.toFixed(1)+' km²','+ 479.2 km² of water',ic('#2f9a63','',`<path d="M2 4l4.5-1.5 5 2 4.5-1.5v11l-4.5 1.5-5-2L2 15z"/><path d="M6.5 2.5v11M11.5 4.5v11"/>`)],
+  ['Density',nf.format(Math.round(SF.dens))+' / km²','2020 Census, land area',ic('#d48a17','',`<rect x="2.5" y="9" width="4" height="6.5"/><rect x="7" y="4" width="4" height="11.5"/><rect x="11.5" y="7" width="4" height="8.5"/>`)],
+  ['Elevation','0 – 283 m','Highest: Mount Davidson',ic('#2d58e6','',`<path d="M1.5 15l5-8 3 4.5 2-3 5 6.5z"/>`)],
+  ['Time zone','<span id="tzk">PT</span>','UTC−8 (PST) · UTC−7 (PDT)',ic('#0e9fb0','',`<circle cx="9" cy="9" r="6.5"/><path d="M9 5v4l2.8 1.6"/>`)]
+];
+$('#kpis').innerHTML=kpis.map(k=>`<div class="kpi">${k[3]}<div style="min-width:0"><div class="l">${k[0]}</div><div class="v">${k[1]}</div><div class="n">${k[2]}</div></div></div>`).join('');
+
+/* ---------- Clock + month normal ---------- */
+function tick(){
+  const now=new Date();
+  const t=new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).format(now);
+  const parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',weekday:'short',day:'numeric',month:'short',timeZoneName:'short'}).formatToParts(now);
+  const g=k=>(parts.find(p=>p.type===k)||{}).value||'';
+  $('#clock').textContent=t;
+  $('#tzline').textContent=`${g('weekday')} ${g('day')} ${g('month')} · ${g('timeZoneName')}`;
+  const tzk=$('#tzk'); if(tzk) tzk.textContent=g('timeZoneName')||'PT';
+  const mi=Number(new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',month:'numeric'}).format(now))-1;
+  $('#normLabel').textContent='Typical day in '+new Intl.DateTimeFormat('en-US',{month:'long',timeZone:'America/Los_Angeles'}).format(now);
+  $('#normHi').textContent=CLIM.hi[mi].toFixed(1)+' °C';
+  $('#normLo').textContent='low '+CLIM.lo[mi].toFixed(1)+' °C · '+(CLIM.pr[mi]<1?CLIM.pr[mi]:Math.round(CLIM.pr[mi]))+' mm';
+}
+tick(); setInterval(tick,1000);
+
+/* ---------- Map ---------- */
+const B={lon0:-122.535,lon1:-122.345,lat0:37.700,lat1:37.838};
+const K=Math.cos(37.77*Math.PI/180), S=760/((B.lon1-B.lon0)*K);
+const P=(lon,lat)=>[((lon-B.lon0)*K*S),((B.lat1-lat)*S)];
+const path=pts=>'M'+pts.map(p=>P(p[0],p[1]).map(n=>n.toFixed(1)).join(' ')).join('L')+'Z';
+const SFLAND=[[-122.5025,37.7081],[-122.5068,37.735],[-122.5098,37.76],[-122.5108,37.772],[-122.514,37.7785],[-122.513,37.7805],[-122.505,37.788],[-122.493,37.7878],[-122.488,37.789],[-122.484,37.793],[-122.483,37.8],[-122.477,37.8107],[-122.465,37.8055],[-122.45,37.806],[-122.44,37.8075],[-122.43,37.808],[-122.425,37.809],[-122.421,37.809],[-122.415,37.8105],[-122.41,37.809],[-122.404,37.8085],[-122.399,37.805],[-122.3925,37.796],[-122.388,37.79],[-122.387,37.781],[-122.387,37.772],[-122.383,37.762],[-122.384,37.75],[-122.385,37.742],[-122.374,37.738],[-122.358,37.729],[-122.362,37.72],[-122.379,37.71],[-122.387,37.708],[-122.42,37.708],[-122.47,37.7081]];
+const MARIN=[[-122.535,37.838],[-122.535,37.82],[-122.529,37.816],[-122.51,37.822],[-122.489,37.827],[-122.478,37.8255],[-122.474,37.832],[-122.468,37.838]];
+const SOUTH=[[-122.5025,37.7081],[-122.47,37.7081],[-122.42,37.708],[-122.387,37.708],[-122.383,37.7],[-122.5,37.7]];
+const TI=[[-122.3745,37.8295],[-122.3655,37.831],[-122.361,37.8255],[-122.364,37.8165],[-122.3715,37.816],[-122.376,37.823]];
+const YBI=[[-122.369,37.8115],[-122.362,37.8125],[-122.359,37.808],[-122.364,37.806],[-122.369,37.8075]];
+const ALC=[[-122.4255,37.8275],[-122.421,37.8285],[-122.4195,37.8262],[-122.424,37.8252]];
+const GGP=[[-122.511,37.7645],[-122.511,37.774],[-122.4535,37.7735],[-122.4475,37.7725],[-122.4475,37.7705],[-122.4535,37.7705],[-122.4535,37.7655]];
+const PRESIDIO=[[-122.484,37.793],[-122.483,37.8],[-122.477,37.8107],[-122.465,37.8055],[-122.448,37.8045],[-122.447,37.7885],[-122.472,37.786]];
+const MERCED=[[-122.4935,37.7265],[-122.4855,37.7305],[-122.4775,37.7265],[-122.4805,37.7175],[-122.4905,37.7175]];
+const PLACES=[
+  {n:'Golden Gate Bridge',d:'Suspension bridge across the Golden Gate strait, opened 1937',t:'Landmark',c:'#c4402d',p:[-122.4783,37.8199]},
+  {n:'Alcatraz Island',d:'Former federal prison in the bay, now part of a national recreation area',t:'Island',c:'#5d6a82',p:[-122.423,37.8267]},
+  {n:'Ferry Building',d:'Terminal for bay ferries at the foot of Market Street',t:'Transport',c:'#0e9fb0',p:[-122.3937,37.7955]},
+  {n:'Coit Tower',d:'Tower on Telegraph Hill, completed 1933',t:'Landmark',c:'#c4402d',p:[-122.4058,37.8024]},
+  {n:'Golden Gate Park',d:'Long city park running inland from Ocean Beach',t:'Park',c:'#2f9a63',p:[-122.4862,37.7694]},
+  {n:'Painted Ladies',d:'Row of Victorian houses facing Alamo Square',t:'Architecture',c:'#7a55e0',p:[-122.4328,37.7762]},
+  {n:'Mission Dolores',d:'Mission San Francisco de Asís, founded 1776',t:'History',c:'#d48a17',p:[-122.4269,37.7643]},
+  {n:'Twin Peaks',d:'Two hills near the center of the city with views east',t:'Viewpoint',c:'#2d58e6',p:[-122.4477,37.7544]},
+  {n:'Presidio',d:'Former military post founded 1776, now a national park site',t:'Park',c:'#2f9a63',p:[-122.4662,37.7989]}
+];
+const HOODS=[['Financial District',-122.4,37.7935],['Chinatown',-122.4078,37.7975],['North Beach',-122.4103,37.8055],['Marina',-122.437,37.803],['SoMa',-122.403,37.7785],['Mission',-122.4148,37.7599],['Haight-Ashbury',-122.4481,37.7692],['Richmond',-122.48,37.7805],['Sunset',-122.494,37.753],['Bayview',-122.39,37.7305],['Excelsior',-122.43,37.7245]];
+const BART=[['Embarcadero',-122.3971,37.7929],['Montgomery St',-122.4013,37.7894],['Powell St',-122.4079,37.7844],['Civic Center',-122.4139,37.7796],['16th St Mission',-122.4196,37.765],['24th St Mission',-122.4184,37.7522],['Glen Park',-122.4339,37.7331],['Balboa Park',-122.4475,37.7215]];
+function drawMap(sel){
+  const L=(pts,fill,extra='')=>`<path d="${path(pts)}" fill="${fill}" ${extra}/>`;
+  const bb=[[-122.388,37.789],[-122.3655,37.8095],[-122.345,37.8165]].map(p=>P(...p));
+  const gg=[P(-122.4772,37.8107),P(-122.4795,37.8324)];
+  const bline=BART.map(b=>P(b[1],b[2])).concat([P(-122.469,37.7063)]);
+  let s=`<rect width="760" height="690" fill="var(--water)"/>`+
+    L(MARIN,'var(--land-2)')+L(SOUTH,'var(--land-2)')+L(SFLAND,'var(--land)','stroke="var(--line)" stroke-width="1.5"')+
+    L(TI,'var(--land)')+L(YBI,'var(--land)')+L(ALC,'var(--land-2)')+
+    L(GGP,'var(--park)')+L(PRESIDIO,'var(--park)')+L(MERCED,'var(--water)');
+  s+=`<polyline points="${bb.map(p=>p.join(',')).join(' ')}" fill="none" stroke="var(--muted)" stroke-width="3"/>`;
+  s+=`<line x1="${gg[0][0]}" y1="${gg[0][1]}" x2="${gg[1][0]}" y2="${gg[1][1]}" stroke="#c4402d" stroke-width="4"/>`;
+  const lab=(x,y,t,size=11,w=500,col='var(--muted)',anchor='middle')=>`<text x="${x}" y="${y}" text-anchor="${anchor}" style="font:${w} ${size}px var(--font);fill:${col};paint-order:stroke;stroke:var(--land);stroke-width:3px">${t}</text>`;
+  s+=lab(...P(-122.505,37.832),'Marin Headlands',11,600)+lab(...P(-122.44,37.703),'Daly City · San Mateo County',11,600);
+  s+=`<text x="${P(-122.528,37.755)[0]}" y="${P(-122.528,37.755)[1]}" transform="rotate(-90 ${P(-122.528,37.755).join(' ')})" text-anchor="middle" style="font:600 12px var(--font);fill:var(--muted);letter-spacing:.2em">PACIFIC OCEAN</text>`;
+  s+=`<text x="${P(-122.37,37.78)[0]}" y="${P(-122.37,37.78)[1]}" text-anchor="middle" style="font:600 12px var(--font);fill:var(--muted);letter-spacing:.2em">SAN FRANCISCO BAY</text>`;
+  s+=lab(bb[2][0]-4,bb[2][1]-8,'Bay Bridge → Oakland',10.5,600,'var(--muted)','end');
+  s+=lab(...P(-122.37,37.835),'Treasure Island',10.5);
+  if(layers.hoods) HOODS.forEach(h=>{const [x,y]=P(h[1],h[2]);s+=lab(x,y,h[0],11.5,600,'var(--ink)')});
+  if(layers.bart){
+    s+=`<polyline points="${bline.map(p=>p.map(n=>n.toFixed(1)).join(',')).join(' ')}" fill="none" stroke="#2d58e6" stroke-width="3.5" stroke-linejoin="round" opacity=".8"/>`;
+    BART.forEach(b=>{const [x,y]=P(b[1],b[2]);s+=`<circle cx="${x}" cy="${y}" r="4.5" fill="var(--surface)" stroke="#2d58e6" stroke-width="2.5"><title>${b[0]} (BART)</title></circle>`});
+  }
+  if(layers.places) PLACES.forEach((pl,i)=>{const [x,y]=P(...pl.p);const on=i===sel;
+    s+=`<g style="cursor:pointer" data-i="${i}"><circle cx="${x}" cy="${y}" r="${on?13:10}" fill="${pl.c}" stroke="#fff" stroke-width="2.5"/><text x="${x}" y="${y+4}" text-anchor="middle" style="font:700 11px var(--font);fill:#fff">${i+1}</text><title>${pl.n}</title></g>`;
+    if(on) s+=lab(x,y-18,pl.n,12.5,700,'var(--ink)');});
+  s+=`<g transform="translate(700,40)"><path d="M0 -18 L6 0 L0 -4 L-6 0Z" fill="var(--ink)"/><text y="14" text-anchor="middle" style="font:700 11px var(--font);fill:var(--ink)">N</text></g>`;
+  const kmPx=S/111.32; // 1 km in px along x
+  s+=`<g transform="translate(24,660)"><rect x="0" y="-4" width="${(2*kmPx).toFixed(1)}" height="5" fill="var(--ink)"/><text x="0" y="-10" style="font:600 10.5px var(--font);fill:var(--ink)">0</text><text x="${(2*kmPx).toFixed(1)}" y="-10" text-anchor="end" style="font:600 10.5px var(--font);fill:var(--ink)">2 km</text></g>`;
+  $('#mapsvg').innerHTML=s;
+}
+const layers={places:true,hoods:true,bart:true};let sel=0;
+$('#places').innerHTML=PLACES.map((p,i)=>`<button class="place${i===0?' on':''}" data-i="${i}"><span class="pin" style="background:${p.c}">${i+1}</span><span style="min-width:0"><b>${p.n}<em>${p.t}</em></b><span>${p.d}</span></span></button>`).join('');
+function select(i){sel=i;document.querySelectorAll('.place').forEach(b=>b.classList.toggle('on',+b.dataset.i===i));drawMap(i)}
+$('#places').addEventListener('click',e=>{const b=e.target.closest('.place');if(b)select(+b.dataset.i)});
+$('#mapsvg').addEventListener('click',e=>{const g=e.target.closest('g[data-i]');if(g){select(+g.dataset.i);document.querySelector(`.place[data-i="${g.dataset.i}"]`).scrollIntoView({block:'nearest'})}});
+document.querySelectorAll('[data-layer]').forEach(b=>b.addEventListener('click',()=>{const k=b.dataset.layer;layers[k]=!layers[k];b.setAttribute('aria-pressed',layers[k]);drawMap(sel)}));
+drawMap(0);
+
+/* ---------- People ---------- */
+const st=[[`$${nf.format(SF.inc)}`,'Median household income'],[`$${nf.format(SF.home)}`,'Median value, owner-occupied home'],[SF.ba.toFixed(1)+'%','Bachelor’s degree or higher (25+)'],[SF.fb.toFixed(1)+'%','Born outside the U.S.'],[SF.pov.toFixed(1)+'%','Persons in poverty'],[SF.commute.toFixed(1)+' min','Mean travel time to work']];
+$('#stats').innerHTML=st.map(s=>`<div class="stat"><div class="v">${s[0]}</div><div class="l">${s[1]}</div></div>`).join('');
+(function(){const a=SF.pop20,b=SF.pop25,mx=a,ch=(b-a)/a*100;
+  const row=(lab,v,col)=>`<div class="bar${col?' cur':''}"><span>${lab}</span><span class="t"><i style="width:${(v/mx*100).toFixed(1)}%"></i></span><span class="val">${nf.format(v)}</span></div>`;
+  $('#trend').innerHTML=row('2020',a,false)+row('2025',b,true)+`<div class="notes" style="margin-top:6px">${ch.toFixed(1)}% (${nf.format(b-a)} people)</div>`})();
+
+/* ---------- Climate chart ---------- */
+function chart(view){
+  const W=640,H=280,pl=40,pr=12,pt=14,pb=30,iw=W-pl-pr,ih=H-pt-pb;
+  const x=i=>pl+iw*(i+.5)/12;
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${view==='temp'?'Monthly average high and low temperature':'Monthly precipitation'}">`;
+  if(view==='temp'){
+    const y0=0,y1=25,y=v=>pt+ih*(1-(v-y0)/(y1-y0));
+    for(let v=0;v<=25;v+=5){s+=`<line x1="${pl}" x2="${W-pr}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${pl-8}" y="${y(v)+4}" text-anchor="end">${v}°</text>`}
+    const line=(arr,col)=>{const pts=arr.map((v,i)=>[x(i),y(v)]);
+      const area=`M${pts[0][0]},${y(0)}L`+pts.map(p=>p.join(',')).join('L')+`L${pts[11][0]},${y(0)}Z`;
+      return `<path d="${area}" fill="${col}" opacity=".08"/><polyline points="${pts.map(p=>p.join(',')).join(' ')}" fill="none" stroke="${col}" stroke-width="2.5"/>`+pts.map((p,i)=>`<circle cx="${p[0]}" cy="${p[1]}" r="3.5" fill="var(--surface)" stroke="${col}" stroke-width="2"><title>${CLIM.m[i]}: ${arr[i].toFixed(1)} °C</title></circle>`).join('')};
+    s+=line(CLIM.hi,'var(--hi)')+line(CLIM.lo,'var(--lo)');
+    s+=`<text x="${x(8)}" y="${y(CLIM.hi[8])-10}" text-anchor="middle" style="font:700 11px var(--font);fill:var(--hi)">21.2°</text>`;
+    $('#legend').innerHTML='<span><i style="background:var(--hi)"></i>Average high</span><span><i style="background:var(--lo)"></i>Average low</span>';
+  }else{
+    const y1=125,y=v=>pt+ih*(1-v/y1),bw=iw/12*.56;
+    for(let v=0;v<=125;v+=25){s+=`<line x1="${pl}" x2="${W-pr}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${pl-8}" y="${y(v)+4}" text-anchor="end">${v}</text>`}
+    CLIM.pr.forEach((v,i)=>{const wet=[10,11,0,1,2].includes(i);s+=`<rect x="${x(i)-bw/2}" y="${y(v)}" width="${bw}" height="${Math.max(y(0)-y(v),1)}" rx="3" fill="${wet?'var(--lo)':'var(--muted)'}" opacity="${wet?1:.45}"><title>${CLIM.m[i]}: ${v} mm</title></rect>`});
+    $('#legend').innerHTML='<span><i style="background:var(--lo)"></i>Wet season (Nov–Mar), mm</span><span><i style="background:var(--muted)"></i>Rest of year</span>';
+  }
+  CLIM.m.forEach((m,i)=>s+=`<text x="${x(i)}" y="${H-10}" text-anchor="middle">${m}</text>`);
+  $('#chart').innerHTML=s+'</svg>';
+}
+const tot=CLIM.pr.reduce((a,b)=>a+b,0), wet=[10,11,0,1,2].reduce((a,i)=>a+CLIM.pr[i],0);
+$('#csum').innerHTML=`<b style="color:var(--ink);font-size:14px">Climate summary</b>
+<div>Mild all year. Summer days are often foggy and cool, and the warmest month is September, not July.</div>
+<div class="row"><span class="dot" style="background:color-mix(in srgb,var(--hi) 15%,transparent);color:var(--hi)">▲</span><div><b>17.8 °C / 10.7 °C</b>Average annual high / low</div></div>
+<div class="row"><span class="dot" style="background:color-mix(in srgb,var(--lo) 15%,transparent);color:var(--lo)">●</span><div><b>${Math.round(tot)} mm</b>Precipitation per year, ${Math.round(wet/tot*100)}% from November to March</div></div>
+<div class="row"><span class="dot" style="background:color-mix(in srgb,var(--amber) 18%,transparent);color:var(--amber)">★</span><div><b>41.1 °C</b>Record high, 1 September 2017</div></div>
+<div class="row"><span class="dot" style="background:color-mix(in srgb,var(--accent) 15%,transparent);color:var(--accent)">✱</span><div><b>−2.8 °C</b>Record low, 11 December 1932</div></div>`;
+document.querySelectorAll('[data-cv]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-cv]').forEach(o=>o.setAttribute('aria-selected',o===b));chart(b.dataset.cv)}));
+chart('temp');
+
+/* ---------- Transport ---------- */
+function hav(a,b){const R=6371,r=Math.PI/180,dl=(b[1]-a[1])*r,dn=(b[0]-a[0])*r;const h=Math.sin(dl/2)**2+Math.cos(a[1]*r)*Math.cos(b[1]*r)*Math.sin(dn/2)**2;return 2*R*Math.asin(Math.sqrt(h))}
+const sfo=hav([-122.4164,37.7775],[-122.379,37.6213]);
+const L1=[['BART','#2d58e6','Bay Area Rapid Transit','5 lines · 50 stations, 8 of them in the city','186k/day'],
+ ['MUNI','#c4402d','Muni Metro light rail','6 lines: J, K, L, M, N, T','513k/day*'],
+ ['CBL','#8b6d4c','Cable cars','Powell–Mason, Powell–Hyde, California','3 lines'],
+ ['F','#d48a17','Historic streetcar','F Market & Wharves (E Embarcadero suspended since 2020)','1 line']];
+const L2=[['TROL','#7a55e0','Trolleybuses','About 300 electric trolleybuses in a fleet of ~1,200','Muni'],
+ ['CAL','#5d6a82','Caltrain','Commuter rail to San Jose, city terminal at 4th & King','1 line'],
+ ['FRY','#0e9fb0','Ferries','San Francisco Bay Ferry and Golden Gate Ferry from the Ferry Building','Bay'],
+ ['SFO','#2f9a63','San Francisco International','Owned by the city, located in San Mateo County',`${sfo.toFixed(0)} km`]];
+const ln=a=>a.map(l=>`<div class="line"><span class="bd" style="background:${l[1]}">${l[0]}</span><span style="min-width:0"><b>${l[2]}</b><span>${l[3]}</span></span><span class="num">${l[4]}</span></div>`).join('');
+$('#lines1').innerHTML=ln(L1)+`<div class="notes">* All Muni modes together, weekday average, Q1 2026. BART: weekday average for the whole system, Q1 2026.</div>`;
+$('#lines2').innerHTML=ln(L2)+`<div class="notes">SFO distance: straight line from the city's reference point to the airport.</div>`;
+
+/* ---------- History ---------- */
+const H=[['Before 1776','Yelamu, a group of the Ohlone people, live on the peninsula.'],['1776','Spanish settlers found the Presidio and Mission Dolores.'],['1834','The settlement of Yerba Buena is established.'],['1847','Yerba Buena is renamed San Francisco.'],['1848–49','The Gold Rush: about 1,000 residents in 1848, about 25,000 by December 1849.'],['15 Apr 1850','The city is incorporated.'],['1906','The earthquake and fires destroy about three-quarters of the city.'],['1936–37','The Bay Bridge (1936) and the Golden Gate Bridge (1937) open.'],['1912','Muni starts service, on 28 December.'],['1972','BART carries its first passengers on 11 September.']];
+H.sort((a,b)=>parseInt(a[0].match(/\d{4}/)?.[0]||0)-parseInt(b[0].match(/\d{4}/)?.[0]||0));
+$('#timeline').innerHTML=H.map(h=>`<div class="ev"><div class="y">${h[0]}</div><p>${h[1]}</p></div>`).join('');
+
+/* ---------- Compare ---------- */
+let chosen=['sf','la','sd','sj','oak'];
+$('#cmpchips').innerHTML=Object.entries(CITIES).map(([k,c])=>`<button class="chip" data-c="${k}" aria-pressed="true"${k==='sf'?' disabled title="Current city"':''}>${c.name}</button>`).join('');
+$('#cmpchips').addEventListener('click',e=>{const b=e.target.closest('[data-c]');if(!b||b.disabled)return;const k=b.dataset.c;
+  if(chosen.includes(k)){if(chosen.length<=2){toast('Keep at least two cities');return}chosen=chosen.filter(x=>x!==k)}else chosen=Object.keys(CITIES).filter(x=>x===k||chosen.includes(x));
+  b.setAttribute('aria-pressed',chosen.includes(k));cmp()});
+const ROWS=[['Population, 1 Jul 2025 (est.)',c=>nf.format(c.pop25)],['Population, 2020 Census',c=>nf.format(c.pop20)],['Land area',c=>nf.format(Math.round(c.landKm))+' km²'],['Density, 2020',c=>nf.format(Math.round(c.dens))+' / km²'],['Median household income',c=>'$'+nf.format(c.inc)],['Median home value',c=>'$'+nf.format(c.home)],['Bachelor’s degree or higher',c=>c.ba.toFixed(1)+'%'],['Born outside the U.S.',c=>c.fb.toFixed(1)+'%'],['Persons in poverty',c=>c.pov.toFixed(1)+'%'],['Mean commute',c=>c.commute.toFixed(1)+' min']];
+const DNA=[['Density',c=>c.dens,v=>nf.format(Math.round(v))],['Household income',c=>c.inc,v=>'$'+Math.round(v/1000)+'k'],['Degree holders',c=>c.ba,v=>v.toFixed(0)+'%'],['Commute',c=>c.commute,v=>v.toFixed(0)+' min']];
+function cmp(){
+  const cs=chosen.map(k=>[k,CITIES[k]]);
+  $('#cmp').innerHTML=`<thead><tr><th>Indicator</th>${cs.map(([k,c])=>`<th class="${k==='sf'?'cur':''}">${c.name}</th>`).join('')}</tr></thead><tbody>`+
+    ROWS.map(r=>`<tr><td>${r[0]}</td>${cs.map(([k,c])=>`<td class="${k==='sf'?'cur':''}">${r[1](c)}</td>`).join('')}</tr>`).join('')+'</tbody>';
+  $('#dna').innerHTML=DNA.map(d=>{const mx=Math.max(...cs.map(([,c])=>d[1](c)));
+    return `<div><h4>${d[0]}</h4>${cs.map(([k,c])=>`<div class="bar${k==='sf'?' cur':''}"><span>${c.name.replace('San ','S. ').replace('Los Angeles','L.A.')}</span><span class="t"><i style="width:${(d[1](c)/mx*100).toFixed(1)}%"></i></span><span class="val">${d[2](d[1](c))}</span></div>`).join('')}</div>`}).join('');
+}
+cmp();
+
+/* ---------- Actions ---------- */
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+function paintSave(){const on=store.get('ce-saved-sf')==='1';$('#save').classList.toggle('saved',on);$('#save span').textContent=on?'Saved':'Save city'}
+$('#save').addEventListener('click',()=>{const on=store.get('ce-saved-sf')==='1';store.set('ce-saved-sf',on?'0':'1');paintSave();toast(on?'Removed from your list':'Saved to your list')});paintSave();
+$('#share').addEventListener('click',()=>{const u=location.href;try{navigator.clipboard.writeText(u).then(()=>toast('Link copied'),()=>toast(u))}catch(e){toast(u)}});
+$('#theme').addEventListener('click',()=>{const r=document.documentElement;const dark=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;r.dataset.theme=dark?'light':'dark';store.set('ce-theme',r.dataset.theme)});
+(function(){const t=store.get('ce-theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t})();
+$('#q').addEventListener('change',e=>{const v=e.target.value.trim();if(!v)return;if(/san francisco/i.test(v))toast('You are on San Francisco');else toast(v+' gets its own page in the app. Compare it below.');document.getElementById('compare').scrollIntoView({behavior:'smooth'})});
+addEventListener('keydown',e=>{if(e.key==='/'&&document.activeElement.tagName!=='INPUT'){e.preventDefault();$('#q').focus()}});
+/* nav highlight */
+const secs=['overview','map','people','climate','transport','history','compare','sources'].map(id=>document.getElementById(id));
+const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){const id=en.target.id;document.querySelectorAll('#nav a,#tabs a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+id))}})},{rootMargin:'-45% 0px -50% 0px'});
+secs.forEach(s=>io.observe(s));
+const h=location.hash.slice(1);if(h&&document.getElementById(h))setTimeout(()=>document.getElementById(h).scrollIntoView(),50);
+})();
+</script>
+</html>
