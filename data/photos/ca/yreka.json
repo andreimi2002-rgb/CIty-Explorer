@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q2565455",
+    "label": "Yreka",
+    "description": "county seat of Siskiyou County, California, United States"
+  },
+  "hero": {
+    "file": "Yreka, California in summer 2011 (3).JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Yreka,_California_in_summer_2011_(3).JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Yreka%2C_California_in_summer_2011_%283%29.JPG/1920px-Yreka%2C_California_in_summer_2011_%283%29.JPG",
+    "width": 1920,
+    "height": 1280,
+    "originalWidth": 4752,
+    "originalHeight": 3168,
+    "author": "Chmee2",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Yreka%2C_California_in_summer_2011_%283%29.JPG/960px-Yreka%2C_California_in_summer_2011_%283%29.JPG",
+    "widthSmall": 960,
+    "heightSmall": 640,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

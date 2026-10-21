@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q987296",
+    "label": "Colma",
+    "description": "incorporated town in San Mateo County, California, United States"
+  },
+  "hero": {
+    "file": "Aerial photo of San Bruno, Colma, Millbrae, SFO Airport.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Aerial_photo_of_San_Bruno,_Colma,_Millbrae,_SFO_Airport.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Aerial_photo_of_San_Bruno%2C_Colma%2C_Millbrae%2C_SFO_Airport.jpg/1920px-Aerial_photo_of_San_Bruno%2C_Colma%2C_Millbrae%2C_SFO_Airport.jpg",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 4608,
+    "originalHeight": 3456,
+    "author": "Firstcultural",
+    "licence": "CC0",
+    "licenceCode": "cc0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Aerial_photo_of_San_Bruno%2C_Colma%2C_Millbrae%2C_SFO_Airport.jpg/960px-Aerial_photo_of_San_Bruno%2C_Colma%2C_Millbrae%2C_SFO_Airport.jpg",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

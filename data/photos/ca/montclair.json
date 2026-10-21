@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q853691",
+    "label": "Montclair",
+    "description": "city in San Bernardino County, California, United States"
+  },
+  "hero": {
+    "file": "Iglesia Ni Cristo chapel CA.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Iglesia_Ni_Cristo_chapel_CA.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Iglesia_Ni_Cristo_chapel_CA.jpg",
+    "width": 1920,
+    "height": 1286,
+    "originalWidth": 902,
+    "originalHeight": 604,
+    "author": "Westpacificmovement",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Iglesia_Ni_Cristo_chapel_CA.jpg",
+    "widthSmall": 960,
+    "heightSmall": 643,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

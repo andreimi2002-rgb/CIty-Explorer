@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q853677",
+    "label": "Grand Terrace",
+    "description": "city in San Bernardino County, California, United States"
+  },
+  "hero": {
+    "file": "Views of Grand Terrace, CA.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Views_of_Grand_Terrace,_CA.png",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Views_of_Grand_Terrace%2C_CA.png",
+    "width": 1920,
+    "height": 2967,
+    "originalWidth": 1650,
+    "originalHeight": 2550,
+    "author": "Jsmithwikigt",
+    "licence": "CC BY 3.0",
+    "licenceCode": "cc-by-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Views_of_Grand_Terrace%2C_CA.png/960px-Views_of_Grand_Terrace%2C_CA.png",
+    "widthSmall": 960,
+    "heightSmall": 1484,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

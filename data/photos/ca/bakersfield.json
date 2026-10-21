@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q49256",
+    "label": "Bakersfield",
+    "description": "city and county seat of Kern County, California, United States"
+  },
+  "hero": {
+    "file": "BakersfieldSkyline.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:BakersfieldSkyline.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/BakersfieldSkyline.jpg/1920px-BakersfieldSkyline.jpg",
+    "width": 1920,
+    "height": 1273,
+    "originalWidth": 3088,
+    "originalHeight": 2048,
+    "author": "Robert Hale",
+    "licence": "CC BY-SA 2.0",
+    "licenceCode": "cc-by-sa-2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/BakersfieldSkyline.jpg/960px-BakersfieldSkyline.jpg",
+    "widthSmall": 960,
+    "heightSmall": 637,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

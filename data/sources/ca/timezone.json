@@ -1,0 +1,3874 @@
+{
+  "source": {
+    "name": "timezone-boundary-builder 2026e (time zone boundaries from OpenStreetMap)",
+    "url": "https://github.com/evansiroky/timezone-boundary-builder/releases/download/2026e/timezones.geojson.zip",
+    "retrieved": "2026-10-21",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+  },
+  "places": {
+    "adelanto": {
+      "point": {
+        "lon": -117.40922,
+        "lat": 34.58277,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "agoura-hills": {
+      "point": {
+        "lon": -118.77453,
+        "lat": 34.13639,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "alameda": {
+      "point": {
+        "lon": -122.24164,
+        "lat": 37.76521,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "albany": {
+      "point": {
+        "lon": -122.29775,
+        "lat": 37.88687,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "alhambra": {
+      "point": {
+        "lon": -118.12701,
+        "lat": 34.09529,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "aliso-viejo": {
+      "point": {
+        "lon": -117.72712,
+        "lat": 33.56504,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "alturas": {
+      "point": {
+        "lon": -120.54246,
+        "lat": 41.48711,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "amador-city": {
+      "point": {
+        "lon": -120.8241,
+        "lat": 38.41936,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "american-canyon": {
+      "point": {
+        "lon": -122.2608,
+        "lat": 38.17492,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "anaheim": {
+      "point": {
+        "lon": -117.9145,
+        "lat": 33.83529,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "anderson": {
+      "point": {
+        "lon": -122.29778,
+        "lat": 40.44821,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "angels": {
+      "point": {
+        "lon": -120.55173,
+        "lat": 38.07104,
+        "source": "census-internal-point"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "antioch": {
+      "point": {
+        "lon": -121.80579,
+        "lat": 38.00492,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "apple-valley": {
+      "point": {
+        "lon": -117.18588,
+        "lat": 34.50083,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "arcadia": {
+      "point": {
+        "lon": -118.03534,
+        "lat": 34.13973,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "arcata": {
+      "point": {
+        "lon": -124.08284,
+        "lat": 40.86652,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "arroyo-grande": {
+      "point": {
+        "lon": -120.59073,
+        "lat": 35.11859,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "artesia": {
+      "point": {
+        "lon": -118.08312,
+        "lat": 33.86585,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "arvin": {
+      "point": {
+        "lon": -118.82843,
+        "lat": 35.20913,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "atascadero": {
+      "point": {
+        "lon": -120.67073,
+        "lat": 35.48942,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "atherton": {
+      "point": {
+        "lon": -122.19774,
+        "lat": 37.46133,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "atwater": {
+      "point": {
+        "lon": -120.60908,
+        "lat": 37.34772,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "auburn": {
+      "point": {
+        "lon": -121.07689,
+        "lat": 38.89657,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "avalon": {
+      "point": {
+        "lon": -118.32785,
+        "lat": 33.34281,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "avenal": {
+      "point": {
+        "lon": -120.12903,
+        "lat": 36.00412,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "azusa": {
+      "point": {
+        "lon": -117.90756,
+        "lat": 34.13362,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "bakersfield": {
+      "point": {
+        "lon": -119.01871,
+        "lat": 35.37329,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "baldwin-park": {
+      "point": {
+        "lon": -117.9609,
+        "lat": 34.08529,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "banning": {
+      "point": {
+        "lon": -116.87641,
+        "lat": 33.92557,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "barstow": {
+      "point": {
+        "lon": -117.02282,
+        "lat": 34.89859,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "beaumont": {
+      "point": {
+        "lon": -116.97725,
+        "lat": 33.92946,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "bell": {
+      "point": {
+        "lon": -118.18702,
+        "lat": 33.97751,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "bell-gardens": {
+      "point": {
+        "lon": -118.15146,
+        "lat": 33.96529,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "bellflower": {
+      "point": {
+        "lon": -118.11701,
+        "lat": 33.88168,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "belmont": {
+      "point": {
+        "lon": -122.2758,
+        "lat": 37.52021,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "belvedere": {
+      "point": {
+        "lon": -122.46444,
+        "lat": 37.87278,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "benicia": {
+      "point": {
+        "lon": -122.15858,
+        "lat": 38.04937,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "berkeley": {
+      "point": {
+        "lon": -122.27275,
+        "lat": 37.87159,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "beverly-hills": {
+      "point": {
+        "lon": -118.40036,
+        "lat": 34.07362,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "big-bear-lake": {
+      "point": {
+        "lon": -116.91142,
+        "lat": 34.2439,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "biggs": {
+      "point": {
+        "lon": -121.71275,
+        "lat": 39.41239,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "bishop": {
+      "point": {
+        "lon": -118.39511,
+        "lat": 37.36354,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "blue-lake": {
+      "point": {
+        "lon": -123.98395,
+        "lat": 40.88291,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "blythe": {
+      "point": {
+        "lon": -114.59635,
+        "lat": 33.6103,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "bradbury": {
+      "point": {
+        "lon": -117.9709,
+        "lat": 34.14695,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "brawley": {
+      "point": {
+        "lon": -115.53027,
+        "lat": 32.97866,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "brea": {
+      "point": {
+        "lon": -117.90006,
+        "lat": 33.91668,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "brentwood": {
+      "point": {
+        "lon": -121.69579,
+        "lat": 37.93187,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "brisbane": {
+      "point": {
+        "lon": -122.4,
+        "lat": 37.68083,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "buellton": {
+      "point": {
+        "lon": -120.19265,
+        "lat": 34.6136,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "buena-park": {
+      "point": {
+        "lon": -117.99812,
+        "lat": 33.86751,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "burbank": {
+      "point": {
+        "lon": -118.30897,
+        "lat": 34.18084,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "burlingame": {
+      "point": {
+        "lon": -122.36608,
+        "lat": 37.5841,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "calabasas": {
+      "point": {
+        "lon": -118.63842,
+        "lat": 34.15778,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "calexico": {
+      "point": {
+        "lon": -115.49888,
+        "lat": 32.67895,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "california-city": {
+      "point": {
+        "lon": -117.9859,
+        "lat": 35.1258,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "calimesa": {
+      "point": {
+        "lon": -117.06198,
+        "lat": 34.0039,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "calipatria": {
+      "point": {
+        "lon": -115.51415,
+        "lat": 33.1256,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "calistoga": {
+      "point": {
+        "lon": -122.57971,
+        "lat": 38.5788,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "camarillo": {
+      "point": {
+        "lon": -119.0376,
+        "lat": 34.21639,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "campbell": {
+      "point": {
+        "lon": -121.94996,
+        "lat": 37.28717,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "canyon-lake": {
+      "point": {
+        "lon": -117.27309,
+        "lat": 33.68502,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "capitola": {
+      "point": {
+        "lon": -121.95329,
+        "lat": 36.97523,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "carlsbad": {
+      "point": {
+        "lon": -117.35059,
+        "lat": 33.15809,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "carmel-by-the-sea": {
+      "point": {
+        "lon": -121.92329,
+        "lat": 36.55524,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "carpinteria": {
+      "point": {
+        "lon": -119.51846,
+        "lat": 34.39888,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "carson": {
+      "point": {
+        "lon": -118.28202,
+        "lat": 33.83141,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "cathedral-city": {
+      "point": {
+        "lon": -116.46529,
+        "lat": 33.77974,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "ceres": {
+      "point": {
+        "lon": -120.95771,
+        "lat": 37.59493,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "cerritos": {
+      "point": {
+        "lon": -118.06479,
+        "lat": 33.85835,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "chico": {
+      "point": {
+        "lon": -121.83748,
+        "lat": 39.72849,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "chino": {
+      "point": {
+        "lon": -117.68894,
+        "lat": 34.01223,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "chino-hills": {
+      "point": {
+        "lon": -117.75888,
+        "lat": 33.9938,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "chowchilla": {
+      "point": {
+        "lon": -120.26018,
+        "lat": 37.123,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "chula-vista": {
+      "point": {
+        "lon": -117.08417,
+        "lat": 32.64,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "citrus-heights": {
+      "point": {
+        "lon": -121.28106,
+        "lat": 38.70712,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "claremont": {
+      "point": {
+        "lon": -117.71978,
+        "lat": 34.09668,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "clayton": {
+      "point": {
+        "lon": -121.93579,
+        "lat": 37.94103,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "clearlake": {
+      "point": {
+        "lon": -122.62637,
+        "lat": 38.95823,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "cloverdale": {
+      "point": {
+        "lon": -123.01722,
+        "lat": 38.80546,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "clovis": {
+      "point": {
+        "lon": -119.70292,
+        "lat": 36.82523,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "coachella": {
+      "point": {
+        "lon": -116.17389,
+        "lat": 33.6803,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "coalinga": {
+      "point": {
+        "lon": -120.36015,
+        "lat": 36.13968,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "colfax": {
+      "point": {
+        "lon": -120.95328,
+        "lat": 39.10073,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "colma": {
+      "point": {
+        "lon": -122.45972,
+        "lat": 37.67694,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "colton": {
+      "point": {
+        "lon": -117.31365,
+        "lat": 34.0739,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "colusa": {
+      "point": {
+        "lon": -122.00942,
+        "lat": 39.21433,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "commerce": {
+      "point": {
+        "lon": -118.15979,
+        "lat": 34.00057,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "compton": {
+      "point": {
+        "lon": -118.22007,
+        "lat": 33.89585,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "concord": {
+      "point": {
+        "lon": -122.03107,
+        "lat": 37.97798,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "corcoran": {
+      "point": {
+        "lon": -119.5604,
+        "lat": 36.09801,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "corning": {
+      "point": {
+        "lon": -122.17916,
+        "lat": 39.92766,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "corona": {
+      "point": {
+        "lon": -117.56644,
+        "lat": 33.87529,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "coronado": {
+      "point": {
+        "lon": -117.18306,
+        "lat": 32.68583,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "corte-madera": {
+      "point": {
+        "lon": -122.5275,
+        "lat": 37.92556,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "costa-mesa": {
+      "point": {
+        "lon": -117.91867,
+        "lat": 33.64113,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "cotati": {
+      "point": {
+        "lon": -122.70721,
+        "lat": 38.32686,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "covina": {
+      "point": {
+        "lon": -117.89034,
+        "lat": 34.09001,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "crescent-city": {
+      "point": {
+        "lon": -124.20175,
+        "lat": 41.75595,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "cudahy": {
+      "point": {
+        "lon": -118.18535,
+        "lat": 33.96057,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "culver-city": {
+      "point": {
+        "lon": -118.39647,
+        "lat": 34.02112,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "cupertino": {
+      "point": {
+        "lon": -122.03218,
+        "lat": 37.323,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "cypress": {
+      "point": {
+        "lon": -118.03729,
+        "lat": 33.81696,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "daly-city": {
+      "point": {
+        "lon": -122.46194,
+        "lat": 37.70583,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "dana-point": {
+      "point": {
+        "lon": -117.69811,
+        "lat": 33.46697,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "danville": {
+      "point": {
+        "lon": -121.99996,
+        "lat": 37.82159,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "davis": {
+      "point": {
+        "lon": -121.74052,
+        "lat": 38.54491,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "del-mar": {
+      "point": {
+        "lon": -117.26531,
+        "lat": 32.95949,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "del-rey-oaks": {
+      "point": {
+        "lon": -121.83495,
+        "lat": 36.59329,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "delano": {
+      "point": {
+        "lon": -119.24705,
+        "lat": 35.76884,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "desert-hot-springs": {
+      "point": {
+        "lon": -116.50168,
+        "lat": 33.96112,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "diamond-bar": {
+      "point": {
+        "lon": -117.81034,
+        "lat": 34.02862,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "dinuba": {
+      "point": {
+        "lon": -119.38707,
+        "lat": 36.54328,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "dixon": {
+      "point": {
+        "lon": -121.8233,
+        "lat": 38.44546,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "dorris": {
+      "point": {
+        "lon": -121.91806,
+        "lat": 41.96737,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "dos-palos": {
+      "point": {
+        "lon": -120.62657,
+        "lat": 36.98606,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "downey": {
+      "point": {
+        "lon": -118.13257,
+        "lat": 33.94001,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "duarte": {
+      "point": {
+        "lon": -117.97729,
+        "lat": 34.13945,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "dublin": {
+      "point": {
+        "lon": -121.93579,
+        "lat": 37.70215,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "dunsmuir": {
+      "point": {
+        "lon": -122.27195,
+        "lat": 41.20821,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "east-palo-alto": {
+      "point": {
+        "lon": -122.14108,
+        "lat": 37.46883,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "eastvale": {
+      "point": {
+        "lon": -117.56418,
+        "lat": 33.96358,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "el-cajon": {
+      "point": {
+        "lon": -116.96253,
+        "lat": 32.79477,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "el-centro": {
+      "point": {
+        "lon": -115.56305,
+        "lat": 32.792,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "el-cerrito": {
+      "point": {
+        "lon": -122.31164,
+        "lat": 37.91576,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "el-monte": {
+      "point": {
+        "lon": -118.02757,
+        "lat": 34.06862,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "el-segundo": {
+      "point": {
+        "lon": -118.41647,
+        "lat": 33.91918,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "elk-grove": {
+      "point": {
+        "lon": -121.37162,
+        "lat": 38.4088,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "emeryville": {
+      "point": {
+        "lon": -122.28525,
+        "lat": 37.83132,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "encinitas": {
+      "point": {
+        "lon": -117.29198,
+        "lat": 33.03699,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "escalon": {
+      "point": {
+        "lon": -120.9966,
+        "lat": 37.79743,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "escondido": {
+      "point": {
+        "lon": -117.08642,
+        "lat": 33.11921,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "etna": {
+      "point": {
+        "lon": -122.89476,
+        "lat": 41.45681,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "eureka": {
+      "point": {
+        "lon": -124.16367,
+        "lat": 40.80207,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "exeter": {
+      "point": {
+        "lon": -119.14205,
+        "lat": 36.29606,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "fairfax": {
+      "point": {
+        "lon": -122.58889,
+        "lat": 37.98722,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "fairfield": {
+      "point": {
+        "lon": -122.03997,
+        "lat": 38.24936,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "farmersville": {
+      "point": {
+        "lon": -119.20678,
+        "lat": 36.29773,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "ferndale": {
+      "point": {
+        "lon": -124.26394,
+        "lat": 40.57624,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "fillmore": {
+      "point": {
+        "lon": -118.91815,
+        "lat": 34.39916,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "firebaugh": {
+      "point": {
+        "lon": -120.45601,
+        "lat": 36.85884,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "folsom": {
+      "point": {
+        "lon": -121.17606,
+        "lat": 38.67796,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "fontana": {
+      "point": {
+        "lon": -117.43505,
+        "lat": 34.09223,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "fort-bragg": {
+      "point": {
+        "lon": -123.80529,
+        "lat": 39.44572,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "fort-jones": {
+      "point": {
+        "lon": -122.84031,
+        "lat": 41.60764,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "fortuna": {
+      "point": {
+        "lon": -124.15728,
+        "lat": 40.59819,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "foster-city": {
+      "point": {
+        "lon": -122.27108,
+        "lat": 37.55855,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "fountain-valley": {
+      "point": {
+        "lon": -117.95367,
+        "lat": 33.70918,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "fowler": {
+      "point": {
+        "lon": -119.67847,
+        "lat": 36.63051,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "fremont": {
+      "point": {
+        "lon": -121.98857,
+        "lat": 37.54827,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "fresno": {
+      "point": {
+        "lon": -119.77237,
+        "lat": 36.74773,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "fullerton": {
+      "point": {
+        "lon": -117.92534,
+        "lat": 33.87029,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "galt": {
+      "point": {
+        "lon": -121.29995,
+        "lat": 38.25464,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "garden-grove": {
+      "point": {
+        "lon": -117.94145,
+        "lat": 33.77391,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "gardena": {
+      "point": {
+        "lon": -118.30896,
+        "lat": 33.88835,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "gilroy": {
+      "point": {
+        "lon": -121.56828,
+        "lat": 37.00578,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "glendale": {
+      "point": {
+        "lon": -118.25508,
+        "lat": 34.14251,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "glendora": {
+      "point": {
+        "lon": -117.86534,
+        "lat": 34.13612,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "goleta": {
+      "point": {
+        "lon": -119.82764,
+        "lat": 34.43583,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "gonzales": {
+      "point": {
+        "lon": -121.44438,
+        "lat": 36.50663,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "grand-terrace": {
+      "point": {
+        "lon": -117.31365,
+        "lat": 34.0339,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "grass-valley": {
+      "point": {
+        "lon": -121.06106,
+        "lat": 39.21906,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "greenfield": {
+      "point": {
+        "lon": -121.24381,
+        "lat": 36.3208,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "gridley": {
+      "point": {
+        "lon": -121.69358,
+        "lat": 39.36378,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "grover-beach": {
+      "point": {
+        "lon": -120.62128,
+        "lat": 35.12164,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "guadalupe": {
+      "point": {
+        "lon": -120.57184,
+        "lat": 34.97164,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "gustine": {
+      "point": {
+        "lon": -120.99882,
+        "lat": 37.25772,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "half-moon-bay": {
+      "point": {
+        "lon": -122.42859,
+        "lat": 37.46355,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "hanford": {
+      "point": {
+        "lon": -119.64568,
+        "lat": 36.32745,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "hawaiian-gardens": {
+      "point": {
+        "lon": -118.07284,
+        "lat": 33.8314,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "hawthorne": {
+      "point": {
+        "lon": -118.35257,
+        "lat": 33.9164,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "hayward": {
+      "point": {
+        "lon": -122.0808,
+        "lat": 37.66882,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "healdsburg": {
+      "point": {
+        "lon": -122.86916,
+        "lat": 38.61047,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "hemet": {
+      "point": {
+        "lon": -116.97197,
+        "lat": 33.74752,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "hercules": {
+      "point": {
+        "lon": -122.28858,
+        "lat": 38.01714,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "hermosa-beach": {
+      "point": {
+        "lon": -118.39952,
+        "lat": 33.86224,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "hesperia": {
+      "point": {
+        "lon": -117.30088,
+        "lat": 34.42639,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "hidden-hills": {
+      "point": {
+        "lon": -118.65231,
+        "lat": 34.16028,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "highland": {
+      "point": {
+        "lon": -117.20865,
+        "lat": 34.12834,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "hillsborough": {
+      "point": {
+        "lon": -122.37942,
+        "lat": 37.5741,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "hollister": {
+      "point": {
+        "lon": -121.4016,
+        "lat": 36.85245,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "holtville": {
+      "point": {
+        "lon": -115.38026,
+        "lat": 32.81116,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "hughson": {
+      "point": {
+        "lon": -120.86604,
+        "lat": 37.59688,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "huntington-beach": {
+      "point": {
+        "lon": -117.99923,
+        "lat": 33.6603,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "huntington-park": {
+      "point": {
+        "lon": -118.22507,
+        "lat": 33.98168,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "huron": {
+      "point": {
+        "lon": -120.10292,
+        "lat": 36.20273,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "imperial": {
+      "point": {
+        "lon": -115.56944,
+        "lat": 32.84755,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "imperial-beach": {
+      "point": {
+        "lon": -117.11306,
+        "lat": 32.58389,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "indian-wells": {
+      "point": {
+        "lon": -116.30834,
+        "lat": 33.71863,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "indio": {
+      "point": {
+        "lon": -116.21556,
+        "lat": 33.72058,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "industry": {
+      "point": {
+        "lon": -117.95868,
+        "lat": 34.01973,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "inglewood": {
+      "point": {
+        "lon": -118.35313,
+        "lat": 33.96168,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "ione": {
+      "point": {
+        "lon": -120.93272,
+        "lat": 38.35269,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "irvine": {
+      "point": {
+        "lon": -117.82311,
+        "lat": 33.66946,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "irwindale": {
+      "point": {
+        "lon": -117.93534,
+        "lat": 34.10695,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "isleton": {
+      "point": {
+        "lon": -121.61162,
+        "lat": 38.16186,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "jackson": {
+      "point": {
+        "lon": -120.7741,
+        "lat": 38.3488,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "jurupa-valley": {
+      "point": {
+        "lon": -117.46761,
+        "lat": 34.00259,
+        "source": "census-internal-point"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "kerman": {
+      "point": {
+        "lon": -120.05988,
+        "lat": 36.72356,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "king-city": {
+      "point": {
+        "lon": -121.12603,
+        "lat": 36.21274,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "kingsburg": {
+      "point": {
+        "lon": -119.55402,
+        "lat": 36.51384,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "la-canada-flintridge": {
+      "point": {
+        "lon": -118.18785,
+        "lat": 34.19917,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "la-habra": {
+      "point": {
+        "lon": -117.94617,
+        "lat": 33.93196,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "la-habra-heights": {
+      "point": {
+        "lon": -117.95062,
+        "lat": 33.96085,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "la-mesa": {
+      "point": {
+        "lon": -117.02306,
+        "lat": 32.76778,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "la-mirada": {
+      "point": {
+        "lon": -118.01201,
+        "lat": 33.91724,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "la-palma": {
+      "point": {
+        "lon": -118.04667,
+        "lat": 33.84639,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "la-puente": {
+      "point": {
+        "lon": -117.94951,
+        "lat": 34.02001,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "la-quinta": {
+      "point": {
+        "lon": -116.31001,
+        "lat": 33.66336,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "la-verne": {
+      "point": {
+        "lon": -117.76784,
+        "lat": 34.10084,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "lafayette": {
+      "point": {
+        "lon": -122.11802,
+        "lat": 37.88576,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "laguna-beach": {
+      "point": {
+        "lon": -117.78311,
+        "lat": 33.54225,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "laguna-hills": {
+      "point": {
+        "lon": -117.71283,
+        "lat": 33.61252,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "laguna-niguel": {
+      "point": {
+        "lon": -117.70755,
+        "lat": 33.52253,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "laguna-woods": {
+      "point": {
+        "lon": -117.72533,
+        "lat": 33.6103,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "lake-elsinore": {
+      "point": {
+        "lon": -117.32726,
+        "lat": 33.66808,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "lake-forest": {
+      "point": {
+        "lon": -117.68922,
+        "lat": 33.64697,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "lakeport": {
+      "point": {
+        "lon": -122.91583,
+        "lat": 39.04295,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "lakewood": {
+      "point": {
+        "lon": -118.13396,
+        "lat": 33.85363,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "lancaster": {
+      "point": {
+        "lon": -118.13674,
+        "lat": 34.69804,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "larkspur": {
+      "point": {
+        "lon": -122.53528,
+        "lat": 37.93417,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "lathrop": {
+      "point": {
+        "lon": -121.27661,
+        "lat": 37.8227,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "lawndale": {
+      "point": {
+        "lon": -118.35257,
+        "lat": 33.88724,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "lemon-grove": {
+      "point": {
+        "lon": -117.03142,
+        "lat": 32.74255,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "lemoore": {
+      "point": {
+        "lon": -119.78291,
+        "lat": 36.30078,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "lincoln": {
+      "point": {
+        "lon": -121.29301,
+        "lat": 38.89156,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "lindsay": {
+      "point": {
+        "lon": -119.08816,
+        "lat": 36.20301,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "live-oak": {
+      "point": {
+        "lon": -121.65997,
+        "lat": 39.27572,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "livermore": {
+      "point": {
+        "lon": -121.76801,
+        "lat": 37.68187,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "livingston": {
+      "point": {
+        "lon": -120.72353,
+        "lat": 37.38688,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "lodi": {
+      "point": {
+        "lon": -121.27245,
+        "lat": 38.1302,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "loma-linda": {
+      "point": {
+        "lon": -117.26115,
+        "lat": 34.04835,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "lomita": {
+      "point": {
+        "lon": -118.31507,
+        "lat": 33.79224,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "lompoc": {
+      "point": {
+        "lon": -120.45794,
+        "lat": 34.63915,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "long-beach": {
+      "point": {
+        "lon": -118.18923,
+        "lat": 33.76696,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "loomis": {
+      "point": {
+        "lon": -121.193,
+        "lat": 38.82129,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "los-alamitos": {
+      "point": {
+        "lon": -118.0725,
+        "lat": 33.80306,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "los-altos": {
+      "point": {
+        "lon": -122.11413,
+        "lat": 37.38522,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "los-altos-hills": {
+      "point": {
+        "lon": -122.13746,
+        "lat": 37.37966,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "los-angeles": {
+      "point": {
+        "lon": -118.24368,
+        "lat": 34.05223,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "los-banos": {
+      "point": {
+        "lon": -120.84992,
+        "lat": 37.05828,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "los-gatos": {
+      "point": {
+        "lon": -121.97468,
+        "lat": 37.22661,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "loyalton": {
+      "point": {
+        "lon": -120.24104,
+        "lat": 39.67629,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "lynwood": {
+      "point": {
+        "lon": -118.21146,
+        "lat": 33.93029,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "madera": {
+      "point": {
+        "lon": -120.06072,
+        "lat": 36.96134,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "malibu": {
+      "point": {
+        "lon": -118.81009,
+        "lat": 34.00501,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "mammoth-lakes": {
+      "point": {
+        "lon": -118.97208,
+        "lat": 37.64855,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "manhattan-beach": {
+      "point": {
+        "lon": -118.41091,
+        "lat": 33.88474,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "manteca": {
+      "point": {
+        "lon": -121.21605,
+        "lat": 37.79743,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "maricopa": {
+      "point": {
+        "lon": -119.40095,
+        "lat": 35.05886,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "marina": {
+      "point": {
+        "lon": -121.80217,
+        "lat": 36.6844,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "martinez": {
+      "point": {
+        "lon": -122.13413,
+        "lat": 38.01937,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "marysville": {
+      "point": {
+        "lon": -121.59135,
+        "lat": 39.14573,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "maywood": {
+      "point": {
+        "lon": -118.18535,
+        "lat": 33.98668,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "mcfarland": {
+      "point": {
+        "lon": -119.22927,
+        "lat": 35.67801,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "mendota": {
+      "point": {
+        "lon": -120.38156,
+        "lat": 36.75356,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "menifee": {
+      "point": {
+        "lon": -117.14642,
+        "lat": 33.72835,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "menlo-park": {
+      "point": {
+        "lon": -122.18219,
+        "lat": 37.45383,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "merced": {
+      "point": {
+        "lon": -120.48297,
+        "lat": 37.30216,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "mill-valley": {
+      "point": {
+        "lon": -122.545,
+        "lat": 37.90611,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "millbrae": {
+      "point": {
+        "lon": -122.38719,
+        "lat": 37.59855,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "milpitas": {
+      "point": {
+        "lon": -121.90662,
+        "lat": 37.42827,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "mission-viejo": {
+      "point": {
+        "lon": -117.672,
+        "lat": 33.60002,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "modesto": {
+      "point": {
+        "lon": -120.99688,
+        "lat": 37.6391,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "monrovia": {
+      "point": {
+        "lon": -117.99895,
+        "lat": 34.14806,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "montague": {
+      "point": {
+        "lon": -122.5278,
+        "lat": 41.7282,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "montclair": {
+      "point": {
+        "lon": -117.68978,
+        "lat": 34.07751,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "monte-sereno": {
+      "point": {
+        "lon": -121.99246,
+        "lat": 37.23633,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "montebello": {
+      "point": {
+        "lon": -118.10528,
+        "lat": 34.00944,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "monterey": {
+      "point": {
+        "lon": -121.89468,
+        "lat": 36.60024,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "monterey-park": {
+      "point": {
+        "lon": -118.12285,
+        "lat": 34.06251,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "moorpark": {
+      "point": {
+        "lon": -118.88204,
+        "lat": 34.28556,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "moraga": {
+      "point": {
+        "lon": -122.12969,
+        "lat": 37.83493,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "moreno-valley": {
+      "point": {
+        "lon": -117.23059,
+        "lat": 33.93752,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "morgan-hill": {
+      "point": {
+        "lon": -121.65439,
+        "lat": 37.1305,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "morro-bay": {
+      "point": {
+        "lon": -120.8499,
+        "lat": 35.36581,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "mount-shasta": {
+      "point": {
+        "lon": -122.31057,
+        "lat": 41.30987,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "mountain-house": {
+      "point": {
+        "lon": -121.54273,
+        "lat": 37.78326,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "mountain-view": {
+      "point": {
+        "lon": -122.08385,
+        "lat": 37.38605,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "murrieta": {
+      "point": {
+        "lon": -117.21392,
+        "lat": 33.55391,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "napa": {
+      "point": {
+        "lon": -122.28553,
+        "lat": 38.29714,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "national-city": {
+      "point": {
+        "lon": -117.09917,
+        "lat": 32.67806,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "needles": {
+      "point": {
+        "lon": -114.61413,
+        "lat": 34.84806,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "nevada-city": {
+      "point": {
+        "lon": -121.01606,
+        "lat": 39.26156,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "newark": {
+      "point": {
+        "lon": -122.04024,
+        "lat": 37.52966,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "newman": {
+      "point": {
+        "lon": -121.02076,
+        "lat": 37.31383,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "newport-beach": {
+      "point": {
+        "lon": -117.92895,
+        "lat": 33.61891,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "norco": {
+      "point": {
+        "lon": -117.54866,
+        "lat": 33.93113,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "norwalk": {
+      "point": {
+        "lon": -118.08173,
+        "lat": 33.90224,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "novato": {
+      "point": {
+        "lon": -122.5697,
+        "lat": 38.10742,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "oakdale": {
+      "point": {
+        "lon": -120.84715,
+        "lat": 37.76659,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "oakland": {
+      "point": {
+        "lon": -122.2708,
+        "lat": 37.80437,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "oakley": {
+      "point": {
+        "lon": -121.71245,
+        "lat": 37.99742,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "oceanside": {
+      "point": {
+        "lon": -117.37948,
+        "lat": 33.19587,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "ojai": {
+      "point": {
+        "lon": -119.24289,
+        "lat": 34.44805,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "ontario": {
+      "point": {
+        "lon": -117.65089,
+        "lat": 34.06334,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "orange": {
+      "point": {
+        "lon": -117.85311,
+        "lat": 33.78779,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "orange-cove": {
+      "point": {
+        "lon": -119.31373,
+        "lat": 36.62439,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "orinda": {
+      "point": {
+        "lon": -122.17969,
+        "lat": 37.87715,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "orland": {
+      "point": {
+        "lon": -122.19637,
+        "lat": 39.74738,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "oroville": {
+      "point": {
+        "lon": -121.55636,
+        "lat": 39.51378,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "oxnard": {
+      "point": {
+        "lon": -119.17705,
+        "lat": 34.1975,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "pacific-grove": {
+      "point": {
+        "lon": -121.91662,
+        "lat": 36.61774,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "pacifica": {
+      "point": {
+        "lon": -122.48692,
+        "lat": 37.61383,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "palm-desert": {
+      "point": {
+        "lon": -116.37446,
+        "lat": 33.72224,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "palm-springs": {
+      "point": {
+        "lon": -116.54529,
+        "lat": 33.8303,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "palmdale": {
+      "point": {
+        "lon": -118.11646,
+        "lat": 34.57943,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "palo-alto": {
+      "point": {
+        "lon": -122.14302,
+        "lat": 37.44188,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "palos-verdes-estates": {
+      "point": {
+        "lon": -118.39007,
+        "lat": 33.80057,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "paradise": {
+      "point": {
+        "lon": -121.62192,
+        "lat": 39.75961,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "paramount": {
+      "point": {
+        "lon": -118.15979,
+        "lat": 33.88946,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "parlier": {
+      "point": {
+        "lon": -119.52707,
+        "lat": 36.61162,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "pasadena": {
+      "point": {
+        "lon": -118.14452,
+        "lat": 34.14778,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "paso-robles": {
+      "point": {
+        "lon": -120.691,
+        "lat": 35.62664,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "patterson": {
+      "point": {
+        "lon": -121.12966,
+        "lat": 37.4716,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "perris": {
+      "point": {
+        "lon": -117.22865,
+        "lat": 33.78252,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "petaluma": {
+      "point": {
+        "lon": -122.63665,
+        "lat": 38.23242,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "pico-rivera": {
+      "point": {
+        "lon": -118.09673,
+        "lat": 33.98307,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "piedmont": {
+      "point": {
+        "lon": -122.23163,
+        "lat": 37.82437,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "pinole": {
+      "point": {
+        "lon": -122.29886,
+        "lat": 38.00437,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "pismo-beach": {
+      "point": {
+        "lon": -120.64128,
+        "lat": 35.14275,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "pittsburg": {
+      "point": {
+        "lon": -121.88468,
+        "lat": 38.02798,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "placentia": {
+      "point": {
+        "lon": -117.87034,
+        "lat": 33.87224,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "placerville": {
+      "point": {
+        "lon": -120.79855,
+        "lat": 38.72963,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "pleasant-hill": {
+      "point": {
+        "lon": -122.0608,
+        "lat": 37.94798,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "pleasanton": {
+      "point": {
+        "lon": -121.87468,
+        "lat": 37.66243,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "plymouth": {
+      "point": {
+        "lon": -120.84466,
+        "lat": 38.48185,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "point-arena": {
+      "point": {
+        "lon": -123.69307,
+        "lat": 38.9088,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "pomona": {
+      "point": {
+        "lon": -117.75228,
+        "lat": 34.05529,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "port-hueneme": {
+      "point": {
+        "lon": -119.19511,
+        "lat": 34.14778,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "porterville": {
+      "point": {
+        "lon": -119.01677,
+        "lat": 36.06523,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "portola": {
+      "point": {
+        "lon": -120.4691,
+        "lat": 39.81046,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "portola-valley": {
+      "point": {
+        "lon": -122.23524,
+        "lat": 37.38411,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "poway": {
+      "point": {
+        "lon": -117.03586,
+        "lat": 32.96282,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "rancho-cordova": {
+      "point": {
+        "lon": -121.30273,
+        "lat": 38.58907,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "rancho-cucamonga": {
+      "point": {
+        "lon": -117.59311,
+        "lat": 34.1064,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "rancho-mirage": {
+      "point": {
+        "lon": -116.41279,
+        "lat": 33.73974,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "rancho-palos-verdes": {
+      "point": {
+        "lon": -118.38702,
+        "lat": 33.74446,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "rancho-santa-margarita": {
+      "point": {
+        "lon": -117.6031,
+        "lat": 33.64086,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "red-bluff": {
+      "point": {
+        "lon": -122.23583,
+        "lat": 40.17849,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "redding": {
+      "point": {
+        "lon": -122.39168,
+        "lat": 40.58654,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "redlands": {
+      "point": {
+        "lon": -117.18254,
+        "lat": 34.05557,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "redondo-beach": {
+      "point": {
+        "lon": -118.38833,
+        "lat": 33.84917,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "redwood-city": {
+      "point": {
+        "lon": -122.23635,
+        "lat": 37.48522,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "reedley": {
+      "point": {
+        "lon": -119.4504,
+        "lat": 36.59634,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "rialto": {
+      "point": {
+        "lon": -117.37032,
+        "lat": 34.1064,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "richmond": {
+      "point": {
+        "lon": -122.34775,
+        "lat": 37.93576,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "ridgecrest": {
+      "point": {
+        "lon": -117.6709,
+        "lat": 35.62246,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "rio-dell": {
+      "point": {
+        "lon": -124.10644,
+        "lat": 40.4993,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "rio-vista": {
+      "point": {
+        "lon": -121.69134,
+        "lat": 38.15575,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "ripon": {
+      "point": {
+        "lon": -121.12438,
+        "lat": 37.74159,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "riverbank": {
+      "point": {
+        "lon": -120.93549,
+        "lat": 37.73604,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "riverside": {
+      "point": {
+        "lon": -117.39611,
+        "lat": 33.95333,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "rocklin": {
+      "point": {
+        "lon": -121.23578,
+        "lat": 38.79073,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "rohnert-park": {
+      "point": {
+        "lon": -122.7011,
+        "lat": 38.33964,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "rolling-hills": {
+      "point": {
+        "lon": -118.35396,
+        "lat": 33.75696,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "rolling-hills-estates": {
+      "point": {
+        "lon": -118.35813,
+        "lat": 33.78779,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "rosemead": {
+      "point": {
+        "lon": -118.07285,
+        "lat": 34.08057,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "roseville": {
+      "point": {
+        "lon": -121.28801,
+        "lat": 38.75212,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "ross": {
+      "point": {
+        "lon": -122.555,
+        "lat": 37.9625,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "sacramento": {
+      "point": {
+        "lon": -121.4944,
+        "lat": 38.58157,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "salinas": {
+      "point": {
+        "lon": -121.6555,
+        "lat": 36.67774,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-anselmo": {
+      "point": {
+        "lon": -122.56167,
+        "lat": 37.97472,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-bernardino": {
+      "point": {
+        "lon": -117.28977,
+        "lat": 34.10834,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-bruno": {
+      "point": {
+        "lon": -122.41108,
+        "lat": 37.63049,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-carlos": {
+      "point": {
+        "lon": -122.26052,
+        "lat": 37.50716,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-clemente": {
+      "point": {
+        "lon": -117.61199,
+        "lat": 33.42697,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-diego": {
+      "point": {
+        "lon": -117.15726,
+        "lat": 32.71533,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-dimas": {
+      "point": {
+        "lon": -117.80673,
+        "lat": 34.10668,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-fernando": {
+      "point": {
+        "lon": -118.43897,
+        "lat": 34.28195,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-francisco": {
+      "point": {
+        "lon": -122.41944,
+        "lat": 37.775,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-gabriel": {
+      "point": {
+        "lon": -118.10583,
+        "lat": 34.09611,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-jacinto": {
+      "point": {
+        "lon": -116.95864,
+        "lat": 33.78391,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-joaquin": {
+      "point": {
+        "lon": -120.18904,
+        "lat": 36.60662,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-jose": {
+      "point": {
+        "lon": -121.89496,
+        "lat": 37.33939,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-juan-bautista": {
+      "point": {
+        "lon": -121.538,
+        "lat": 36.84551,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-juan-capistrano": {
+      "point": {
+        "lon": -117.66255,
+        "lat": 33.50169,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-leandro": {
+      "point": {
+        "lon": -122.15608,
+        "lat": 37.72493,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-luis-obispo": {
+      "point": {
+        "lon": -120.65962,
+        "lat": 35.28275,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-marcos": {
+      "point": {
+        "lon": -117.16614,
+        "lat": 33.14337,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-marino": {
+      "point": {
+        "lon": -118.10646,
+        "lat": 34.1214,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-mateo": {
+      "point": {
+        "lon": -122.32553,
+        "lat": 37.56299,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-pablo": {
+      "point": {
+        "lon": -122.34553,
+        "lat": 37.96215,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-rafael": {
+      "point": {
+        "lon": -122.53111,
+        "lat": 37.97361,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "san-ramon": {
+      "point": {
+        "lon": -121.97802,
+        "lat": 37.77993,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "sand-city": {
+      "point": {
+        "lon": -121.84829,
+        "lat": 36.61718,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "sanger": {
+      "point": {
+        "lon": -119.55597,
+        "lat": 36.70801,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "santa-ana": {
+      "point": {
+        "lon": -117.86783,
+        "lat": 33.74557,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "santa-barbara": {
+      "point": {
+        "lon": -119.69819,
+        "lat": 34.42083,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "santa-clara": {
+      "point": {
+        "lon": -121.95524,
+        "lat": 37.35411,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "santa-clarita": {
+      "point": {
+        "lon": -118.54259,
+        "lat": 34.39166,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "santa-cruz": {
+      "point": {
+        "lon": -122.0308,
+        "lat": 36.97412,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "santa-fe-springs": {
+      "point": {
+        "lon": -118.08535,
+        "lat": 33.94724,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "santa-maria": {
+      "point": {
+        "lon": -120.43572,
+        "lat": 34.95303,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "santa-monica": {
+      "point": {
+        "lon": -118.49119,
+        "lat": 34.01945,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "santa-paula": {
+      "point": {
+        "lon": -119.05927,
+        "lat": 34.35417,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "santa-rosa": {
+      "point": {
+        "lon": -122.71443,
+        "lat": 38.44047,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "santee": {
+      "point": {
+        "lon": -116.97392,
+        "lat": 32.83838,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "saratoga": {
+      "point": {
+        "lon": -122.02301,
+        "lat": 37.26383,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "sausalito": {
+      "point": {
+        "lon": -122.48528,
+        "lat": 37.85917,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "scotts-valley": {
+      "point": {
+        "lon": -122.01468,
+        "lat": 37.05106,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "seal-beach": {
+      "point": {
+        "lon": -118.10479,
+        "lat": 33.74141,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "seaside": {
+      "point": {
+        "lon": -121.84461,
+        "lat": 36.61104,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "sebastopol": {
+      "point": {
+        "lon": -122.82388,
+        "lat": 38.40214,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "selma": {
+      "point": {
+        "lon": -119.61208,
+        "lat": 36.57078,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "shafter": {
+      "point": {
+        "lon": -119.27178,
+        "lat": 35.50051,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "shasta-lake": {
+      "point": {
+        "lon": -122.37084,
+        "lat": 40.68043,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "sierra-madre": {
+      "point": {
+        "lon": -118.05285,
+        "lat": 34.16167,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "signal-hill": {
+      "point": {
+        "lon": -118.16785,
+        "lat": 33.80446,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "simi-valley": {
+      "point": {
+        "lon": -118.78148,
+        "lat": 34.26945,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "solana-beach": {
+      "point": {
+        "lon": -117.27115,
+        "lat": 32.99115,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "soledad": {
+      "point": {
+        "lon": -121.32632,
+        "lat": 36.42469,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "solvang": {
+      "point": {
+        "lon": -120.13765,
+        "lat": 34.59582,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "sonoma": {
+      "point": {
+        "lon": -122.45804,
+        "lat": 38.29186,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "sonora": {
+      "point": {
+        "lon": -120.38214,
+        "lat": 37.98409,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "south-el-monte": {
+      "point": {
+        "lon": -118.04673,
+        "lat": 34.05195,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "south-gate": {
+      "point": {
+        "lon": -118.21202,
+        "lat": 33.95474,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "south-lake-tahoe": {
+      "point": {
+        "lon": -119.98435,
+        "lat": 38.93324,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "south-pasadena": {
+      "point": {
+        "lon": -118.15035,
+        "lat": 34.11612,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "south-san-francisco": {
+      "point": {
+        "lon": -122.40778,
+        "lat": 37.65472,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "st-helena": {
+      "point": {
+        "lon": -122.47026,
+        "lat": 38.50519,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "stanton": {
+      "point": {
+        "lon": -117.99312,
+        "lat": 33.80252,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "stockton": {
+      "point": {
+        "lon": -121.29078,
+        "lat": 37.9577,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "suisun-city": {
+      "point": {
+        "lon": -122.04024,
+        "lat": 38.23825,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "sunnyvale": {
+      "point": {
+        "lon": -122.03635,
+        "lat": 37.36883,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "susanville": {
+      "point": {
+        "lon": -120.65301,
+        "lat": 40.41628,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "sutter-creek": {
+      "point": {
+        "lon": -120.80244,
+        "lat": 38.39297,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "taft": {
+      "point": {
+        "lon": -119.45651,
+        "lat": 35.14247,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "tehachapi": {
+      "point": {
+        "lon": -118.44897,
+        "lat": 35.13219,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "tehama": {
+      "point": {
+        "lon": -122.12332,
+        "lat": 40.0271,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "temecula": {
+      "point": {
+        "lon": -117.14836,
+        "lat": 33.49364,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "temple-city": {
+      "point": {
+        "lon": -118.05785,
+        "lat": 34.10723,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "thousand-oaks": {
+      "point": {
+        "lon": -118.8375,
+        "lat": 34.17056,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "tiburon": {
+      "point": {
+        "lon": -122.45667,
+        "lat": 37.87361,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "torrance": {
+      "point": {
+        "lon": -118.34063,
+        "lat": 33.83585,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "tracy": {
+      "point": {
+        "lon": -121.42522,
+        "lat": 37.73965,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "trinidad": {
+      "point": {
+        "lon": -124.14312,
+        "lat": 41.05929,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "truckee": {
+      "point": {
+        "lon": -120.18325,
+        "lat": 39.32796,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "tulare": {
+      "point": {
+        "lon": -119.34734,
+        "lat": 36.20773,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "tulelake": {
+      "point": {
+        "lon": -121.47749,
+        "lat": 41.95599,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "turlock": {
+      "point": {
+        "lon": -120.84659,
+        "lat": 37.49466,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "tustin": {
+      "point": {
+        "lon": -117.82617,
+        "lat": 33.74585,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "twentynine-palms": {
+      "point": {
+        "lon": -116.05417,
+        "lat": 34.13556,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "ukiah": {
+      "point": {
+        "lon": -123.20778,
+        "lat": 39.15017,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "union-city": {
+      "point": {
+        "lon": -122.01917,
+        "lat": 37.59583,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "upland": {
+      "point": {
+        "lon": -117.64839,
+        "lat": 34.09751,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "vacaville": {
+      "point": {
+        "lon": -121.98774,
+        "lat": 38.35658,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "vallejo": {
+      "point": {
+        "lon": -122.25664,
+        "lat": 38.10409,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "ventura": {
+      "point": {
+        "lon": -119.29317,
+        "lat": 34.27834,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "vernon": {
+      "point": {
+        "lon": -118.23007,
+        "lat": 34.0039,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "victorville": {
+      "point": {
+        "lon": -117.29116,
+        "lat": 34.53611,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "villa-park": {
+      "point": {
+        "lon": -117.81311,
+        "lat": 33.81446,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "visalia": {
+      "point": {
+        "lon": -119.29206,
+        "lat": 36.33023,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "vista": {
+      "point": {
+        "lon": -117.24254,
+        "lat": 33.20004,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "walnut": {
+      "point": {
+        "lon": -117.86534,
+        "lat": 34.02029,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "walnut-creek": {
+      "point": {
+        "lon": -122.06496,
+        "lat": 37.90631,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "wasco": {
+      "point": {
+        "lon": -119.34095,
+        "lat": 35.59412,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "waterford": {
+      "point": {
+        "lon": -120.76048,
+        "lat": 37.64132,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "watsonville": {
+      "point": {
+        "lon": -121.75689,
+        "lat": 36.91023,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "weed": {
+      "point": {
+        "lon": -122.38613,
+        "lat": 41.42265,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "west-covina": {
+      "point": {
+        "lon": -117.93895,
+        "lat": 34.06862,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "west-hollywood": {
+      "point": {
+        "lon": -118.36174,
+        "lat": 34.09001,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "west-sacramento": {
+      "point": {
+        "lon": -121.53023,
+        "lat": 38.58046,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "westlake-village": {
+      "point": {
+        "lon": -118.80565,
+        "lat": 34.14584,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "westminster": {
+      "point": {
+        "lon": -118.00673,
+        "lat": 33.75918,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "westmorland": {
+      "point": {
+        "lon": -115.62138,
+        "lat": 33.03727,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "wheatland": {
+      "point": {
+        "lon": -121.42301,
+        "lat": 39.00989,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "whittier": {
+      "point": {
+        "lon": -118.03284,
+        "lat": 33.97918,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "wildomar": {
+      "point": {
+        "lon": -117.28004,
+        "lat": 33.59891,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "williams": {
+      "point": {
+        "lon": -122.14942,
+        "lat": 39.15461,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "willits": {
+      "point": {
+        "lon": -123.35557,
+        "lat": 39.40961,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "willows": {
+      "point": {
+        "lon": -122.19359,
+        "lat": 39.52433,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "windsor": {
+      "point": {
+        "lon": -122.81638,
+        "lat": 38.54713,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "winters": {
+      "point": {
+        "lon": -121.9708,
+        "lat": 38.52491,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "woodlake": {
+      "point": {
+        "lon": -119.09872,
+        "lat": 36.41356,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "woodland": {
+      "point": {
+        "lon": -121.7733,
+        "lat": 38.67852,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "woodside": {
+      "point": {
+        "lon": -122.25386,
+        "lat": 37.42994,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "yorba-linda": {
+      "point": {
+        "lon": -117.81311,
+        "lat": 33.88863,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "yountville": {
+      "point": {
+        "lon": -122.36081,
+        "lat": 38.40158,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "yreka": {
+      "point": {
+        "lon": -122.63447,
+        "lat": 41.73542,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "yuba-city": {
+      "point": {
+        "lon": -121.61691,
+        "lat": 39.14045,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "yucaipa": {
+      "point": {
+        "lon": -117.04309,
+        "lat": 34.03363,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    },
+    "yucca-valley": {
+      "point": {
+        "lon": -116.43224,
+        "lat": 34.11417,
+        "source": "gnis"
+      },
+      "timezone": "America/Los_Angeles"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q986871",
+    "label": "Livingston",
+    "description": "city in Merced County, California, United States"
+  },
+  "hero": {
+    "file": "Livingston, California.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Livingston,_California.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Livingston%2C_California.JPG/1920px-Livingston%2C_California.JPG",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 3264,
+    "originalHeight": 2448,
+    "author": "Publichall",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Livingston%2C_California.JPG/960px-Livingston%2C_California.JPG",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

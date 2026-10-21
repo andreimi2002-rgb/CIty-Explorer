@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q896910",
+    "label": "Bradbury",
+    "description": "city in Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "Bradbury CA sign.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Bradbury_CA_sign.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Bradbury_CA_sign.jpg/1920px-Bradbury_CA_sign.jpg",
+    "width": 1920,
+    "height": 2560,
+    "originalWidth": 3024,
+    "originalHeight": 4032,
+    "author": "Fruitianslip",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Bradbury_CA_sign.jpg/960px-Bradbury_CA_sign.jpg",
+    "widthSmall": 960,
+    "heightSmall": 1280,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

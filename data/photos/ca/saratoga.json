@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q927163",
+    "label": "Saratoga",
+    "description": "city in Santa Clara County, California, USA"
+  },
+  "hero": {
+    "file": "Memorial Arch Saratoga California.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Memorial_Arch_Saratoga_California.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Memorial_Arch_Saratoga_California.jpg/1920px-Memorial_Arch_Saratoga_California.jpg",
+    "width": 1920,
+    "height": 1280,
+    "originalWidth": 4368,
+    "originalHeight": 2912,
+    "author": "LPS.1",
+    "licence": "CC0",
+    "licenceCode": "cc0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Memorial_Arch_Saratoga_California.jpg/960px-Memorial_Arch_Saratoga_California.jpg",
+    "widthSmall": 960,
+    "heightSmall": 640,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

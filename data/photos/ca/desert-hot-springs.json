@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q573096",
+    "label": "Desert Hot Springs",
+    "description": "city in Riverside County, California, United States"
+  },
+  "hero": {
+    "file": "Desert Hot Springs, California (8364279254).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Desert_Hot_Springs,_California_(8364279254).jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/15/Desert_Hot_Springs%2C_California_%288364279254%29.jpg",
+    "width": 1920,
+    "height": 1237,
+    "originalWidth": 874,
+    "originalHeight": 563,
+    "author": "1950sUnlimited",
+    "licence": "CC BY 2.0",
+    "licenceCode": "cc-by-2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "assessment": null,
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/1/15/Desert_Hot_Springs%2C_California_%288364279254%29.jpg",
+    "widthSmall": 960,
+    "heightSmall": 618,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

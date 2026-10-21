@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q491340",
+    "label": "Roseville",
+    "description": "city in Placer County, California, United States"
+  },
+  "hero": {
+    "file": "Carnegie Museum Exterior 2014.08.23.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Carnegie_Museum_Exterior_2014.08.23.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Carnegie_Museum_Exterior_2014.08.23.jpg",
+    "width": 1920,
+    "height": 1081,
+    "originalWidth": 1508,
+    "originalHeight": 849,
+    "author": "YankeeSpirit",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Carnegie_Museum_Exterior_2014.08.23.jpg/960px-Carnegie_Museum_Exterior_2014.08.23.jpg",
+    "widthSmall": 960,
+    "heightSmall": 540,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

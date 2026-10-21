@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q773516",
+    "label": "Hesperia",
+    "description": "city in San Bernardino County, California, United States"
+  },
+  "hero": {
+    "file": "HesperiaCA.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:HesperiaCA.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/HesperiaCA.JPG/1920px-HesperiaCA.JPG",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 3072,
+    "originalHeight": 2304,
+    "author": "me",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/HesperiaCA.JPG/960px-HesperiaCA.JPG",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

@@ -19,8 +19,17 @@ Details: [`fonts/README.md`](fonts/README.md).
 | City limits (cartographic, clipped to the shoreline), official name, internal point | Public domain (U.S. government work) | U.S. Census Bureau, TIGERweb Generalized ACS2025, Incorporated Places 500K (`.../Generalized_ACS2025/Places_CouSub_ConCity_SubMCD/MapServer/10`) | vintage 1 Jan 2025, retrieved 21 Oct 2026 | `scripts/fetch-boundary.js` | Map boundary, page name, weather point |
 | City and place labels, descriptions, coordinates, main image (P18) | CC0 1.0 | Wikidata, https://www.wikidata.org/ | retrieved 21 Oct 2026 | `scripts/fetch-photos.js` | Hero text, highlight cards, map pins |
 | Photos | Per file: public domain, CC0, CC BY or CC BY-SA only; author, licence and file page stored with each photo and shown on the page | Wikimedia Commons, https://commons.wikimedia.org/ | retrieved 21 Oct 2026 | `scripts/fetch-photos.js` (choice of hero: `scripts/suggest-hero.js` + a person) | Hero and highlight photos, loaded from Wikimedia's servers |
+| List of incorporated places, land and water area (2020, 2025) | Public domain (U.S. government work) | U.S. Census Bureau, Gazetteer Files 2020 and 2025, places | retrieved 21 Oct 2026 | `scripts/build-places.js`, `scripts/fetch-census.js` | City list, land area, density |
+| GNIS ids and city center points (Populated Place) | Public domain (U.S. government work) | USGS Geographic Names Information System, Domestic Names (state text file) | file of 29 Sep 2026, retrieved 21 Oct 2026 | `scripts/build-places.js` | Reference point for elevation, weather and climate station |
+| Wikidata items by GNIS id (P590) | CC0 1.0 | Wikidata Query Service | retrieved 21 Oct 2026 | `scripts/build-places.js` | Link to photos and descriptions |
+| Population, 2020 Census (P1_001N) | Public domain (U.S. government work) | U.S. Census Bureau, 2020 Census DHC, Census Data API (free key, kept in the local `.env`, never committed) | April 1, 2020 | `scripts/fetch-census.js` | Population, density 2020 |
+| Population estimates, July 1, 2025 and estimates base 2020 | Public domain (U.S. government work) | U.S. Census Bureau, Population Estimates Program, Vintage 2025, `sub-est2025_<state>.csv` | July 1, 2025 | `scripts/fetch-census.js` | Population, change, density 2025 |
+| Income, home value, education, foreign-born, poverty, commute (with margins of error) | Public domain (U.S. government work) | U.S. Census Bureau, American Community Survey 5-year 2020–2024, Data Profiles, Census Data API | 2020–2024, money in 2024 dollars | `scripts/fetch-census.js` | People & economy |
+| Elevation at the city center | Public domain (U.S. government work) | USGS 3D Elevation Program, Elevation Point Query Service | retrieved 21 Oct 2026 | `scripts/fetch-elevation.js` | Elevation |
+| Time zone boundaries | ODbL 1.0 (© OpenStreetMap contributors) | timezone-boundary-builder release 2026e (downloaded to `tmp/`, only the result is committed) | release of 11 Oct 2026 | `scripts/fetch-timezone.js` | Time zone, local time |
+| Monthly climate normals (max, min, precipitation) | Public domain (U.S. government work) | NOAA NCEI U.S. Climate Normals 1991–2020, monthly, per station | 1991–2020 | `scripts/fetch-climate.js` | Climate chart and summary |
 
-Curation (which city uses which Census GEOID, Wikidata item, hero file and highlights) is in `data/curation/<state>/<slug>.json`.
+Curation (manual choices: hero file and focus point, highlights) is in `data/curation/<state>/<slug>.json`. The generated intermediate files are in `data/reference/` and `data/sources/<state>/`; the page reads `data/cities/<state>/<slug>.json`.
 
 ## Live services (called while the page is open)
 

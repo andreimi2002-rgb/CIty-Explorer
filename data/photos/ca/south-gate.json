@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q838772",
+    "label": "South Gate",
+    "description": "city in Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "Hoot Owl Cafe South Gate Calif.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Hoot_Owl_Cafe_South_Gate_Calif.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Hoot_Owl_Cafe_South_Gate_Calif.jpg/1920px-Hoot_Owl_Cafe_South_Gate_Calif.jpg",
+    "width": 1920,
+    "height": 2790,
+    "originalWidth": 3226,
+    "originalHeight": 4688,
+    "author": "John Margolies",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Hoot_Owl_Cafe_South_Gate_Calif.jpg/960px-Hoot_Owl_Cafe_South_Gate_Calif.jpg",
+    "widthSmall": 960,
+    "heightSmall": 1395,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

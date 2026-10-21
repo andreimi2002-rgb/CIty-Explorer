@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q948071",
+    "label": "La Habra",
+    "description": "city in Orange County, California, United States"
+  },
+  "hero": {
+    "file": "La Habra Circle Shopping Center, La Habra, California (2021-06-25).jpeg",
+    "page": "https://commons.wikimedia.org/wiki/File:La_Habra_Circle_Shopping_Center,_La_Habra,_California_(2021-06-25).jpeg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/La_Habra_Circle_Shopping_Center%2C_La_Habra%2C_California_%282021-06-25%29.jpeg/1920px-La_Habra_Circle_Shopping_Center%2C_La_Habra%2C_California_%282021-06-25%29.jpeg",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 3264,
+    "originalHeight": 2448,
+    "author": "Amin Eshaiker",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/La_Habra_Circle_Shopping_Center%2C_La_Habra%2C_California_%282021-06-25%29.jpeg/960px-La_Habra_Circle_Shopping_Center%2C_La_Habra%2C_California_%282021-06-25%29.jpeg",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

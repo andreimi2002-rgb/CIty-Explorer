@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q851034",
+    "label": "San Leandro",
+    "description": "city in Alameda County, California, United States"
+  },
+  "hero": {
+    "file": "San Leandro Marina 07830.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:San_Leandro_Marina_07830.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/San_Leandro_Marina_07830.JPG/1920px-San_Leandro_Marina_07830.JPG",
+    "width": 1920,
+    "height": 1383,
+    "originalWidth": 2433,
+    "originalHeight": 1753,
+    "author": "Walter Siegmund",
+    "licence": "CC BY 2.5",
+    "licenceCode": "cc-by-2.5",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.5",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/San_Leandro_Marina_07830.JPG/960px-San_Leandro_Marina_07830.JPG",
+    "widthSmall": 960,
+    "heightSmall": 692,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

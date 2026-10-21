@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q837097",
+    "label": "Gilroy",
+    "description": "city in Santa Clara County, California, United States"
+  },
+  "hero": {
+    "file": "Old City Hall, Gilroy 2014 01.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Old_City_Hall,_Gilroy_2014_01.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Old_City_Hall%2C_Gilroy_2014_01.JPG/1920px-Old_City_Hall%2C_Gilroy_2014_01.JPG",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 2048,
+    "originalHeight": 1536,
+    "author": "Pedro Xing",
+    "licence": "CC0",
+    "licenceCode": "cc0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Old_City_Hall%2C_Gilroy_2014_01.JPG/960px-Old_City_Hall%2C_Gilroy_2014_01.JPG",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q838769",
+    "label": "Fountain Valley",
+    "description": "city in Orange County, California, United States"
+  },
+  "hero": {
+    "file": "Interstate 405 Through Fountain Valley and Westminster, California (6013793940).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Interstate_405_Through_Fountain_Valley_and_Westminster,_California_(6013793940).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Interstate_405_Through_Fountain_Valley_and_Westminster%2C_California_%286013793940%29.jpg/1920px-Interstate_405_Through_Fountain_Valley_and_Westminster%2C_California_%286013793940%29.jpg",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 3800,
+    "originalHeight": 2850,
+    "author": "Ken Lund from Reno, Nevada, USA",
+    "licence": "CC BY-SA 2.0",
+    "licenceCode": "cc-by-sa-2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Interstate_405_Through_Fountain_Valley_and_Westminster%2C_California_%286013793940%29.jpg/960px-Interstate_405_Through_Fountain_Valley_and_Westminster%2C_California_%286013793940%29.jpg",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

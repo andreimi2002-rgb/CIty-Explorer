@@ -38,7 +38,7 @@ test('place problems are reported', () => {
   assert.match(v(feature({ STATE: '32' })).join(), /STATE/);
   assert.match(v(feature({ NAME: '' })).join(), /name/);
   assert.match(v(feature({}, null)).join(), /geometry/);
-  assert.match(v(feature({}, { type: 'Polygon', coordinates: [ring.slice(0, 5)] })).join(), /points/);
+  assert.match(v(feature({}, { type: 'Polygon', coordinates: [ring.slice(0, 3)] })).join(), /points/);
   const far = ring.map(([x, y]) => [x - 10, y]);
   assert.match(v(feature({ INTPTLON: '-132.45' }, { type: 'Polygon', coordinates: [far] })).join(), /outside California/);
   assert.match(v(feature({ INTPTLON: '-121' })).join(), /internal point is outside/);

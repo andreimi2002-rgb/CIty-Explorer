@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q49270",
+    "label": "Chula Vista",
+    "description": "city in San Diego County, California, United States"
+  },
+  "hero": {
+    "file": "Gateway Buildings, Chula Vista.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Gateway_Buildings,_Chula_Vista.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Gateway_Buildings%2C_Chula_Vista.jpg/1920px-Gateway_Buildings%2C_Chula_Vista.jpg",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 4032,
+    "originalHeight": 3024,
+    "author": "WeaponizingArchitecture",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Gateway_Buildings%2C_Chula_Vista.jpg/960px-Gateway_Buildings%2C_Chula_Vista.jpg",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

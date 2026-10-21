@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q846040",
+    "label": "Camarillo",
+    "description": "city in Ventura County, California, United States"
+  },
+  "hero": {
+    "file": "CamarilloCaliforniaPanorama.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:CamarilloCaliforniaPanorama.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/CamarilloCaliforniaPanorama.jpg/1920px-CamarilloCaliforniaPanorama.jpg",
+    "width": 1920,
+    "height": 446,
+    "originalWidth": 4353,
+    "originalHeight": 1012,
+    "author": "Frantik at English Wikipedia",
+    "licence": "CC BY 3.0",
+    "licenceCode": "cc-by-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/CamarilloCaliforniaPanorama.jpg/960px-CamarilloCaliforniaPanorama.jpg",
+    "widthSmall": 960,
+    "heightSmall": 223,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

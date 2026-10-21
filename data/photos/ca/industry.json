@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q927094",
+    "label": "City of Industry",
+    "description": "city in the San Gabriel Valley, in eastern Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "From across the Hills.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:From_across_the_Hills.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/From_across_the_Hills.jpg/1920px-From_across_the_Hills.jpg",
+    "width": 1920,
+    "height": 471,
+    "originalWidth": 11887,
+    "originalHeight": 2914,
+    "author": "Victorrocha",
+    "licence": "CC BY 3.0",
+    "licenceCode": "cc-by-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "assessment": "quality",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/From_across_the_Hills.jpg/960px-From_across_the_Hills.jpg",
+    "widthSmall": 960,
+    "heightSmall": 235,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

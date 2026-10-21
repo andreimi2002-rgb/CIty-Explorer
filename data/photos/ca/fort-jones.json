@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q584377",
+    "label": "Fort Jones",
+    "description": "city in Siskiyou County, California, United States"
+  },
+  "hero": {
+    "file": "Fort Jones House.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Fort_Jones_House.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/29/Fort_Jones_House.jpg",
+    "width": 1920,
+    "height": 1392,
+    "originalWidth": 800,
+    "originalHeight": 580,
+    "author": "NoeHill",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/2/29/Fort_Jones_House.jpg",
+    "widthSmall": 960,
+    "heightSmall": 696,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

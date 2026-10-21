@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q685224",
+    "label": "Cypress",
+    "description": "city in Orange County, California, United States"
+  },
+  "hero": {
+    "file": "Christie Digital Systems USA Headquarters Cypress California 2021.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Christie_Digital_Systems_USA_Headquarters_Cypress_California_2021.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Christie_Digital_Systems_USA_Headquarters_Cypress_California_2021.jpg/1920px-Christie_Digital_Systems_USA_Headquarters_Cypress_California_2021.jpg",
+    "width": 1920,
+    "height": 641,
+    "originalWidth": 5728,
+    "originalHeight": 1912,
+    "author": "DigitalIceAge",
+    "licence": "CC BY 4.0",
+    "licenceCode": "cc-by-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Christie_Digital_Systems_USA_Headquarters_Cypress_California_2021.jpg/960px-Christie_Digital_Systems_USA_Headquarters_Cypress_California_2021.jpg",
+    "widthSmall": 960,
+    "heightSmall": 320,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

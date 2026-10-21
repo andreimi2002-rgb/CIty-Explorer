@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q499196",
+    "label": "Costa Mesa",
+    "description": "city in Orange County, California, United States"
+  },
+  "hero": {
+    "file": "Costa Mesa 01 Photo Don Ramey Logan.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Costa_Mesa_01_Photo_Don_Ramey_Logan.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Costa_Mesa_01_Photo_Don_Ramey_Logan.jpg/1920px-Costa_Mesa_01_Photo_Don_Ramey_Logan.jpg",
+    "width": 1920,
+    "height": 1275,
+    "originalWidth": 4288,
+    "originalHeight": 2848,
+    "author": "Don Ramey Logan",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Costa_Mesa_01_Photo_Don_Ramey_Logan.jpg/960px-Costa_Mesa_01_Photo_Don_Ramey_Logan.jpg",
+    "widthSmall": 960,
+    "heightSmall": 638,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

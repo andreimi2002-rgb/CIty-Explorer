@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q940711",
+    "label": "Loyalton",
+    "description": "city in Sierra County, California, United States"
+  },
+  "hero": {
+    "file": "Sierra Valley Home Center in Loyalton, California LCCN2013633851.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Sierra_Valley_Home_Center_in_Loyalton,_California_LCCN2013633851.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Sierra_Valley_Home_Center_in_Loyalton%2C_California_LCCN2013633851.jpg/1920px-Sierra_Valley_Home_Center_in_Loyalton%2C_California_LCCN2013633851.jpg",
+    "width": 1920,
+    "height": 1281,
+    "originalWidth": 7360,
+    "originalHeight": 4912,
+    "author": "Carol M. Highsmith",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Sierra_Valley_Home_Center_in_Loyalton%2C_California_LCCN2013633851.jpg/960px-Sierra_Valley_Home_Center_in_Loyalton%2C_California_LCCN2013633851.jpg",
+    "widthSmall": 960,
+    "heightSmall": 641,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q983863",
+    "label": "San Pablo",
+    "description": "city in Contra Costa County, California, United States"
+  },
+  "hero": {
+    "file": "Welcome Sign San Pablo California.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Welcome_Sign_San_Pablo_California.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Welcome_Sign_San_Pablo_California.jpg/1920px-Welcome_Sign_San_Pablo_California.jpg",
+    "width": 1920,
+    "height": 1280,
+    "originalWidth": 3672,
+    "originalHeight": 2448,
+    "author": "LPS.1",
+    "licence": "CC0",
+    "licenceCode": "cc0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Welcome_Sign_San_Pablo_California.jpg/960px-Welcome_Sign_San_Pablo_California.jpg",
+    "widthSmall": 960,
+    "heightSmall": 640,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

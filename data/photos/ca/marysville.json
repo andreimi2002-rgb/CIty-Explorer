@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q950966",
+    "label": "Marysville",
+    "description": "city and county seat in Yuba County, California, United States"
+  },
+  "hero": {
+    "file": "MarysvilleEllisLake.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:MarysvilleEllisLake.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/72/MarysvilleEllisLake.jpg",
+    "width": 1920,
+    "height": 1356,
+    "originalWidth": 1008,
+    "originalHeight": 712,
+    "author": "Mchavez at English Wikipedia",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/MarysvilleEllisLake.jpg/960px-MarysvilleEllisLake.jpg",
+    "widthSmall": 960,
+    "heightSmall": 678,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

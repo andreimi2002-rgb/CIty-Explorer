@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q747509",
+    "label": "Los Gatos",
+    "description": "incorporated town in Santa Clara County, California, United States"
+  },
+  "hero": {
+    "file": "Lacanadabuilding.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Lacanadabuilding.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/63/Lacanadabuilding.jpg",
+    "width": 1920,
+    "height": 2560,
+    "originalWidth": 1200,
+    "originalHeight": 1600,
+    "author": "Mike24 at en.wikipedia",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Lacanadabuilding.jpg/960px-Lacanadabuilding.jpg",
+    "widthSmall": 960,
+    "heightSmall": 1280,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

@@ -3,6 +3,9 @@
 export const USER_AGENT =
   'CityExplorer/0.2 (https://city-explorer-pro.netlify.app; https://github.com/andreimi2002-rgb/CIty-Explorer)';
 
+/** URLs in messages never show API keys. */
+export const redact = (url) => String(url).replace(/([?&]key=)[^&]+/gi, '$1***');
+
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 let last = 0;
 
@@ -23,13 +26,25 @@ async function politeFetch(url, init, { delayMs = 1000, retries = 4 } = {}) {
 
 export async function getJson(url, options) {
   const res = await politeFetch(url, { headers: { Accept: 'application/json' } }, options);
-  if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
+  if (!res.ok) throw new Error(`HTTP ${res.status} for ${redact(url)}`);
   const text = await res.text();
   try {
     return JSON.parse(text);
   } catch {
-    throw new Error(`Not JSON from ${url}: ${text.slice(0, 120)}`);
+    throw new Error(`Not JSON from ${redact(url)}: ${text.slice(0, 120)}`);
   }
+}
+
+export async function getText(url, options) {
+  const res = await politeFetch(url, {}, options);
+  if (!res.ok) throw new Error(`HTTP ${res.status} for ${redact(url)}`);
+  return res.text();
+}
+
+export async function getBuffer(url, options) {
+  const res = await politeFetch(url, {}, options);
+  if (!res.ok) throw new Error(`HTTP ${res.status} for ${redact(url)}`);
+  return Buffer.from(await res.arrayBuffer());
 }
 
 /** Checks that a URL answers 200 with the expected content type prefix (e.g. "image/"). */

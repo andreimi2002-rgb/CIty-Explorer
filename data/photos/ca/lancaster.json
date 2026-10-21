@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q494711",
+    "label": "Lancaster",
+    "description": "city in Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "October 2012 - Overall Excellence in Smart Growth 2012- Lancaster, CA, The BLVD Transformation (8634270433).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:October_2012_-_Overall_Excellence_in_Smart_Growth_2012-_Lancaster,_CA,_The_BLVD_Transformation_(8634270433).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/October_2012_-_Overall_Excellence_in_Smart_Growth_2012-_Lancaster%2C_CA%2C_The_BLVD_Transformation_%288634270433%29.jpg/1920px-October_2012_-_Overall_Excellence_in_Smart_Growth_2012-_Lancaster%2C_CA%2C_The_BLVD_Transformation_%288634270433%29.jpg",
+    "width": 1920,
+    "height": 1280,
+    "originalWidth": 5616,
+    "originalHeight": 3744,
+    "author": "USEPA Environmental-Protection-Agency",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/October_2012_-_Overall_Excellence_in_Smart_Growth_2012-_Lancaster%2C_CA%2C_The_BLVD_Transformation_%288634270433%29.jpg/960px-October_2012_-_Overall_Excellence_in_Smart_Growth_2012-_Lancaster%2C_CA%2C_The_BLVD_Transformation_%288634270433%29.jpg",
+    "widthSmall": 960,
+    "heightSmall": 640,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

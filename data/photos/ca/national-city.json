@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q430316",
+    "label": "National City",
+    "description": "City in California, United States"
+  },
+  "hero": {
+    "file": "San Diego Freeway 805 - panoramio.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:San_Diego_Freeway_805_-_panoramio.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/San_Diego_Freeway_805_-_panoramio.jpg/1920px-San_Diego_Freeway_805_-_panoramio.jpg",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 3264,
+    "originalHeight": 2448,
+    "author": "JulezSD",
+    "licence": "CC BY 3.0",
+    "licenceCode": "cc-by-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/San_Diego_Freeway_805_-_panoramio.jpg/960px-San_Diego_Freeway_805_-_panoramio.jpg",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

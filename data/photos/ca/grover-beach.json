@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q986934",
+    "label": "Grover Beach",
+    "description": "city in San Luis Obispo County, California, United States"
+  },
+  "hero": {
+    "file": "Grover Beach sign.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Grover_Beach_sign.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Grover_Beach_sign.jpg",
+    "width": 1920,
+    "height": 1696,
+    "originalWidth": 1833,
+    "originalHeight": 1619,
+    "author": "ECTran71",
+    "licence": "CC0",
+    "licenceCode": "cc0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Grover_Beach_sign.jpg/960px-Grover_Beach_sign.jpg",
+    "widthSmall": 960,
+    "heightSmall": 848,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

@@ -48,6 +48,11 @@ test('excluded categories: maps, flags, seals, logos, collages', () => {
   assert.ok(excludedCategory('Photo collages of San Francisco'));
   assert.ok(excludedCategory('AI-generated images'));
   assert.equal(excludedCategory('Mapleton|Sealand Avenue'), null);
+  assert.equal(excludedCategory('Seal Beach Municipal Pier|Seal Slough'), null);
+  assert.ok(excludedCategory('Locator maps of cities in California'));
+  assert.ok(excludedCategory('Photographs of flags of the United States in California'));
+  assert.ok(excludedCategory('Culture of San Jose, California|Montages of California'));
+  assert.ok(excludedCategory('Photomontages of Los Angeles'));
   assert.equal(excludedCategory(undefined), null);
 });
 
@@ -69,6 +74,10 @@ test('photo problems', () => {
   assert.match(photoProblems(info({}, { Artist: { value: '<span></span>' } })).join(), /no author/);
   assert.match(photoProblems(info({}, { Categories: { value: 'Maps of X' } })).join(), /excluded/);
   assert.match(photoProblems(info({ thumburl: undefined })).join(), /thumbnail/);
+  assert.match(photoProblems(info(), 'File:SanJose Infobox Pic Montage.jpg').join(), /collage/);
+  assert.match(photoProblems(info(), 'File:Laguna_Beach_photo_collage.jpg').join(), /collage/);
+  assert.deepEqual(photoProblems(info(), 'File:Downtown San Jose.jpg'), []);
+  assert.match(photoProblems(info(), 'File:CommerceMontageCA.jpg').join(), /collage/);
 });
 
 test('photo record has everything needed for the credit line', () => {
@@ -127,8 +136,9 @@ test('wikidata entities: preferred claims, deprecated ignored, coordinates as [l
       P373: [{ ...snak('Bridges'), rank: 'normal' }],
     },
   });
-  assert.deepEqual(e, { qid: 'Q1', label: 'Bridge', description: 'a bridge', image: 'best.jpg', coords: [-122.47826, 37.81993], commonsCategory: 'Bridges' });
+  assert.deepEqual(e, { qid: 'Q1', label: 'Bridge', description: 'a bridge', image: 'best.jpg', images: ['best.jpg', 'old.jpg'], coords: [-122.47826, 37.81993], commonsCategory: 'Bridges' });
   assert.equal(parseEntity({ id: 'Q2', missing: '' }), null);
+  assert.equal(parseEntity({ id: 'Q4', labels: { mul: { value: 'Campbell' } }, claims: {} }).label, 'Campbell');
   assert.equal(parseEntity({ id: 'Q3', claims: {} }).image, null);
   assert.throws(() => entitiesUrl(['Q1', 'X2']));
   assert.throws(() => entitiesUrl([]));

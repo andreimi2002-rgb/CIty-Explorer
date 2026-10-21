@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q281248",
+    "label": "Pittsburg",
+    "description": "city in Contra Costa County, California, United States"
+  },
+  "hero": {
+    "file": "Old Town Pittsburg, Pittsburg California.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Old_Town_Pittsburg,_Pittsburg_California.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Old_Town_Pittsburg%2C_Pittsburg_California.jpg/1920px-Old_Town_Pittsburg%2C_Pittsburg_California.jpg",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 4032,
+    "originalHeight": 3024,
+    "author": "Armenshirazd",
+    "licence": "CC BY 4.0",
+    "licenceCode": "cc-by-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Old_Town_Pittsburg%2C_Pittsburg_California.jpg/960px-Old_Town_Pittsburg%2C_Pittsburg_California.jpg",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

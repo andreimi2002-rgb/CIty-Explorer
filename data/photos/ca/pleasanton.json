@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q747444",
+    "label": "Pleasanton",
+    "description": "city in Alameda County, California, United States"
+  },
+  "hero": {
+    "file": "Aerial view of Dublin and Pleasanton with morning fog, December 2023.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Dublin_and_Pleasanton_with_morning_fog,_December_2023.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Aerial_view_of_Dublin_and_Pleasanton_with_morning_fog%2C_December_2023.JPG/1920px-Aerial_view_of_Dublin_and_Pleasanton_with_morning_fog%2C_December_2023.JPG",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 5184,
+    "originalHeight": 3888,
+    "author": "Pi.1415926535",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Aerial_view_of_Dublin_and_Pleasanton_with_morning_fog%2C_December_2023.JPG/960px-Aerial_view_of_Dublin_and_Pleasanton_with_morning_fog%2C_December_2023.JPG",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

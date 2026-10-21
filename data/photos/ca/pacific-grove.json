@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q117514",
+    "label": "Pacific Grove",
+    "description": "city in Monterey County, California, United States"
+  },
+  "hero": {
+    "file": "Point Pinos Light during reconstruction (2013).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Point_Pinos_Light_during_reconstruction_(2013).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Point_Pinos_Light_during_reconstruction_%282013%29.jpg/1920px-Point_Pinos_Light_during_reconstruction_%282013%29.jpg",
+    "width": 1920,
+    "height": 1165,
+    "originalWidth": 4079,
+    "originalHeight": 2474,
+    "author": "Frank Schulenburg",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": "featured",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Point_Pinos_Light_during_reconstruction_%282013%29.jpg/960px-Point_Pinos_Light_during_reconstruction_%282013%29.jpg",
+    "widthSmall": 960,
+    "heightSmall": 582,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

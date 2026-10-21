@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q927122",
+    "label": "South San Francisco",
+    "description": "city in San Mateo County, California, United States"
+  },
+  "hero": {
+    "file": "Southsanfrancisco.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Southsanfrancisco.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/8/85/Southsanfrancisco.jpg",
+    "width": 1920,
+    "height": 1336,
+    "originalWidth": 1483,
+    "originalHeight": 1032,
+    "author": "Coolcaesar at English Wikipedia",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Southsanfrancisco.jpg/960px-Southsanfrancisco.jpg",
+    "widthSmall": 960,
+    "heightSmall": 668,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

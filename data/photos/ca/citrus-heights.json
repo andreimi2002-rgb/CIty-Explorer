@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q658402",
+    "label": "Citrus Heights",
+    "description": "city in Sacramento County, California, United States"
+  },
+  "hero": {
+    "file": "Citrus Heights - City Hall.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Citrus_Heights_-_City_Hall.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Citrus_Heights_-_City_Hall.jpg/1920px-Citrus_Heights_-_City_Hall.jpg",
+    "width": 1920,
+    "height": 1280,
+    "originalWidth": 3072,
+    "originalHeight": 2048,
+    "author": "The original uploader was J.smith at English Wikipedia.",
+    "licence": "CC BY-SA 2.5",
+    "licenceCode": "cc-by-sa-2.5",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Citrus_Heights_-_City_Hall.jpg/960px-Citrus_Heights_-_City_Hall.jpg",
+    "widthSmall": 960,
+    "heightSmall": 640,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

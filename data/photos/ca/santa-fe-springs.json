@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q948045",
+    "label": "Santa Fe Springs",
+    "description": "city in Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "Looking toward Carmenita District of Santa Fe Springs.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Looking_toward_Carmenita_District_of_Santa_Fe_Springs.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Looking_toward_Carmenita_District_of_Santa_Fe_Springs.jpg/1920px-Looking_toward_Carmenita_District_of_Santa_Fe_Springs.jpg",
+    "width": 1920,
+    "height": 1280,
+    "originalWidth": 4896,
+    "originalHeight": 3264,
+    "author": "Northwalker",
+    "licence": "CC0",
+    "licenceCode": "cc0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Looking_toward_Carmenita_District_of_Santa_Fe_Springs.jpg/960px-Looking_toward_Carmenita_District_of_Santa_Fe_Springs.jpg",
+    "widthSmall": 960,
+    "heightSmall": 640,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

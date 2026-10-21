@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q446281",
+    "label": "Alturas",
+    "description": "city in California, United States"
+  },
+  "hero": {
+    "file": "Alturas California 1975.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Alturas_California_1975.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Alturas_California_1975.jpg",
+    "width": 1920,
+    "height": 1205,
+    "originalWidth": 1020,
+    "originalHeight": 640,
+    "author": "Ethan",
+    "licence": "CC BY 2.0",
+    "licenceCode": "cc-by-2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Alturas_California_1975.jpg/960px-Alturas_California_1975.jpg",
+    "widthSmall": 960,
+    "heightSmall": 602,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

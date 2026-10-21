@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q775868",
+    "label": "Delano",
+    "description": "city in Kern County, California, United States"
+  },
+  "hero": {
+    "file": "Downtown Delano, California (crop) (2012-01-29).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Downtown_Delano,_California_(crop)_(2012-01-29).jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/be/Downtown_Delano%2C_California_%28crop%29_%282012-01-29%29.jpg",
+    "width": 1920,
+    "height": 858,
+    "originalWidth": 1686,
+    "originalHeight": 753,
+    "author": "Amin Eshaiker",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Downtown_Delano%2C_California_%28crop%29_%282012-01-29%29.jpg/960px-Downtown_Delano%2C_California_%28crop%29_%282012-01-29%29.jpg",
+    "widthSmall": 960,
+    "heightSmall": 429,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

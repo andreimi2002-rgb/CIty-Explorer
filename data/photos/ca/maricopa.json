@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q984159",
+    "label": "Maricopa",
+    "description": "city in Kern County, California, United States"
+  },
+  "hero": {
+    "file": "MaricopaWithGasFlare.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:MaricopaWithGasFlare.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/b6/MaricopaWithGasFlare.jpg",
+    "width": 1920,
+    "height": 1379,
+    "originalWidth": 1520,
+    "originalHeight": 1092,
+    "author": "The original uploader was Antandrus at English Wikipedia.",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/MaricopaWithGasFlare.jpg/960px-MaricopaWithGasFlare.jpg",
+    "widthSmall": 960,
+    "heightSmall": 690,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

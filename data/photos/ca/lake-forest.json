@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q752671",
+    "label": "Lake Forest",
+    "description": "city in Orange County, California, United States"
+  },
+  "hero": {
+    "file": "Lake Forest and Laguna Hills Photo Don Ramey Logan.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Lake_Forest_and_Laguna_Hills_Photo_Don_Ramey_Logan.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Lake_Forest_and_Laguna_Hills_Photo_Don_Ramey_Logan.jpg/1920px-Lake_Forest_and_Laguna_Hills_Photo_Don_Ramey_Logan.jpg",
+    "width": 1920,
+    "height": 1281,
+    "originalWidth": 3776,
+    "originalHeight": 2520,
+    "author": "Don Ramey Logan",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Lake_Forest_and_Laguna_Hills_Photo_Don_Ramey_Logan.jpg/960px-Lake_Forest_and_Laguna_Hills_Photo_Don_Ramey_Logan.jpg",
+    "widthSmall": 960,
+    "heightSmall": 641,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

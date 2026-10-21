@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q816099",
+    "label": "Belmont",
+    "description": "city in San Mateo County, California, United States"
+  },
+  "hero": {
+    "file": "Ralston hall.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Ralston_hall.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Ralston_hall.JPG/1920px-Ralston_hall.JPG",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 2272,
+    "originalHeight": 1704,
+    "author": "Created by Kglavin",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Ralston_hall.JPG/960px-Ralston_hall.JPG",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

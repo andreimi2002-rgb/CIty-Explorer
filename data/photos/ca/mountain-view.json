@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q486860",
+    "label": "Mountain View",
+    "description": "city in Santa Clara County, California, United States"
+  },
+  "hero": {
+    "file": "Moffett Field.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Moffett_Field.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Moffett_Field.jpg/1920px-Moffett_Field.jpg",
+    "width": 1920,
+    "height": 1159,
+    "originalWidth": 2108,
+    "originalHeight": 1272,
+    "author": "Dicklyon",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Moffett_Field.jpg/960px-Moffett_Field.jpg",
+    "widthSmall": 960,
+    "heightSmall": 579,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

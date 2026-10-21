@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q902878",
+    "label": "Brawley",
+    "description": "city in Imperial County, California, United States"
+  },
+  "hero": {
+    "file": "Brawley city hall.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Brawley_city_hall.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Brawley_city_hall.JPG/1920px-Brawley_city_hall.JPG",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 2048,
+    "originalHeight": 1536,
+    "author": "en:User:Epolk Eric Polk",
+    "licence": "CC BY-SA 2.5",
+    "licenceCode": "cc-by-sa-2.5",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Brawley_city_hall.JPG/960px-Brawley_city_hall.JPG",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

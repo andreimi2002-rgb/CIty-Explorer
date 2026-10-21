@@ -9,10 +9,11 @@ export function readJson(path) {
   return JSON.parse(readFileSync(join(ROOT, path), 'utf8'));
 }
 
-export function writeJson(path, value) {
+/** Writes JSON; compact for large files the browser downloads (boundaries), indented otherwise. */
+export function writeJson(path, value, { compact = false } = {}) {
   const abs = join(ROOT, path);
   mkdirSync(dirname(abs), { recursive: true });
-  writeFileSync(abs, JSON.stringify(value, null, 2) + '\n');
+  writeFileSync(abs, (compact ? JSON.stringify(value) : JSON.stringify(value, null, 2)) + '\n');
 }
 
 export function writeText(path, text) {
@@ -40,7 +41,23 @@ export function curationFor(state) {
     .map((f) => ({ slug: f.slice(0, -5), ...readJson(`data/curation/${state}/${f}`) }));
 }
 
-export const today = () => new Date().toISOString().slice(0, 10);
+/**
+ * Every place of a state (data/reference/places-<state>.json) merged with its curation file,
+ * if any (manual choices: hero photo, highlights, or a corrected Wikidata item).
+ * An optional list of slugs limits the result.
+ */
+export function citiesFor(state, onlySlugs = []) {
+  const path = join(ROOT, `data/reference/places-${state}.json`);
+  if (!existsSync(path)) throw new Error(`Missing data/reference/places-${state}.json. Run scripts/build-places.js ${state} first.`);
+  const curated = new Map(curationFor(state).map((c) => [c.slug, c]));
+  const all = readJson(`data/reference/places-${state}.json`).places.map((p) => ({ ...p, ...(curated.get(p.slug) || {}) }));
+  if (!onlySlugs.length) return all;
+  const unknown = onlySlugs.filter((s) => !all.some((c) => c.slug === s));
+  if (unknown.length) throw new Error(`Unknown city: ${unknown.join(', ')}`);
+  return all.filter((c) => onlySlugs.includes(c.slug));
+}
+
+export const today =() => new Date().toISOString().slice(0, 10);
 
 /** Prints problems and exits with an error; nothing is written. */
 export function refuse(what, problems) {

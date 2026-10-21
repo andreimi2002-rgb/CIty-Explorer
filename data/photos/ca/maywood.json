@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q774998",
+    "label": "Maywood",
+    "description": "city in Los Angeles County, California, USA"
+  },
+  "hero": {
+    "file": "MaywoodCA.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:MaywoodCA.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/9/96/MaywoodCA.jpg",
+    "width": 1920,
+    "height": 2622,
+    "originalWidth": 1230,
+    "originalHeight": 1680,
+    "author": "Justefrain",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/MaywoodCA.jpg/960px-MaywoodCA.jpg",
+    "widthSmall": 960,
+    "heightSmall": 1311,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

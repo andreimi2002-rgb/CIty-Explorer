@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q495365",
+    "label": "Rancho Cucamonga",
+    "description": "suburban city in San Bernardino County, California, United States"
+  },
+  "hero": {
+    "file": "Cucamonga Peak 122608.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Cucamonga_Peak_122608.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Cucamonga_Peak_122608.jpg/1920px-Cucamonga_Peak_122608.jpg",
+    "width": 1920,
+    "height": 819,
+    "originalWidth": 2233,
+    "originalHeight": 953,
+    "author": "Cheryl",
+    "licence": "CC BY 2.0",
+    "licenceCode": "cc-by-2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Cucamonga_Peak_122608.jpg/960px-Cucamonga_Peak_122608.jpg",
+    "widthSmall": 960,
+    "heightSmall": 410,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

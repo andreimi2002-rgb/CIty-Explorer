@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q616562",
+    "label": "Tulare",
+    "description": "city in California, United States"
+  },
+  "hero": {
+    "file": "Tulare Union High School Auditorium June 2006.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Tulare_Union_High_School_Auditorium_June_2006.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/3/35/Tulare_Union_High_School_Auditorium_June_2006.jpg",
+    "width": 1920,
+    "height": 1409,
+    "originalWidth": 800,
+    "originalHeight": 587,
+    "author": "NoeHill",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/3/35/Tulare_Union_High_School_Auditorium_June_2006.jpg",
+    "widthSmall": 960,
+    "heightSmall": 704,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

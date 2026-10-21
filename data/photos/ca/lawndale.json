@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q985356",
+    "label": "Lawndale",
+    "description": "city in Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "Lawndale, California 1 2018-05-21.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Lawndale,_California_1_2018-05-21.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Lawndale%2C_California_1_2018-05-21.jpg/1920px-Lawndale%2C_California_1_2018-05-21.jpg",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 4032,
+    "originalHeight": 3024,
+    "author": "FASTILY",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Lawndale%2C_California_1_2018-05-21.jpg/960px-Lawndale%2C_California_1_2018-05-21.jpg",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

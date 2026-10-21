@@ -1,6 +1,6 @@
 {
   "name": "city-explorer",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "description": "Interactive, visual encyclopedia of cities. Every number with its source.",
   "type": "module",

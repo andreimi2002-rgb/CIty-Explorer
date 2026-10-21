@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q588482",
+    "label": "Carpinteria",
+    "description": "city in Santa Barbara County, California, United States"
+  },
+  "hero": {
+    "file": "El Estero, Carpinteria Dec 68 (28907839152).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:El_Estero,_Carpinteria_Dec_68_(28907839152).jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/bb/El_Estero%2C_Carpinteria_Dec_68_%2828907839152%29.jpg",
+    "width": 1920,
+    "height": 1325,
+    "originalWidth": 1536,
+    "originalHeight": 1060,
+    "author": "California Department of Fish and Wildlife from Sacramento, CA, USA",
+    "licence": "CC BY 2.0",
+    "licenceCode": "cc-by-2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/El_Estero%2C_Carpinteria_Dec_68_%2828907839152%29.jpg/960px-El_Estero%2C_Carpinteria_Dec_68_%2828907839152%29.jpg",
+    "widthSmall": 960,
+    "heightSmall": 663,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q49244",
+    "label": "Santa Ana",
+    "description": "county seat and city of Orange County, California, United States"
+  },
+  "hero": {
+    "file": "Santa Ana Station (cropped).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Santa_Ana_Station_(cropped).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Santa_Ana_Station_%28cropped%29.jpg/1920px-Santa_Ana_Station_%28cropped%29.jpg",
+    "width": 1920,
+    "height": 1388,
+    "originalWidth": 2954,
+    "originalHeight": 2135,
+    "author": "Charlie Nguyen",
+    "licence": "CC BY 2.0",
+    "licenceCode": "cc-by-2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Santa_Ana_Station_%28cropped%29.jpg/960px-Santa_Ana_Station_%28cropped%29.jpg",
+    "widthSmall": 960,
+    "heightSmall": 694,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

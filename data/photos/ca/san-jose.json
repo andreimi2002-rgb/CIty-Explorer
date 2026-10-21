@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q16553",
+    "label": "San Jose",
+    "description": "city and county seat of Santa Clara County, California, United States"
+  },
+  "hero": {
+    "file": "SJ skyline at night horizontal (cropped).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:SJ_skyline_at_night_horizontal_(cropped).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/SJ_skyline_at_night_horizontal_%28cropped%29.jpg/1920px-SJ_skyline_at_night_horizontal_%28cropped%29.jpg",
+    "width": 1920,
+    "height": 717,
+    "originalWidth": 3490,
+    "originalHeight": 1304,
+    "author": "Ben Loomis",
+    "licence": "CC BY 2.0",
+    "licenceCode": "cc-by-2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/SJ_skyline_at_night_horizontal_%28cropped%29.jpg/960px-SJ_skyline_at_night_horizontal_%28cropped%29.jpg",
+    "widthSmall": 960,
+    "heightSmall": 359,
+    "focus": [
+      0.5,
+      0.4
+    ],
+    "chosenBy": "claude",
+    "chosenOn": "2026-10-21"
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

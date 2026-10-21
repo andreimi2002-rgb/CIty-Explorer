@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q837420",
+    "label": "Ojai",
+    "description": "city in Ventura County, California, United States"
+  },
+  "hero": {
+    "file": "Downtown Ojai 2019-333.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Downtown_Ojai_2019-333.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Downtown_Ojai_2019-333.jpg",
+    "width": 1920,
+    "height": 1083,
+    "originalWidth": 1496,
+    "originalHeight": 844,
+    "author": "Derek V. Schmalenberger",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Downtown_Ojai_2019-333.jpg/960px-Downtown_Ojai_2019-333.jpg",
+    "widthSmall": 960,
+    "heightSmall": 542,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

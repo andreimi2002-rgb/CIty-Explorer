@@ -2,6 +2,23 @@
 
 All notable changes to City Explorer. Versions follow `package.json`.
 
+## [0.3.0] - 2026-10-21
+
+Stage 2: every California city has a page with real figures (plan: `docs/STAGE-2-PLAN.md`).
+
+### Added
+- Place list of 483 incorporated places (Census Gazetteer 2025), linked to GNIS and Wikidata (`scripts/build-places.js`). City center = GNIS Populated Place point.
+- City data model: one file per city (`data/cities/<state>/<slug>.json`); every fact is sourced (with source) or computed (with formula and inputs), or null with a reason.
+- Census: 2020 count, July 1, 2025 estimate and change, land/water area 2020 and 2025, density (same-year population and land area only), ACS 5-year 2020–2024 (income and home value in 2024 dollars, education, foreign-born, poverty, commute) with margins of error and low-reliability marks. The Census API key stays in the local, git-ignored `.env`.
+- Elevation at the city center (USGS 3DEP), time zone (timezone-boundary-builder 2026e), NOAA 1991–2020 monthly normals from the nearest complete station, with its distance and a warning when it is far.
+- Page: real KPIs, local clock, People & economy, climate chart (temperature/precipitation, US/metric), a provenance dialog on every figure (source, period, formula, inputs, margin of error), Data & sources generated from the city file.
+- Home: the 12 largest cities as cards and all 483 cities A–Z.
+- Hero photos chosen for Los Angeles, San Diego, Sacramento, Oakland, Stockton and Berkeley; other cities use their Wikidata image (the first usable one).
+
+### Fixed
+- Mountain House (incorporated 2024): its 2020 Census GEOID described the former CDP, so the 2020 count and area are not shown as city-limits values.
+- Photo checks: "Seal Beach" no longer excluded as a "seal"; collages categorized as "Montages" are excluded; TIFF originals allowed.
+
 ## [0.2.0] - 2026-10-21
 
 Stage 1: photos, map and live weather for San Francisco (plan: `docs/STAGE-1-PLAN.md`). Figures (population, area, climate, time zone) remain "Not available yet" until stage 2.

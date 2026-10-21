@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q924241",
+    "label": "Vista",
+    "description": "city in San Diego County, California, United States"
+  },
+  "hero": {
+    "file": "Downtown Vista.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Downtown_Vista.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Downtown_Vista.JPG/1920px-Downtown_Vista.JPG",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 3264,
+    "originalHeight": 2448,
+    "author": "Paulvta",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Downtown_Vista.JPG/960px-Downtown_Vista.JPG",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q180226",
+    "label": "Rancho Palos Verdes",
+    "description": "city in Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "Trump National Golf Club (Los Angeles).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Trump_National_Golf_Club_(Los_Angeles).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Trump_National_Golf_Club_%28Los_Angeles%29.jpg/1920px-Trump_National_Golf_Club_%28Los_Angeles%29.jpg",
+    "width": 1920,
+    "height": 1080,
+    "originalWidth": 3072,
+    "originalHeight": 1728,
+    "author": "Cardinalngold at English Wikipedia",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Trump_National_Golf_Club_%28Los_Angeles%29.jpg/960px-Trump_National_Golf_Club_%28Los_Angeles%29.jpg",
+    "widthSmall": 960,
+    "heightSmall": 540,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

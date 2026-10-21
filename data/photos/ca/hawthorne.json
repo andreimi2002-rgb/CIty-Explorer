@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q688596",
+    "label": "Hawthorne",
+    "description": "city in southwestern Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "Freeway 405 & 105 (34631704525).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Freeway_405_%26_105_(34631704525).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Freeway_405_%26_105_%2834631704525%29.jpg/1920px-Freeway_405_%26_105_%2834631704525%29.jpg",
+    "width": 1920,
+    "height": 1146,
+    "originalWidth": 5184,
+    "originalHeight": 3094,
+    "author": "Prayitno / Thank you for (12 millions +) view from Los Angeles, USA",
+    "licence": "CC BY 2.0",
+    "licenceCode": "cc-by-2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Freeway_405_%26_105_%2834631704525%29.jpg/960px-Freeway_405_%26_105_%2834631704525%29.jpg",
+    "widthSmall": 960,
+    "heightSmall": 573,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

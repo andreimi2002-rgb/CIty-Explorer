@@ -3,7 +3,7 @@
 // chooses and records the file and focus point there.
 // Usage: node scripts/suggest-hero.js ca san-francisco
 import { getJson } from './lib/http.js';
-import { stateFromArg, curationFor, writeText, refuse } from './lib/files.js';
+import { stateFromArg, citiesFor, writeText, refuse } from './lib/files.js';
 import { COMMONS_API, rankHeroCandidates, stripHtml, cleanThumbUrl } from './lib/commons.js';
 import { entitiesUrl, parseEntity } from './lib/wikidata.js';
 
@@ -14,8 +14,8 @@ const commons = (params) => getJson(`${COMMONS_API}?${new URLSearchParams({ form
 
 const state = stateFromArg(process.argv[2]);
 const slug = process.argv[3];
-const city = curationFor(state.code).find((c) => c.slug === slug);
-if (!city) refuse(`${state.code}/${slug}`, [`no curation file data/curation/${state.code}/${slug}.json`]);
+const city = citiesFor(state.code).find((c) => c.slug === slug);
+if (!city) refuse(`${state.code}/${slug}`, [`unknown city ${slug}`]);
 
 const entity = parseEntity((await getJson(entitiesUrl([city.wikidata]))).entities[city.wikidata]);
 const base = entity?.commonsCategory;
@@ -66,5 +66,13 @@ writeText(
 <style>body{font:14px system-ui;margin:20px}main{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px}</style>
 <h1>Hero candidates: ${esc(entity.label)}</h1><p>Categories: ${esc(picked.join(', '))}. Ranked: featured &gt; quality &gt; valued, then resolution, then year.</p>
 <main>${cards}</main>`,
+);
+writeText(
+  `tmp/hero-candidates/${state.code}-${slug}.json`,
+  JSON.stringify(
+    ranked.map((c) => ({ title: c.title, assessment: c.assessment, width: c.info.width, height: c.info.height, year: c.year, thumb: cleanThumbUrl(c.info.thumburl), page: c.info.descriptionurl, author: stripHtml(c.info.extmetadata.Artist.value), licence: stripHtml(c.info.extmetadata.LicenseShortName.value) })),
+    null,
+    2,
+  ),
 );
 console.log(`Preview: tmp/hero-candidates/${state.code}-${slug}.html`);

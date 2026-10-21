@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q494723",
+    "label": "Fullerton",
+    "description": "city in Orange County, California, United States"
+  },
+  "hero": {
+    "file": "Fullerton city hall.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Fullerton_city_hall.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Fullerton_city_hall.jpg/1920px-Fullerton_city_hall.jpg",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 3072,
+    "originalHeight": 2304,
+    "author": "User:Geographer",
+    "licence": "CC BY 2.5",
+    "licenceCode": "cc-by-2.5",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.5",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Fullerton_city_hall.jpg/960px-Fullerton_city_hall.jpg",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

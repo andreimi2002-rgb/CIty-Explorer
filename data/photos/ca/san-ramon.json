@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q605472",
+    "label": "San Ramon",
+    "description": "city in Contra Costa County, California, United States"
+  },
+  "hero": {
+    "file": "SanRamonPanorama.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:SanRamonPanorama.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/10/SanRamonPanorama.jpg",
+    "width": 1920,
+    "height": 1081,
+    "originalWidth": 1705,
+    "originalHeight": 960,
+    "author": "OettingerCroat",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/SanRamonPanorama.jpg/960px-SanRamonPanorama.jpg",
+    "widthSmall": 960,
+    "heightSmall": 541,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

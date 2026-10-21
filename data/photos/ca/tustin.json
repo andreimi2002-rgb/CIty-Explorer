@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q917513",
+    "label": "Tustin",
+    "description": "city in Orange County, California, United States"
+  },
+  "hero": {
+    "file": "D St at Main St, Tustin, 1950s.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:D_St_at_Main_St,_Tustin,_1950s.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/D_St_at_Main_St%2C_Tustin%2C_1950s.jpg/1920px-D_St_at_Main_St%2C_Tustin%2C_1950s.jpg",
+    "width": 1920,
+    "height": 929,
+    "originalWidth": 2266,
+    "originalHeight": 1096,
+    "author": "Orange County Archives from Orange County, California, United States of America",
+    "licence": "CC BY 2.0",
+    "licenceCode": "cc-by-2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/D_St_at_Main_St%2C_Tustin%2C_1950s.jpg/960px-D_St_at_Main_St%2C_Tustin%2C_1950s.jpg",
+    "widthSmall": 960,
+    "heightSmall": 464,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

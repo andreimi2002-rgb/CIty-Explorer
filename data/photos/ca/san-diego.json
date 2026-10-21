@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q16552",
+    "label": "San Diego",
+    "description": "seat of San Diego County, California, United States; second-largest city in California"
+  },
+  "hero": {
+    "file": "San Diego Reflecting Pond.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:San_Diego_Reflecting_Pond.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/San_Diego_Reflecting_Pond.jpg/1920px-San_Diego_Reflecting_Pond.jpg",
+    "width": 1920,
+    "height": 860,
+    "originalWidth": 3872,
+    "originalHeight": 1734,
+    "author": "Rufustelestrat",
+    "licence": "CC BY 2.5",
+    "licenceCode": "cc-by-2.5",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.5",
+    "assessment": "featured",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/San_Diego_Reflecting_Pond.jpg/960px-San_Diego_Reflecting_Pond.jpg",
+    "widthSmall": 960,
+    "heightSmall": 430,
+    "focus": [
+      0.5,
+      0.45
+    ],
+    "chosenBy": "claude",
+    "chosenOn": "2026-10-21"
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

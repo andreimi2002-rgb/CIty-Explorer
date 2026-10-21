@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q546468",
+    "label": "Red Bluff",
+    "description": "city in and county seat of Tehama County, California, United States"
+  },
+  "hero": {
+    "file": "Odd Fellows Building in Red Bluff.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Odd_Fellows_Building_in_Red_Bluff.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Odd_Fellows_Building_in_Red_Bluff.jpg/1920px-Odd_Fellows_Building_in_Red_Bluff.jpg",
+    "width": 1920,
+    "height": 1280,
+    "originalWidth": 5695,
+    "originalHeight": 3797,
+    "author": "Frank Schulenburg",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": "featured",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Odd_Fellows_Building_in_Red_Bluff.jpg/960px-Odd_Fellows_Building_in_Red_Bluff.jpg",
+    "widthSmall": 960,
+    "heightSmall": 640,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

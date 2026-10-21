@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q846406",
+    "label": "San Fernando",
+    "description": "city in Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "Santa Rosa Catholic Church, San Fernando, CA.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Santa_Rosa_Catholic_Church,_San_Fernando,_CA.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Santa_Rosa_Catholic_Church%2C_San_Fernando%2C_CA.JPG/1920px-Santa_Rosa_Catholic_Church%2C_San_Fernando%2C_CA.JPG",
+    "width": 1920,
+    "height": 1457,
+    "originalWidth": 2536,
+    "originalHeight": 1925,
+    "author": "Cbl62 at English Wikipedia (Original text: Cbl62 (talk))",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Santa_Rosa_Catholic_Church%2C_San_Fernando%2C_CA.JPG/960px-Santa_Rosa_Catholic_Church%2C_San_Fernando%2C_CA.JPG",
+    "widthSmall": 960,
+    "heightSmall": 729,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

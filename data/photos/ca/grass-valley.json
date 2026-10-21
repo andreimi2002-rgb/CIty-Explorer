@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q834337",
+    "label": "Grass Valley",
+    "description": "city in Nevada County, California, United States"
+  },
+  "hero": {
+    "file": "Holbrooke Hotel (2025)-L1000285.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Holbrooke_Hotel_(2025)-L1000285.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Holbrooke_Hotel_%282025%29-L1000285.jpg/1920px-Holbrooke_Hotel_%282025%29-L1000285.jpg",
+    "width": 1920,
+    "height": 1275,
+    "originalWidth": 9360,
+    "originalHeight": 6217,
+    "author": "Frank Schulenburg",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": "quality",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Holbrooke_Hotel_%282025%29-L1000285.jpg/960px-Holbrooke_Hotel_%282025%29-L1000285.jpg",
+    "widthSmall": 960,
+    "heightSmall": 638,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

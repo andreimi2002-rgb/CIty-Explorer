@@ -277,6 +277,58 @@ section[id] { scroll-margin-top: 72px; }
 .sources .tag { margin-right: 4px; }
 .notes { color: var(--muted); font-size: 13px; }
 
+/* ---------- Clickable facts (open the provenance dialog) ---------- */
+button.kpi, button.stat { font: inherit; color: inherit; text-align: left; cursor: pointer; width: 100%; }
+button.kpi:hover, button.stat:hover { border-color: var(--accent); }
+.linklike { font: inherit; background: none; border: 0; padding: 0; color: var(--accent); text-decoration: underline; cursor: pointer; text-align: left; }
+.chip {
+  font: 600 12.5px var(--font); border: 1px solid var(--line); background: var(--surface); color: var(--muted);
+  border-radius: 8px; padding: 6px 11px; cursor: pointer; min-height: 32px;
+}
+.chip[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+
+/* ---------- People & economy ---------- */
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.stat { border: 1px solid var(--line); border-radius: 12px; padding: 14px; background: var(--surface-2); }
+.stat .v { font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -.01em; }
+.stat .v.na { font-size: 15px; color: var(--muted); }
+.stat .l { font-size: 13px; color: var(--muted); }
+.stat .moe { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.badge-warn, .prov-warn { color: var(--amber); font-size: 12px; font-weight: 600; }
+.trend { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 18px; align-items: center; margin-top: 16px; }
+.trend h3 { margin: 0 0 4px; font-size: 15px; }
+.bar { display: grid; grid-template-columns: 72px minmax(0, 1fr) 90px; gap: 8px; align-items: center; font-size: 12.5px; margin: 5px 0; }
+.bar .t { height: 8px; border-radius: 99px; background: var(--surface-2); border: 1px solid var(--line); overflow: hidden; }
+.bar .t i { display: block; height: 100%; background: var(--muted); border-radius: 99px; }
+.bar.cur .t i { background: var(--accent); }
+.bar .val { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* ---------- Climate ---------- */
+.climate { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 20px; }
+.chart svg { width: 100%; height: auto; display: block; }
+.chart text { fill: var(--muted); font: 11px var(--font); }
+.legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); margin: 0 0 6px; }
+.legend i { display: inline-block; width: 14px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 6px; }
+.lg-hi { background: var(--hi); }
+.lg-lo { background: var(--lo); }
+.summary { background: var(--surface-2); border: 1px solid var(--line); border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 12px; font-size: 13px; color: var(--muted); }
+.summary b { display: block; color: var(--ink); font-size: 17px; font-variant-numeric: tabular-nums; }
+
+/* ---------- Provenance dialog ---------- */
+.prov {
+  border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px; max-width: 560px; width: calc(100% - 32px);
+  background: var(--surface); color: var(--ink); box-shadow: 0 20px 60px rgba(0,0,0,.35);
+}
+.prov::backdrop { background: rgba(6,10,22,.45); }
+.prov h2 { font-size: 18px; margin: 0 36px 6px 0; }
+.prov h3 { font-size: 13px; margin: 14px 0 4px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.prov p, .prov li { font-size: 14px; margin: 4px 0; overflow-wrap: anywhere; }
+.prov-value { font-size: 22px !important; font-weight: 700; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.prov-formula { font-family: var(--mono); font-size: 13px !important; }
+.prov-close { position: absolute; top: 12px; right: 12px; width: 36px; justify-content: center; padding: 0; font-size: 20px; }
+.sources .uses { display: block; color: var(--muted); font-size: 12.5px; }
+
 footer { color: var(--muted); font-size: 12.5px; padding: 4px 4px 20px; }
 
 /* ---------- Responsive ---------- */
@@ -291,10 +343,14 @@ footer { color: var(--muted); font-size: 12.5px; padding: 4px 4px 20px; }
   /* On phones the sticky tab bar is the section navigation; the sidebar keeps only the brand. */
   .nav, .side-card { display: none; }
   .hero-in { grid-template-columns: minmax(0, 1fr); }
+  .climate, .trend { grid-template-columns: minmax(0, 1fr); }
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 560px) {
   .kpis, .hl { grid-template-columns: minmax(0, 1fr); }
   .card .photo-fallback, .card-photo { aspect-ratio: 2 / 1; }
+  .stats { grid-template-columns: minmax(0, 1fr); }
+  .prov { width: 100%; max-width: none; margin: auto 0 0; border-radius: 16px 16px 0 0; }
   .map { height: 360px; }
   .hero-credit { left: 14px; right: 14px; max-width: none; border-radius: 10px; }
   .hero-credit ~ .hero-in { padding-top: 64px; }
@@ -308,3 +364,8 @@ footer { color: var(--muted); font-size: 12.5px; padding: 4px 4px 20px; }
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
 .app-single { grid-template-columns: minmax(0, 1fr); max-width: 720px; }
+.city-card .pop { color: var(--ink); font-size: 13px; font-weight: 600; margin: 0 0 2px; }
+.az { margin-top: 18px; }
+.az summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+.az-list { columns: 4 180px; column-gap: 24px; list-style: none; padding: 0; margin: 12px 0 0; font-size: 14px; }
+.az-list li { margin: 0 0 6px; break-inside: avoid; }

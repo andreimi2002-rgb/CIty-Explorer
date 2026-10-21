@@ -13,11 +13,13 @@ for (const code of existsSync(dir) ? readdirSync(dir).sort() : []) {
   for (const f of readdirSync(join(dir, code)).filter((n) => n.endsWith('.geojson')).sort()) {
     const slug = f.slice(0, -'.geojson'.length);
     const photosPath = `data/photos/${code}/${slug}.json`;
+    const cityPath = `data/cities/${code}/${slug}.json`;
     entries.push({
       state: code,
       slug,
       boundary: readJson(`data/boundaries/${code}/${f}`),
       photos: existsSync(join(ROOT, photosPath)) ? readJson(photosPath) : null,
+      city: existsSync(join(ROOT, cityPath)) ? readJson(cityPath) : null,
     });
   }
 }

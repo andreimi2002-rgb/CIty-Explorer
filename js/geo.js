@@ -75,6 +75,18 @@ export function roundGeometry(geometry, decimals = 5) {
   };
 }
 
+/** Great-circle distance in km between [lon, lat] points (haversine, mean Earth radius 6371.0088 km). */
+export function distanceKm([lon1, lat1], [lon2, lat2]) {
+  const r = Math.PI / 180;
+  const a = Math.sin(((lat2 - lat1) * r) / 2) ** 2 + Math.cos(lat1 * r) * Math.cos(lat2 * r) * Math.sin(((lon2 - lon1) * r) / 2) ** 2;
+  return 2 * 6371.0088 * Math.asin(Math.min(1, Math.sqrt(a)));
+}
+
+/** True when two [minLon, minLat, maxLon, maxLat] boxes overlap. */
+export function bboxIntersects(a, b) {
+  return a[0] <= b[2] && b[0] <= a[2] && a[1] <= b[3] && b[1] <= a[3];
+}
+
 /** Grows a bbox to include the given [lon, lat] points (null points are ignored). */
 export function extendBbox(box, points) {
   return points

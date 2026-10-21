@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q39561",
+    "label": "Burbank",
+    "description": "city in Los Angeles County, State of California, United States"
+  },
+  "hero": {
+    "file": "Burbank City Hall (DSCF0794-DSCF0798).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Burbank_City_Hall_(DSCF0794-DSCF0798).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Burbank_City_Hall_%28DSCF0794-DSCF0798%29.jpg/1920px-Burbank_City_Hall_%28DSCF0794-DSCF0798%29.jpg",
+    "width": 1920,
+    "height": 777,
+    "originalWidth": 10140,
+    "originalHeight": 4105,
+    "author": "Trougnouf (Benoit Brummer)",
+    "licence": "CC BY 4.0",
+    "licenceCode": "cc-by-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "assessment": "quality",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Burbank_City_Hall_%28DSCF0794-DSCF0798%29.jpg/960px-Burbank_City_Hall_%28DSCF0794-DSCF0798%29.jpg",
+    "widthSmall": 960,
+    "heightSmall": 389,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

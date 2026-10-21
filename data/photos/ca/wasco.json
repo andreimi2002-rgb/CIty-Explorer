@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q985255",
+    "label": "Wasco",
+    "description": "city in Kern County, California, United States"
+  },
+  "hero": {
+    "file": "2010-1227-WascoWaterTower.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:2010-1227-WascoWaterTower.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/2a/2010-1227-WascoWaterTower.jpg",
+    "width": 1920,
+    "height": 2480,
+    "originalWidth": 1440,
+    "originalHeight": 1860,
+    "author": "Bobak Ha'Eri",
+    "licence": "CC BY 3.0",
+    "licenceCode": "cc-by-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/2010-1227-WascoWaterTower.jpg/960px-2010-1227-WascoWaterTower.jpg",
+    "widthSmall": 960,
+    "heightSmall": 1240,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q475724",
+    "label": "La Puente",
+    "description": "city in Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "Star Theater, La Puente.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Star_Theater,_La_Puente.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Star_Theater%2C_La_Puente.JPG/1920px-Star_Theater%2C_La_Puente.JPG",
+    "width": 1920,
+    "height": 1417,
+    "originalWidth": 3093,
+    "originalHeight": 2282,
+    "author": "Los Angeles",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Star_Theater%2C_La_Puente.JPG/960px-Star_Theater%2C_La_Puente.JPG",
+    "widthSmall": 960,
+    "heightSmall": 708,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

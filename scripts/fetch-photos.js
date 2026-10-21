@@ -1,101 +1,102 @@
-// Writes data/photos/<state>/<slug>.json for every curated city of a state:
-// hero photo (curated file, otherwise Wikidata P18) and highlight cards (Wikidata label,
-// description, coordinates and P18 image), each photo with author, licence and a checked URL.
-// Usage: node scripts/fetch-photos.js ca
+// Writes data/photos/<state>/<slug>.json for every place of a state (or only the slugs given):
+// hero photo (the curated file, otherwise the Wikidata image P18) and, for curated cities, highlight
+// cards (Wikidata label, description, coordinates and P18 image). Every photo is checked: allowed
+// licence, author, no maps/flags/logos/collages, thumbnail URL answering with an image.
+// A curated photo that fails stops the script; an automatic P18 that fails is skipped (fallback panel).
+// Usage: node scripts/fetch-photos.js ca [slug ...]
 import { getJson, checkUrl } from './lib/http.js';
-import { stateFromArg, curationFor, writeJson, today, refuse } from './lib/files.js';
+import { stateFromArg, citiesFor, writeJson, today, refuse } from './lib/files.js';
 import { COMMONS_API, photoProblems, photoRecord, validFocus } from './lib/commons.js';
 import { entitiesUrl, parseEntity } from './lib/wikidata.js';
 
 const HERO_WIDTH = 1920;
 const CARD_WIDTH = 960;
+const chunks = (a, n) => Array.from({ length: Math.ceil(a.length / n) }, (_, i) => a.slice(i * n, i * n + n));
 
-async function imageInfo(files, width) {
-  const q = new URLSearchParams({
-    action: 'query',
-    format: 'json',
-    prop: 'imageinfo',
-    iiprop: 'url|size|mime|extmetadata',
-    iiurlwidth: String(width),
-    titles: files.map((f) => `File:${f}`).join('|'),
-  });
-  const res = await getJson(`${COMMONS_API}?${q}`);
-  const renamed = Object.fromEntries((res.query.normalized || []).map((n) => [n.to, n.from]));
+async function entities(ids) {
   const out = {};
-  for (const page of Object.values(res.query.pages)) {
-    const asked = (renamed[page.title] || page.title).replace(/^File:/, '');
-    out[asked] = page.imageinfo?.[0] ? { title: page.title, info: page.imageinfo[0] } : null;
+  for (const part of chunks([...new Set(ids)], 50)) {
+    const res = await getJson(entitiesUrl(part));
+    for (const id of part) out[id] = parseEntity(res.entities[id]);
   }
   return out;
 }
 
-async function checkedPhoto(found, label, problems) {
-  if (!found) return problems.push(`${label}: file not found on Commons`), null;
-  const p = photoProblems(found.info);
-  if (p.length) return problems.push(...p.map((x) => `${label}: ${x}`)), null;
+async function imageInfo(files, width) {
+  const out = {};
+  for (const part of chunks([...new Set(files)], 50)) {
+    const q = new URLSearchParams({ action: 'query', format: 'json', prop: 'imageinfo', iiprop: 'url|size|mime|extmetadata', iiurlwidth: String(width), titles: part.map((f) => `File:${f}`).join('|') });
+    const res = await getJson(`${COMMONS_API}?${q}`);
+    const renamed = Object.fromEntries((res.query.normalized || []).map((n) => [n.to, n.from]));
+    for (const page of Object.values(res.query.pages)) {
+      const asked = (renamed[page.title] || page.title).replace(/^File:/, '');
+      out[asked] = page.imageinfo?.[0] ? { title: page.title, info: page.imageinfo[0] } : null;
+    }
+  }
+  return out;
+}
+
+/** A checked photo record, or { problems }. */
+async function checked(found, label) {
+  if (!found) return { problems: [`${label}: file not found on Commons`] };
+  const p = photoProblems(found.info, found.title);
+  if (p.length) return { problems: p.map((x) => `${label}: ${x}`) };
   const record = photoRecord(found.title, found.info);
-  const check = await checkUrl(record.src, 'image/');
-  if (!check.ok) return problems.push(`${label}: thumbnail answered ${check.status} ${check.type}`), null;
-  return record;
+  const check = await checkUrl(record.src, 'image/', { delayMs: 300 });
+  return check.ok ? { record } : { problems: [`${label}: thumbnail answered ${check.status} ${check.type}`] };
 }
 
 const state = stateFromArg(process.argv[2]);
-const cities = curationFor(state.code);
-if (!cities.length) refuse(state.code, [`no curation files in data/curation/${state.code}/`]);
+const cities = citiesFor(state.code, process.argv.slice(3));
+const ents = await entities(cities.flatMap((c) => [c.wikidata, ...(c.highlights || [])]).filter(Boolean));
 
+// Curated hero file, otherwise every Wikidata image (P18) in order: the first usable one wins.
+const heroFiles = (c) => (c.hero?.file ? [c.hero.file] : ents[c.wikidata]?.images ?? []);
+const allHeroFiles = cities.flatMap(heroFiles);
+const big = await imageInfo(allHeroFiles, HERO_WIDTH);
+const small = await imageInfo(allHeroFiles, CARD_WIDTH);
+const cardFiles = cities.flatMap((c) => (c.highlights || []).map((id) => ents[id]?.image)).filter(Boolean);
+const cards = cardFiles.length ? await imageInfo(cardFiles, CARD_WIDTH) : {};
+
+const problems = [];
+const skipped = [];
 const results = [];
-for (const city of cities) {
-  const problems = [];
-  const ids = [city.wikidata, ...(city.highlights || [])];
-  const entities = (await getJson(entitiesUrl(ids))).entities;
-  const parsed = Object.fromEntries(ids.map((id) => [id, parseEntity(entities[id])]));
-  const main = parsed[city.wikidata];
-  if (!main?.label) problems.push(`${city.wikidata}: no English label`);
+for (const [i, c] of cities.entries()) {
+  const main = ents[c.wikidata];
+  if (!main?.label) {
+    problems.push(`${c.slug}: Wikidata ${c.wikidata} has no English label`);
+    continue;
+  }
+  const curated = !!c.hero?.file;
+  const focus = c.hero?.focus ?? [0.5, 0.5];
+  if (!validFocus(focus)) problems.push(`${c.slug}: hero focus must be two numbers between 0 and 1`);
 
-  // Hero
-  const heroFile = city.hero?.file || main?.image;
-  const focus = city.hero?.focus ?? [0.5, 0.5];
-  if (!validFocus(focus)) problems.push(`hero focus ${JSON.stringify(focus)} must be two numbers between 0 and 1`);
   let hero = null;
-  if (heroFile) {
-    const found = (await imageInfo([heroFile], HERO_WIDTH))[heroFile];
-    const photo = await checkedPhoto(found, `hero "${heroFile}"`, problems);
-    // A smaller copy of the same photo for city cards (home page).
-    const small = photo && (await checkedPhoto((await imageInfo([heroFile], CARD_WIDTH))[heroFile], `hero "${heroFile}" (small)`, problems));
-    if (photo && small) {
-      hero = {
-        ...photo,
-        srcSmall: small.src,
-        widthSmall: small.width,
-        heightSmall: small.height,
-        focus,
-        chosenBy: city.hero ? city.hero.chosenBy : 'wikidata-p18',
-        chosenOn: city.hero?.chosenOn ?? null,
-      };
+  for (const file of heroFiles(c)) {
+    const a = await checked(big[file], `${c.slug} hero "${file}"`);
+    const b = a.record ? await checked(small[file], `${c.slug} hero "${file}" (small)`) : a;
+    if (a.record && b.record) {
+      hero = { ...a.record, srcSmall: b.record.src, widthSmall: b.record.width, heightSmall: b.record.height, focus, chosenBy: curated ? c.hero.chosenBy : 'wikidata-p18', chosenOn: curated ? c.hero.chosenOn ?? null : null };
+      break;
     }
+    if (curated) problems.push(...(b.problems || a.problems));
+    else skipped.push(...(b.problems || a.problems));
   }
 
-  // Highlights
   const highlights = [];
-  const cardFiles = (city.highlights || []).map((id) => parsed[id]?.image).filter(Boolean);
-  const cardInfo = cardFiles.length ? await imageInfo(cardFiles, CARD_WIDTH) : {};
-  for (const id of city.highlights || []) {
-    const e = parsed[id];
-    if (!e?.label || !e.description) {
-      problems.push(`${id}: missing English label or description`);
+  for (const id of c.highlights || []) {
+    const e = ents[id];
+    if (!e?.label || !e.description || !e.image) {
+      problems.push(`${c.slug}: highlight ${id} needs an English label, description and image`);
       continue;
     }
-    if (!e.image) {
-      problems.push(`${id} (${e.label}): no image (P18)`);
-      continue;
-    }
-    const photo = await checkedPhoto(cardInfo[e.image], `${id} (${e.label})`, problems);
-    if (photo) highlights.push({ qid: id, label: e.label, description: e.description, coords: e.coords, photo });
+    const r = await checked(cards[e.image], `${c.slug} highlight ${id} (${e.label})`);
+    if (r.record) highlights.push({ qid: id, label: e.label, description: e.description, coords: e.coords, photo: r.record });
+    else problems.push(...r.problems);
   }
 
-  if (problems.length) refuse(`${state.code}/${city.slug}`, problems);
   results.push([
-    city.slug,
+    c.slug,
     {
       city: { qid: main.qid, label: main.label, description: main.description },
       hero,
@@ -106,9 +107,11 @@ for (const city of cities) {
       },
     },
   ]);
+  if ((i + 1) % 50 === 0) console.log(`  ${i + 1}/${cities.length}`);
 }
 
-for (const [slug, data] of results) {
-  writeJson(`data/photos/${state.code}/${slug}.json`, data);
-  console.log(`Wrote data/photos/${state.code}/${slug}.json: hero ${data.hero ? data.hero.file : 'none'}, ${data.highlights.length} highlights`);
-}
+if (problems.length) refuse(`${state.code} photos`, problems);
+for (const [slug, data] of results) writeJson(`data/photos/${state.code}/${slug}.json`, data);
+const withHero = results.filter(([, d]) => d.hero).length;
+console.log(`Wrote ${results.length} photo files: ${withHero} with a hero photo, ${results.length - withHero} without.`);
+for (const s of skipped) console.log(`  skipped (automatic image): ${s}`);

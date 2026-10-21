@@ -1,7 +1,7 @@
 // Builds the home-page index from city data files. Pure.
 
 /**
- * entries: [{ state, slug, boundary, photos | null }]; states: data/reference/states.json states.
+ * entries: [{ state, slug, boundary, photos | null, city | null }]; states: data/reference/states.json states.
  * Returns { index, problems }. Cities are sorted by name within each state, states by name.
  */
 export function buildIndex(entries, states) {
@@ -22,7 +22,8 @@ export function buildIndex(entries, states) {
     const city = {
       slug: e.slug,
       path: `/city/${e.state}/${e.slug}`,
-      name,
+      name: e.city?.name ?? name,
+      population: e.city?.facts?.['population.estimate2025']?.value ?? null,
       description: e.photos?.city?.description ?? null,
       photo: hero
         ? {

@@ -4,6 +4,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { read, listFiles, PAGES } from './helpers.js';
 import { parseAttrSpec } from '../js/i18n.js';
+import { FACT_LABEL_KEYS } from '../js/fact-labels.js';
 
 const dict = JSON.parse(read('i18n/en.json'));
 const jsFiles = listFiles('js', '.js');
@@ -16,11 +17,13 @@ function keysInHtml(html) {
 
 // String literals in JS that look like i18n keys ("nav.overview", 'unit.mi2'). Only namespaces
 // that exist in en.json count, so strings like the map event 'style.load' are not keys.
+// Fact keys of the city data model ('climate.monthly') are not text keys either.
 const namespaces = new Set(Object.keys(dict).map((k) => k.split('.')[0]));
+const factKeys = new Set(Object.keys(FACT_LABEL_KEYS));
 function keysInJs(src) {
   return [...src.matchAll(/['"`]([a-z][a-zA-Z0-9]*(?:\.[a-zA-Z0-9]+)+)['"`]/g)]
     .map((m) => m[1])
-    .filter((k) => !/\.(js|mjs|json|css|html|woff2|svg)$/.test(k) && namespaces.has(k.split('.')[0]));
+    .filter((k) => !/\.(js|mjs|json|css|html|woff2|svg)$/.test(k) && namespaces.has(k.split('.')[0]) && !factKeys.has(k));
 }
 
 const used = new Set([...PAGES.flatMap((p) => keysInHtml(read(p))), ...jsFiles.flatMap((f) => keysInJs(read(f)))]);

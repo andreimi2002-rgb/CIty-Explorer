@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q851041",
+    "label": "Glendora",
+    "description": "city in the San Gabriel Valley in Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "Glendora, California (7134837923).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Glendora,_California_(7134837923).jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/8/81/Glendora%2C_California_%287134837923%29.jpg",
+    "width": 1920,
+    "height": 1276,
+    "originalWidth": 1600,
+    "originalHeight": 1063,
+    "author": "InSapphoWeTrust from Los Angeles, California, USA",
+    "licence": "CC BY-SA 2.0",
+    "licenceCode": "cc-by-sa-2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Glendora%2C_California_%287134837923%29.jpg/960px-Glendora%2C_California_%287134837923%29.jpg",
+    "widthSmall": 960,
+    "heightSmall": 638,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}
