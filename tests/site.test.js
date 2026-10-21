@@ -15,6 +15,13 @@ test('netlify.toml publishes the root and rewrites city pages to city.html (stat
   assert.match(block, /status\s*=\s*200\b/);
 });
 
+test('netlify.toml serves the comparison page at /compare', () => {
+  const block = read('netlify.toml').split('[[redirects]]').slice(1).find((b) => /from\s*=\s*"\/compare"/.test(b));
+  assert.ok(block, 'redirect for /compare');
+  assert.match(block, /to\s*=\s*"\/compare\.html"/);
+  assert.match(block, /status\s*=\s*200\b/);
+});
+
 test('pages declare language, charset and viewport', () => {
   for (const page of PAGES) {
     const html = read(page);

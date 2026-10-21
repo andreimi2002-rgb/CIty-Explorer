@@ -2,6 +2,16 @@
 
 All notable changes to City Explorer. Versions follow `package.json`.
 
+## [0.4.0] - 2026-10-21
+
+Stage 3: search, comparisons, City DNA and saved cities (plan: `docs/STAGE-3-PLAN.md`).
+
+### Added
+- City search on every page (ARIA combobox): `/` focuses it, Ctrl+K / Cmd+K from anywhere; accent- and case-insensitive, alternate names ("Ventura", "Saint Helena"), county and 2025 population in the results. Data: `data/search.json` (48 KB), built by `scripts/build-index.js`; county from GNIS.
+- Comparison of up to 5 cities: on each city page (2 nearest cities + 2 of the closest size by default, editable) and on `/compare?cities=...` with a shareable address. Only rows with one definition (same period, unit, dollar year); mismatches are detected and marked; margins of error and low-reliability marks; every value opens its provenance.
+- City DNA: bars scaled to the highest value among the cities shown (no scores or rankings).
+- "Save city", "Copy link" and "Compare" in the hero; "Your saved cities" on the home page, kept only in the browser.
+
 ## [0.3.0] - 2026-10-21
 
 Stage 2: every California city has a page with real figures (plan: `docs/STAGE-2-PLAN.md`).

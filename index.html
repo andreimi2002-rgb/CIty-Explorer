@@ -26,7 +26,7 @@
     <div class="top">
       <label class="search">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11l3.5 3.5"/></svg>
-        <input id="q" type="search" disabled autocomplete="off" data-i18n-attr="placeholder:search.soon;aria-label:search.label">
+        <input id="q" type="search" autocomplete="off" data-i18n-attr="placeholder:search.placeholder;aria-label:search.label"><kbd aria-hidden="true" data-i18n="search.shortcut"></kbd>
       </label>
       <div class="seg" role="group" data-i18n-attr="aria-label:units.label">
         <button type="button" data-units="us" aria-pressed="true" data-i18n="units.us"></button>
@@ -46,6 +46,11 @@
           <p class="lede" data-i18n="home.lede"></p>
         </div>
       </div>
+    </section>
+
+    <section class="panel" id="saved" hidden aria-labelledby="saved-h">
+      <div class="ph"><div><h2 id="saved-h" data-i18n="saved.title"></h2><p data-i18n="saved.desc"></p></div></div>
+      <div id="savedList"></div>
     </section>
 
     <section class="panel" id="cities" aria-labelledby="cities-h">

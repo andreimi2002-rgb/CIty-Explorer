@@ -1,4 +1,4 @@
-// Entry point for every page. <body data-page="home|city"> picks what to render.
+// Entry point for every page. <body data-page="home|city|compare"> picks what to render.
 import { createT, loadDict, applyI18n } from './i18n.js';
 import { parseCityPath, cityPath, titleFromSlug } from './route.js';
 import { DEFAULT_SYSTEM, isSystem } from './units.js';
@@ -20,6 +20,10 @@ import { renderPeople } from './components/people.js';
 import { renderClimate } from './components/climate.js';
 import { showProvenance } from './components/provenance.js';
 import { localTime, zoneLabel } from './facts.js';
+import { initSearchBox, initSearchShortcuts, loadSearchList } from './components/search-box.js';
+import { renderComparison } from './components/compare-table.js';
+import { renderHeroActions, renderSavedCities } from './components/actions.js';
+import { defaultComparison, parseCompareQuery, compareUrl } from './compare.js';
 
 const UNITS_KEY = 'ce-units';
 const $ = (id) => document.getElementById(id);
@@ -95,14 +99,34 @@ async function renderCity(t, system) {
     setInterval(tick, 15000);
   }
 
+  // Save / copy link / compare, and the comparison with 2 neighbours + 2 cities of similar size.
+  const id = `${route.state}/${route.slug}`;
+  let compareIds = [id];
+  if (city) {
+    renderHeroActions($('heroActions'), id, t);
+    compareIds = [id, ...defaultComparison(id, await loadSearchList())];
+  }
+
   let weather;
   const open = (key) => showProvenance(city, key, { t, system: currentSystem });
   const drawWeather = (s) => weather !== undefined && renderWeather($('weather'), weather, { t, system: s });
+  const drawCompare = (s) =>
+    renderComparison(bodies.compare, { ids: compareIds, current: id }, {
+      t,
+      system: s,
+      showOpenLink: true,
+      onOpen: (c, key) => showProvenance(c, key, { t, system: currentSystem }),
+      onChange: (ids) => {
+        compareIds = ids;
+        drawCompare(currentSystem);
+      },
+    });
   const drawData = (s) => {
     renderKpis($('kpis'), city, { t, system: s, onOpen: open });
     if (city) {
       renderPeople(bodies.people, city, { t, system: s, onOpen: open });
       renderClimate(bodies.climate, city, { t, system: s, onOpen: open });
+      drawCompare(s);
     }
   };
   redraw = (s) => {
@@ -121,6 +145,31 @@ async function renderCity(t, system) {
   }
 }
 
+/** /compare?cities=ca/a,ca/b: the full comparison with a shareable address. */
+function renderComparePage(t, system) {
+  const { ids, rejected, truncated } = parseCompareQuery(location.search);
+  let current = ids;
+  if (rejected.length || truncated) $('compareNote').textContent = t('compare.adjusted');
+  const draw = (s) =>
+    renderComparison($('comparison'), { ids: current, current: null }, {
+      t,
+      system: s,
+      onOpen: (c, key) => showProvenance(c, key, { t, system: currentSystem }),
+      onChange: (next) => {
+        current = next;
+        history.replaceState(null, '', compareUrl(next));
+        draw(currentSystem);
+      },
+    });
+  redraw = draw;
+  // Cities that do not exist are reported once and dropped from the address.
+  draw(system).then(({ ids: found, missing }) => {
+    if (!missing.length) return;
+    current = found;
+    history.replaceState(null, '', compareUrl(found));
+  });
+}
+
 let currentSystem = DEFAULT_SYSTEM;
 let redraw = null;
 
@@ -136,8 +185,16 @@ async function main() {
     currentSystem = s;
     if (redraw) redraw(s);
   });
-  if (document.body.dataset.page === 'city') await renderCity(t, currentSystem);
-  if (document.body.dataset.page === 'home') renderCityIndex($('cityIndex'), await loadIndex(), t);
+  initSearchBox($('q'), { t });
+  initSearchShortcuts($('q'));
+
+  const page = document.body.dataset.page;
+  if (page === 'city') await renderCity(t, currentSystem);
+  if (page === 'compare') renderComparePage(t, currentSystem);
+  if (page === 'home') {
+    renderSavedCities($('saved'), $('savedList'), t);
+    renderCityIndex($('cityIndex'), await loadIndex(), t);
+  }
 
   const hash = location.hash.slice(1);
   if (hash && document.getElementById(hash)) document.getElementById(hash).scrollIntoView();
