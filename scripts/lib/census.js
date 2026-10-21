@@ -56,7 +56,8 @@ export function validatePlace(feature, { geoid, state }) {
   if (p.STATE !== state.fips) problems.push(`STATE ${p.STATE} is not ${state.fips} (${state.code})`);
   if (!p.NAME || !p.BASENAME) problems.push('missing name');
   if (!g || !polygons(g).length) return [...problems, 'missing polygon geometry'];
-  if (countPoints(g) < 20) problems.push(`only ${countPoints(g)} points`);
+  // Small towns can be simple shapes in the generalized (500K) boundaries: a ring needs 4 points.
+  if (countPoints(g) < 4) problems.push(`only ${countPoints(g)} points`);
   if (!bboxContains(state.bbox, bbox(g), 0.05)) problems.push(`boundary outside ${state.name}`);
   const point = [Number(p.INTPTLON), Number(p.INTPTLAT)];
   if (!point.every(Number.isFinite)) problems.push('missing internal point');

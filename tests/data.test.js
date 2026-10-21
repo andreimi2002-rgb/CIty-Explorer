@@ -48,7 +48,7 @@ for (const file of curation) {
     assert.equal(b.properties.geoid, c.geoid);
     assert.ok(b.properties.basename);
     assert.ok(polygons(b.geometry).length >= 1);
-    assert.ok(countPoints(b.geometry) >= 20);
+    assert.ok(countPoints(b.geometry) >= 4);
     assert.ok(bboxContains(state.bbox, bbox(b.geometry), 0.05));
     assert.ok(pointInGeometry(b.properties.internalPoint, b.geometry));
     assert.match(b.properties.source.retrieved, /^\d{4}-\d{2}-\d{2}$/);
