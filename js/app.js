@@ -6,7 +6,8 @@ import { store } from './storage.js';
 import { initThemeToggle } from './theme.js';
 import { SECTIONS } from './sections.js';
 import { el } from './dom.js';
-import { loadCityData } from './city-data.js';
+import { loadCityData, loadIndex } from './city-data.js';
+import { renderCityIndex } from './components/city-cards.js';
 import { renderNav, renderTabs, watchSections } from './components/nav.js';
 import { renderKpis, KPIS } from './components/kpis.js';
 import { renderHighlights } from './components/highlights.js';
@@ -114,6 +115,7 @@ async function main() {
     if (redraw) redraw(s);
   });
   if (document.body.dataset.page === 'city') await renderCity(t, currentSystem);
+  if (document.body.dataset.page === 'home') renderCityIndex($('cityIndex'), await loadIndex(), t);
 
   const hash = location.hash.slice(1);
   if (hash && document.getElementById(hash)) document.getElementById(hash).scrollIntoView();

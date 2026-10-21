@@ -60,7 +60,19 @@ for (const city of cities) {
   if (heroFile) {
     const found = (await imageInfo([heroFile], HERO_WIDTH))[heroFile];
     const photo = await checkedPhoto(found, `hero "${heroFile}"`, problems);
-    if (photo) hero = { ...photo, focus, chosenBy: city.hero ? city.hero.chosenBy : 'wikidata-p18', chosenOn: city.hero?.chosenOn ?? null };
+    // A smaller copy of the same photo for city cards (home page).
+    const small = photo && (await checkedPhoto((await imageInfo([heroFile], CARD_WIDTH))[heroFile], `hero "${heroFile}" (small)`, problems));
+    if (photo && small) {
+      hero = {
+        ...photo,
+        srcSmall: small.src,
+        widthSmall: small.width,
+        heightSmall: small.height,
+        focus,
+        chosenBy: city.hero ? city.hero.chosenBy : 'wikidata-p18',
+        chosenOn: city.hero?.chosenOn ?? null,
+      };
+    }
   }
 
   // Highlights

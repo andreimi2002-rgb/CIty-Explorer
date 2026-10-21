@@ -14,6 +14,7 @@ Stage 1: photos, map and live weather for San Francisco (plan: `docs/STAGE-1-PLA
 - Live weather: Netlify function `/api/weather` for MET Norway Locationforecast, cached on the CDN until MET's Expires time; temperature, symbol (MET icons, MIT), wind, precipitation next hour; °F/mph/in or °C/km/h/mm.
 - "Data & sources" lists every source used on the page.
 - `404.html`: addresses like `/City/CA/San-Francisco` go to the lower-case city page.
+- Home page "Cities" section: a card (photo, name, description, credit) for every city with data, from `data/index.json` built by `scripts/build-index.js` (no city list in code).
 - Rule in AGENTS.md: the hero is the best available downtown/skyline photo, ranked by script and chosen by a person.
 - Tests: geometry, Census validation, Commons/Wikidata checks and hero ranking, weather function, wind units, weather symbols, committed data files (77 tests).
 
