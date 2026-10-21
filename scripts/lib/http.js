@@ -32,6 +32,18 @@ export async function getJson(url, options) {
   }
 }
 
+export async function getText(url, options) {
+  const res = await politeFetch(url, {}, options);
+  if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
+  return res.text();
+}
+
+export async function getBuffer(url, options) {
+  const res = await politeFetch(url, {}, options);
+  if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
+  return Buffer.from(await res.arrayBuffer());
+}
+
 /** Checks that a URL answers 200 with the expected content type prefix (e.g. "image/"). */
 export async function checkUrl(url, typePrefix, options) {
   const res = await politeFetch(url, { method: 'HEAD' }, options);

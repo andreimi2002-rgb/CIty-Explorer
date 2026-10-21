@@ -1,6 +1,6 @@
 # Etapa 2 — plan
 
-Stare: **de aprobat de proprietar**. Branch: `feature/stage-2`. Versiune țintă: 0.3.0.
+Stare: **aprobat de proprietar pe 21 octombrie 2026**. Branch: `feature/stage-2`. Versiune țintă: 0.3.0.
 
 Scop (din `DEVELOPMENT_PLAN.md`): modelul de date al orașului (fiecare cifră cu proveniență) și scripturile offline pentru Census, NOAA și poze. Rezultat vizibil: **toate orașele din California au pagină**, cu cifre reale.
 
