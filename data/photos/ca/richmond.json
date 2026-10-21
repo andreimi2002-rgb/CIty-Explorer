@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q495377",
+    "label": "Richmond",
+    "description": "city in Contra Costa County, California, United States"
+  },
+  "hero": {
+    "file": "Richmond California aerial view with bridge.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Richmond_California_aerial_view_with_bridge.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/0/05/Richmond_California_aerial_view_with_bridge.jpg",
+    "width": 1920,
+    "height": 1281,
+    "originalWidth": 1500,
+    "originalHeight": 1001,
+    "author": "U.S. Army Corps of Engineers, photographer not specified or unknown",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Richmond_California_aerial_view_with_bridge.jpg/960px-Richmond_California_aerial_view_with_bridge.jpg",
+    "widthSmall": 960,
+    "heightSmall": 641,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

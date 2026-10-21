@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q484678",
+    "label": "Berkeley",
+    "description": "city in Alameda County, California, United States"
+  },
+  "hero": {
+    "file": "Downtown-Berkeley-001-view-from-sather-tower-of-downtown-and-Golden-Gate.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Downtown-Berkeley-001-view-from-sather-tower-of-downtown-and-Golden-Gate.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Downtown-Berkeley-001-view-from-sather-tower-of-downtown-and-Golden-Gate.jpg/1920px-Downtown-Berkeley-001-view-from-sather-tower-of-downtown-and-Golden-Gate.jpg",
+    "width": 1920,
+    "height": 1082,
+    "originalWidth": 3264,
+    "originalHeight": 1840,
+    "author": "Firstcultural",
+    "licence": "CC0",
+    "licenceCode": "cc0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Downtown-Berkeley-001-view-from-sather-tower-of-downtown-and-Golden-Gate.jpg/960px-Downtown-Berkeley-001-view-from-sather-tower-of-downtown-and-Golden-Gate.jpg",
+    "widthSmall": 960,
+    "heightSmall": 541,
+    "focus": [
+      0.5,
+      0.6
+    ],
+    "chosenBy": "claude",
+    "chosenOn": "2026-10-21"
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

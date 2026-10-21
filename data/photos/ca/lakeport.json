@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q1960647",
+    "label": "Lakeport",
+    "description": "city in Lake County, California, United States of America"
+  },
+  "hero": {
+    "file": "Main Street Lakeport CA.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Main_Street_Lakeport_CA.png",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Main_Street_Lakeport_CA.png/1920px-Main_Street_Lakeport_CA.png",
+    "width": 1920,
+    "height": 1277,
+    "originalWidth": 2560,
+    "originalHeight": 1702,
+    "author": "Arnaudh",
+    "licence": "CC BY 3.0",
+    "licenceCode": "cc-by-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Main_Street_Lakeport_CA.png/960px-Main_Street_Lakeport_CA.png",
+    "widthSmall": 960,
+    "heightSmall": 638,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

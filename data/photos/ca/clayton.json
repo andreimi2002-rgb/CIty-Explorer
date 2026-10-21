@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q948168",
+    "label": "Clayton",
+    "description": "city in Contra Costa County, California, United States"
+  },
+  "hero": {
+    "file": "Parts Of Clayton, CA.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Parts_Of_Clayton,_CA.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Parts_Of_Clayton%2C_CA.jpg/1920px-Parts_Of_Clayton%2C_CA.jpg",
+    "width": 1920,
+    "height": 999,
+    "originalWidth": 2580,
+    "originalHeight": 1342,
+    "author": "Boereck 14:52, 27 July 2006 (UTC)",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Parts_Of_Clayton%2C_CA.jpg/960px-Parts_Of_Clayton%2C_CA.jpg",
+    "widthSmall": 960,
+    "heightSmall": 499,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

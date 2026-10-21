@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q1967716",
+    "label": "Point Arena",
+    "description": "city in Mendocino County, California, United States"
+  },
+  "hero": {
+    "file": "Point Arena Lighthouse.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Point_Arena_Lighthouse.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Point_Arena_Lighthouse.jpg/1920px-Point_Arena_Lighthouse.jpg",
+    "width": 1920,
+    "height": 2664,
+    "originalWidth": 2139,
+    "originalHeight": 2968,
+    "author": "Frank Schulenburg",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": "quality",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Point_Arena_Lighthouse.jpg/960px-Point_Arena_Lighthouse.jpg",
+    "widthSmall": 960,
+    "heightSmall": 1332,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

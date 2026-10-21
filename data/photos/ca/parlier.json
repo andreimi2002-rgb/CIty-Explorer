@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q985259",
+    "label": "Parlier",
+    "description": "city in Fresno County, California, United States"
+  },
+  "hero": {
+    "file": "Earl Ruth Park in Parlier.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Earl_Ruth_Park_in_Parlier.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Earl_Ruth_Park_in_Parlier.jpg/1920px-Earl_Ruth_Park_in_Parlier.jpg",
+    "width": 1920,
+    "height": 2560,
+    "originalWidth": 3024,
+    "originalHeight": 4032,
+    "author": "Fruitianslip",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Earl_Ruth_Park_in_Parlier.jpg/960px-Earl_Ruth_Park_in_Parlier.jpg",
+    "widthSmall": 960,
+    "heightSmall": 1280,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

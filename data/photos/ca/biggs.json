@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q2902454",
+    "label": "Biggs",
+    "description": "city in California, United States"
+  },
+  "hero": {
+    "file": "Biggs Municipal Building-L1003962.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Biggs_Municipal_Building-L1003962.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Biggs_Municipal_Building-L1003962.jpg/1920px-Biggs_Municipal_Building-L1003962.jpg",
+    "width": 1920,
+    "height": 1920,
+    "originalWidth": 6085,
+    "originalHeight": 6085,
+    "author": "Frank Schulenburg",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Biggs_Municipal_Building-L1003962.jpg/960px-Biggs_Municipal_Building-L1003962.jpg",
+    "widthSmall": 960,
+    "heightSmall": 960,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

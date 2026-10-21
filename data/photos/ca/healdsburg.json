@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q852598",
+    "label": "Healdsburg",
+    "description": "city in Sonoma County, California, United States"
+  },
+  "hero": {
+    "file": "Healdsburg Carnegie Library, 221 Matheson St., Healdsburg, CA 7-3-2010 4-29-17 PM.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Healdsburg_Carnegie_Library,_221_Matheson_St.,_Healdsburg,_CA_7-3-2010_4-29-17_PM.JPG",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Healdsburg_Carnegie_Library%2C_221_Matheson_St.%2C_Healdsburg%2C_CA_7-3-2010_4-29-17_PM.JPG",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 1600,
+    "originalHeight": 1200,
+    "author": "Sanfranman59",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Healdsburg_Carnegie_Library%2C_221_Matheson_St.%2C_Healdsburg%2C_CA_7-3-2010_4-29-17_PM.JPG/960px-Healdsburg_Carnegie_Library%2C_221_Matheson_St.%2C_Healdsburg%2C_CA_7-3-2010_4-29-17_PM.JPG",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

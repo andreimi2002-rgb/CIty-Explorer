@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q490441",
+    "label": "Concord",
+    "description": "city in Contra Costa County, California, United States"
+  },
+  "hero": {
+    "file": "Todos Santos Plaza (Concord, California) Dec 2009.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Todos_Santos_Plaza_(Concord,_California)_Dec_2009.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Todos_Santos_Plaza_%28Concord%2C_California%29_Dec_2009.jpg/1920px-Todos_Santos_Plaza_%28Concord%2C_California%29_Dec_2009.jpg",
+    "width": 1920,
+    "height": 1275,
+    "originalWidth": 3216,
+    "originalHeight": 2136,
+    "author": "Geraoma",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Todos_Santos_Plaza_%28Concord%2C_California%29_Dec_2009.jpg/960px-Todos_Santos_Plaza_%28Concord%2C_California%29_Dec_2009.jpg",
+    "widthSmall": 960,
+    "heightSmall": 638,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

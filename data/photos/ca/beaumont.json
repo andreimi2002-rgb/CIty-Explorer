@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q813431",
+    "label": "Beaumont",
+    "description": "city in Riverside County, California, United States"
+  },
+  "hero": {
+    "file": "Beaumont Library District, Beaumont, CA, bld2.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Beaumont_Library_District,_Beaumont,_CA,_bld2.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Beaumont_Library_District%2C_Beaumont%2C_CA%2C_bld2.jpg",
+    "width": 1920,
+    "height": 1260,
+    "originalWidth": 585,
+    "originalHeight": 384,
+    "author": "Lurend",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Beaumont_Library_District%2C_Beaumont%2C_CA%2C_bld2.jpg",
+    "widthSmall": 960,
+    "heightSmall": 630,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

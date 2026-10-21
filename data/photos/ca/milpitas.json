@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q927510",
+    "label": "Milpitas",
+    "description": "city in Santa Clara County, California, United States"
+  },
+  "hero": {
+    "file": "Milpitas Cit Hall.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Milpitas_Cit_Hall.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Milpitas_Cit_Hall.jpg",
+    "width": 1920,
+    "height": 979,
+    "originalWidth": 612,
+    "originalHeight": 312,
+    "author": "Dmitriy Grigoryev",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "assessment": null,
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Milpitas_Cit_Hall.jpg",
+    "widthSmall": 960,
+    "heightSmall": 489,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

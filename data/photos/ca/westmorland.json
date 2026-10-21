@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q2354754",
+    "label": "Westmorland",
+    "description": "city in Imperial County, California, United States"
+  },
+  "hero": {
+    "file": "Westmorland, California City Hall.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Westmorland,_California_City_Hall.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Westmorland%2C_California_City_Hall.JPG/1920px-Westmorland%2C_California_City_Hall.JPG",
+    "width": 1920,
+    "height": 631,
+    "originalWidth": 3390,
+    "originalHeight": 1114,
+    "author": "Daniel Mayer (mav)",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Westmorland%2C_California_City_Hall.JPG/960px-Westmorland%2C_California_City_Hall.JPG",
+    "widthSmall": 960,
+    "heightSmall": 315,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

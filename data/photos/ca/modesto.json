@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q204561",
+    "label": "Modesto",
+    "description": "city in and county seat of Stanislaus County, California, United States"
+  },
+  "hero": {
+    "file": "Modesto California photo Don Ramey Logan.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Modesto_California_photo_Don_Ramey_Logan.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Modesto_California_photo_Don_Ramey_Logan.jpg/1920px-Modesto_California_photo_Don_Ramey_Logan.jpg",
+    "width": 1920,
+    "height": 1075,
+    "originalWidth": 2959,
+    "originalHeight": 1656,
+    "author": "Don Ramey Logan",
+    "licence": "CC BY 4.0",
+    "licenceCode": "cc-by-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Modesto_California_photo_Don_Ramey_Logan.jpg/960px-Modesto_California_photo_Don_Ramey_Logan.jpg",
+    "widthSmall": 960,
+    "heightSmall": 537,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

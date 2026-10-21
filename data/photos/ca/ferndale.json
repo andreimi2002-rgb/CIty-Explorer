@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q3069604",
+    "label": "Ferndale",
+    "description": "city in Humboldt County, California, United States"
+  },
+  "hero": {
+    "file": "Main Street Ferndale 2015.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Main_Street_Ferndale_2015.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Main_Street_Ferndale_2015.jpg/1920px-Main_Street_Ferndale_2015.jpg",
+    "width": 1920,
+    "height": 1432,
+    "originalWidth": 2000,
+    "originalHeight": 1492,
+    "author": "Ellin Beltz",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Main_Street_Ferndale_2015.jpg/960px-Main_Street_Ferndale_2015.jpg",
+    "widthSmall": 960,
+    "heightSmall": 716,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

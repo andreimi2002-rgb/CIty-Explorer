@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q49240",
+    "label": "Stockton",
+    "description": "county seat of San Joaquin County, California, United States"
+  },
+  "hero": {
+    "file": "Aerial view of Stockton, California skyline.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Stockton,_California_skyline.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Aerial_view_of_Stockton%2C_California_skyline.jpg/1920px-Aerial_view_of_Stockton%2C_California_skyline.jpg",
+    "width": 1920,
+    "height": 1184,
+    "originalWidth": 5068,
+    "originalHeight": 3126,
+    "author": "Quintin Soloviev",
+    "licence": "CC BY 4.0",
+    "licenceCode": "cc-by-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Aerial_view_of_Stockton%2C_California_skyline.jpg/960px-Aerial_view_of_Stockton%2C_California_skyline.jpg",
+    "widthSmall": 960,
+    "heightSmall": 592,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "claude",
+    "chosenOn": "2026-10-21"
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

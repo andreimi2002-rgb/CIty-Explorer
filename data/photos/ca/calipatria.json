@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q931778",
+    "label": "Calipatria",
+    "description": "city in Imperial County, California, United States"
+  },
+  "hero": {
+    "file": "Downtown Calipatria, California (2018-04-01) (crop).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Downtown_Calipatria,_California_(2018-04-01)_(crop).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Downtown_Calipatria%2C_California_%282018-04-01%29_%28crop%29.jpg/1920px-Downtown_Calipatria%2C_California_%282018-04-01%29_%28crop%29.jpg",
+    "width": 1920,
+    "height": 711,
+    "originalWidth": 2772,
+    "originalHeight": 1026,
+    "author": "Amin Eshaiker",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Downtown_Calipatria%2C_California_%282018-04-01%29_%28crop%29.jpg/960px-Downtown_Calipatria%2C_California_%282018-04-01%29_%28crop%29.jpg",
+    "widthSmall": 960,
+    "heightSmall": 355,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

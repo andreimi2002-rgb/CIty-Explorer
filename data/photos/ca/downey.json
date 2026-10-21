@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q488946",
+    "label": "Downey",
+    "description": "city located in southeast Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "Downey City Hall.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Downey_City_Hall.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/Downey_City_Hall.jpg",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 640,
+    "originalHeight": 480,
+    "author": "Rafajs77 at English Wikipedia",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/8/82/Downey_City_Hall.jpg",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

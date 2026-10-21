@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q206464",
+    "label": "Orinda",
+    "description": "city in Contra Costa County, California, United States"
+  },
+  "hero": {
+    "file": "Orinda-california-alice-lane.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Orinda-california-alice-lane.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/64/Orinda-california-alice-lane.jpg",
+    "width": 1920,
+    "height": 1229,
+    "originalWidth": 1000,
+    "originalHeight": 640,
+    "author": "Andwhatsnext at English Wikipedia",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Orinda-california-alice-lane.jpg/960px-Orinda-california-alice-lane.jpg",
+    "widthSmall": 960,
+    "heightSmall": 614,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

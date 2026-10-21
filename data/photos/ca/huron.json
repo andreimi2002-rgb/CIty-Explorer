@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q2649652",
+    "label": "Huron",
+    "description": "small city in Fresno County, California"
+  },
+  "hero": {
+    "file": "Olde Huron Hotel 2001.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Olde_Huron_Hotel_2001.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Olde_Huron_Hotel_2001.jpg",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 480,
+    "originalHeight": 360,
+    "author": "Sergeant Robert Herndon",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Olde_Huron_Hotel_2001.jpg",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

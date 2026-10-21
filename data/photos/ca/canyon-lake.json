@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q656378",
+    "label": "Canyon Lake",
+    "description": "city in Riverside County, California, United States"
+  },
+  "hero": {
+    "file": "Canyon Lake Aerial.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Canyon_Lake_Aerial.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Canyon_Lake_Aerial.jpg/1920px-Canyon_Lake_Aerial.jpg",
+    "width": 1920,
+    "height": 794,
+    "originalWidth": 3596,
+    "originalHeight": 1488,
+    "author": "Canyonlakepoa",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Canyon_Lake_Aerial.jpg/960px-Canyon_Lake_Aerial.jpg",
+    "widthSmall": 960,
+    "heightSmall": 397,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

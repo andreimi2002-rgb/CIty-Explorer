@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q1011171",
+    "label": "Hillsborough",
+    "description": "incorporated town in California, United States"
+  },
+  "hero": {
+    "file": "Carolands Chateau.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Carolands_Chateau.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/72/Carolands_Chateau.jpg",
+    "width": 1920,
+    "height": 1749,
+    "originalWidth": 1800,
+    "originalHeight": 1640,
+    "author": "Gary gary gary at en.wikipedia",
+    "licence": "CC BY 3.0",
+    "licenceCode": "cc-by-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Carolands_Chateau.jpg/960px-Carolands_Chateau.jpg",
+    "widthSmall": 960,
+    "heightSmall": 875,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

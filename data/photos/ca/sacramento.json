@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q18013",
+    "label": "Sacramento",
+    "description": "capital city of the U.S. state of California and seat of Sacramento County"
+  },
+  "hero": {
+    "file": "Downtown Sacramento from the Waterfront Wheel-8.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Downtown_Sacramento_from_the_Waterfront_Wheel-8.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Downtown_Sacramento_from_the_Waterfront_Wheel-8.jpg/1920px-Downtown_Sacramento_from_the_Waterfront_Wheel-8.jpg",
+    "width": 1920,
+    "height": 1424,
+    "originalWidth": 3970,
+    "originalHeight": 2945,
+    "author": "Roc0ast3r",
+    "licence": "CC0",
+    "licenceCode": "cc0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "assessment": "quality",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Downtown_Sacramento_from_the_Waterfront_Wheel-8.jpg/960px-Downtown_Sacramento_from_the_Waterfront_Wheel-8.jpg",
+    "widthSmall": 960,
+    "heightSmall": 712,
+    "focus": [
+      0.5,
+      0.4
+    ],
+    "chosenBy": "claude",
+    "chosenOn": "2026-10-21"
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

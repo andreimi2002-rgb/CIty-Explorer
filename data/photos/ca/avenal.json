@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q790415",
+    "label": "Avenal",
+    "description": "city in Kings County, California, United States"
+  },
+  "hero": {
+    "file": "Avenal Theatre 4-11-30 C.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Avenal_Theatre_4-11-30_C.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Avenal_Theatre_4-11-30_C.jpg/1920px-Avenal_Theatre_4-11-30_C.jpg",
+    "width": 1920,
+    "height": 1536,
+    "originalWidth": 2291,
+    "originalHeight": 1833,
+    "author": "Armona",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Avenal_Theatre_4-11-30_C.jpg/960px-Avenal_Theatre_4-11-30_C.jpg",
+    "widthSmall": 960,
+    "heightSmall": 768,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

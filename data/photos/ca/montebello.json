@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q664503",
+    "label": "Montebello",
+    "description": "city in Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "Montebello Genocide Memorial, July 2023 (6).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Montebello_Genocide_Memorial,_July_2023_(6).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Montebello_Genocide_Memorial%2C_July_2023_%286%29.jpg/1920px-Montebello_Genocide_Memorial%2C_July_2023_%286%29.jpg",
+    "width": 1920,
+    "height": 1654,
+    "originalWidth": 3024,
+    "originalHeight": 2605,
+    "author": "Benoît Prieur",
+    "licence": "CC0",
+    "licenceCode": "cc0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Montebello_Genocide_Memorial%2C_July_2023_%286%29.jpg/960px-Montebello_Genocide_Memorial%2C_July_2023_%286%29.jpg",
+    "widthSmall": 960,
+    "heightSmall": 827,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

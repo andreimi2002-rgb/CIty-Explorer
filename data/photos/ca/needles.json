@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q846591",
+    "label": "Needles",
+    "description": "city in San Bernardino County, California, United States"
+  },
+  "hero": {
+    "file": "NeedlesCAsignflowersJan09.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:NeedlesCAsignflowersJan09.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/61/NeedlesCAsignflowersJan09.jpg",
+    "width": 1920,
+    "height": 2560,
+    "originalWidth": 1200,
+    "originalHeight": 1600,
+    "author": "Ken Lund at https://www.flickr.com/photos/kenlund/",
+    "licence": "CC BY-SA 2.0",
+    "licenceCode": "cc-by-sa-2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/NeedlesCAsignflowersJan09.jpg/960px-NeedlesCAsignflowersJan09.jpg",
+    "widthSmall": 960,
+    "heightSmall": 1280,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

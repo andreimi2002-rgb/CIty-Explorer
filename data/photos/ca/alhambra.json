@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q752681",
+    "label": "Alhambra",
+    "description": "city ​​in the western San Gabriel Valley region of Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "Alhambra, CA.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Alhambra,_CA.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Alhambra%2C_CA.jpg/1920px-Alhambra%2C_CA.jpg",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 3264,
+    "originalHeight": 2448,
+    "author": "Jey0h (talk)",
+    "licence": "CC BY 3.0",
+    "licenceCode": "cc-by-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Alhambra%2C_CA.jpg/960px-Alhambra%2C_CA.jpg",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

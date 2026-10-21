@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q2679379",
+    "label": "Orland",
+    "description": "city in Glenn County, California"
+  },
+  "hero": {
+    "file": "First Lutheran Church in Orland, California-L1001562.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:First_Lutheran_Church_in_Orland,_California-L1001562.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/First_Lutheran_Church_in_Orland%2C_California-L1001562.jpg/1920px-First_Lutheran_Church_in_Orland%2C_California-L1001562.jpg",
+    "width": 1920,
+    "height": 1371,
+    "originalWidth": 8505,
+    "originalHeight": 6075,
+    "author": "Frank Schulenburg",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": "quality",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/First_Lutheran_Church_in_Orland%2C_California-L1001562.jpg/960px-First_Lutheran_Church_in_Orland%2C_California-L1001562.jpg",
+    "widthSmall": 960,
+    "heightSmall": 686,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

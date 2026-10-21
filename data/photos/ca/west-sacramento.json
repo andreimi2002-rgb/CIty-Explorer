@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q983600",
+    "label": "West Sacramento",
+    "description": "city in Yolo County, California, United States"
+  },
+  "hero": {
+    "file": "West Sacramento, California.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:West_Sacramento,_California.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/c/c1/West_Sacramento%2C_California.jpg",
+    "width": 1920,
+    "height": 1817,
+    "originalWidth": 594,
+    "originalHeight": 562,
+    "author": "US Army",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/c/c1/West_Sacramento%2C_California.jpg",
+    "widthSmall": 960,
+    "heightSmall": 908,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

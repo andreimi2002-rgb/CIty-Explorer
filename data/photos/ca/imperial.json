@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q930766",
+    "label": "Imperial",
+    "description": "city in Imperial County, California, United States"
+  },
+  "hero": {
+    "file": "City Hall for Imperial.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:City_Hall_for_Imperial.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/77/City_Hall_for_Imperial.jpg",
+    "width": 1920,
+    "height": 2459,
+    "originalWidth": 840,
+    "originalHeight": 1076,
+    "author": "JacobSA2019",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/7/77/City_Hall_for_Imperial.jpg",
+    "widthSmall": 960,
+    "heightSmall": 1230,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

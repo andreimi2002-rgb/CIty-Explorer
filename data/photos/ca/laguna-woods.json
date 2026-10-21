@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q983826",
+    "label": "Laguna Woods",
+    "description": "city in Orange County, California, United States"
+  },
+  "hero": {
+    "file": "Laguna Hills Civic Center from west.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Laguna_Hills_Civic_Center_from_west.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Laguna_Hills_Civic_Center_from_west.jpg/1920px-Laguna_Hills_Civic_Center_from_west.jpg",
+    "width": 1920,
+    "height": 1001,
+    "originalWidth": 3147,
+    "originalHeight": 1640,
+    "author": "Beyond My Ken",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Laguna_Hills_Civic_Center_from_west.jpg/960px-Laguna_Hills_Civic_Center_from_west.jpg",
+    "widthSmall": 960,
+    "heightSmall": 500,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q1011116",
+    "label": "Portola Valley",
+    "description": "town in San Mateo County, California, United States"
+  },
+  "hero": {
+    "file": "SOUTH FRONT FROM SOUTHWEST - Our Lady of the Wayside Roman Catholic Church, 930 Portola Road, Portola Valley, San Mateo County, CA HABS CAL,41-PORVA,2-13 (CT).tif",
+    "page": "https://commons.wikimedia.org/wiki/File:SOUTH_FRONT_FROM_SOUTHWEST_-_Our_Lady_of_the_Wayside_Roman_Catholic_Church,_930_Portola_Road,_Portola_Valley,_San_Mateo_County,_CA_HABS_CAL,41-PORVA,2-13_(CT).tif",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/SOUTH_FRONT_FROM_SOUTHWEST_-_Our_Lady_of_the_Wayside_Roman_Catholic_Church%2C_930_Portola_Road%2C_Portola_Valley%2C_San_Mateo_County%2C_CA_HABS_CAL%2C41-PORVA%2C2-13_%28CT%29.tif/lossy-page1-1920px-thumbnail.tif.jpg",
+    "width": 1920,
+    "height": 1376,
+    "originalWidth": 4887,
+    "originalHeight": 3503,
+    "author": "Jack Boucher",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/SOUTH_FRONT_FROM_SOUTHWEST_-_Our_Lady_of_the_Wayside_Roman_Catholic_Church%2C_930_Portola_Road%2C_Portola_Valley%2C_San_Mateo_County%2C_CA_HABS_CAL%2C41-PORVA%2C2-13_%28CT%29.tif/lossy-page1-960px-thumbnail.tif.jpg",
+    "widthSmall": 960,
+    "heightSmall": 688,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

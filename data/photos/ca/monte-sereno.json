@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q985343",
+    "label": "Monte Sereno",
+    "description": "city in Santa Clara County, California, United States"
+  },
+  "hero": {
+    "file": "Post Office and City Hall Monte Sereno.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Post_Office_and_City_Hall_Monte_Sereno.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Post_Office_and_City_Hall_Monte_Sereno.jpg/1920px-Post_Office_and_City_Hall_Monte_Sereno.jpg",
+    "width": 1920,
+    "height": 1280,
+    "originalWidth": 4032,
+    "originalHeight": 2688,
+    "author": "LPS.1",
+    "licence": "CC0",
+    "licenceCode": "cc0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Post_Office_and_City_Hall_Monte_Sereno.jpg/960px-Post_Office_and_City_Hall_Monte_Sereno.jpg",
+    "widthSmall": 960,
+    "heightSmall": 640,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

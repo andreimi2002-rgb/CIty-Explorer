@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q779614",
+    "label": "Kingsburg",
+    "description": "town in California, USA"
+  },
+  "hero": {
+    "file": "Draper Street in Kingsburg, California (2).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Draper_Street_in_Kingsburg,_California_(2).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Draper_Street_in_Kingsburg%2C_California_%282%29.jpg/1920px-Draper_Street_in_Kingsburg%2C_California_%282%29.jpg",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 4032,
+    "originalHeight": 3024,
+    "author": "Jeremy Thompson",
+    "licence": "CC BY 2.0",
+    "licenceCode": "cc-by-2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Draper_Street_in_Kingsburg%2C_California_%282%29.jpg/960px-Draper_Street_in_Kingsburg%2C_California_%282%29.jpg",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

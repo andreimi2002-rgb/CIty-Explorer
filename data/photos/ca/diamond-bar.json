@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q768449",
+    "label": "Diamond Bar",
+    "description": "city ​​in eastern Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "Diamond Bar City Hills.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Diamond_Bar_City_Hills.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Diamond_Bar_City_Hills.jpg/1920px-Diamond_Bar_City_Hills.jpg",
+    "width": 1920,
+    "height": 1280,
+    "originalWidth": 2600,
+    "originalHeight": 1733,
+    "author": "Thebluewriter",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Diamond_Bar_City_Hills.jpg/960px-Diamond_Bar_City_Hills.jpg",
+    "widthSmall": 960,
+    "heightSmall": 640,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

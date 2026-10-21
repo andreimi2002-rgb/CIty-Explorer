@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q862704",
+    "label": "Ridgecrest",
+    "description": "city in Kern County, California, United States"
+  },
+  "hero": {
+    "file": "East Ridgecrest, CA.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:East_Ridgecrest,_CA.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/10/East_Ridgecrest%2C_CA.jpg",
+    "width": 1920,
+    "height": 1270,
+    "originalWidth": 331,
+    "originalHeight": 219,
+    "author": "Michael93555 at English Wikipedia",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/1/10/East_Ridgecrest%2C_CA.jpg",
+    "widthSmall": 960,
+    "heightSmall": 635,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

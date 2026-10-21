@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q753830",
+    "label": "Redlands",
+    "description": "city in San Bernardino County, California, United States"
+  },
+  "hero": {
+    "file": "Chapel, U or R, Redlands, CA 2-14 (24956331101) (cropped).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Chapel,_U_or_R,_Redlands,_CA_2-14_(24956331101)_(cropped).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Chapel%2C_U_or_R%2C_Redlands%2C_CA_2-14_%2824956331101%29_%28cropped%29.jpg/1920px-Chapel%2C_U_or_R%2C_Redlands%2C_CA_2-14_%2824956331101%29_%28cropped%29.jpg",
+    "width": 1920,
+    "height": 1172,
+    "originalWidth": 2450,
+    "originalHeight": 1495,
+    "author": "Don Graham from Redlands, CA, USA - God bless it!",
+    "licence": "CC BY-SA 2.0",
+    "licenceCode": "cc-by-sa-2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Chapel%2C_U_or_R%2C_Redlands%2C_CA_2-14_%2824956331101%29_%28cropped%29.jpg/960px-Chapel%2C_U_or_R%2C_Redlands%2C_CA_2-14_%2824956331101%29_%28cropped%29.jpg",
+    "widthSmall": 960,
+    "heightSmall": 586,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

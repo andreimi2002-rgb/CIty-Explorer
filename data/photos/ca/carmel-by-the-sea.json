@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q625458",
+    "label": "Carmel-by-the-Sea",
+    "description": "city in Monterey County, California, United States"
+  },
+  "hero": {
+    "file": "Carmel Monterey Cypress.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Carmel_Monterey_Cypress.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Carmel_Monterey_Cypress.jpg/1920px-Carmel_Monterey_Cypress.jpg",
+    "width": 1920,
+    "height": 2560,
+    "originalWidth": 2448,
+    "originalHeight": 3264,
+    "author": "Amadscientist",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Carmel_Monterey_Cypress.jpg/960px-Carmel_Monterey_Cypress.jpg",
+    "widthSmall": 960,
+    "heightSmall": 1280,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

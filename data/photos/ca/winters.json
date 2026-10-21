@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q986857",
+    "label": "Winters",
+    "description": "city in Yolo County, California, United States"
+  },
+  "hero": {
+    "file": "Main Street Historic District - Winters, CA.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Main_Street_Historic_District_-_Winters,_CA.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Main_Street_Historic_District_-_Winters%2C_CA.jpg/1920px-Main_Street_Historic_District_-_Winters%2C_CA.jpg",
+    "width": 1920,
+    "height": 1272,
+    "originalWidth": 4741,
+    "originalHeight": 3140,
+    "author": "Brian Wickstrom",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Main_Street_Historic_District_-_Winters%2C_CA.jpg/960px-Main_Street_Historic_District_-_Winters%2C_CA.jpg",
+    "widthSmall": 960,
+    "heightSmall": 636,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

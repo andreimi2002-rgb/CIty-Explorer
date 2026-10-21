@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q643953",
+    "label": "Santa Maria",
+    "description": "city in southern California, United States"
+  },
+  "hero": {
+    "file": "11 Ethel Pope Aud front.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:11_Ethel_Pope_Aud_front.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/b3/11_Ethel_Pope_Aud_front.jpg",
+    "width": 1920,
+    "height": 1290,
+    "originalWidth": 670,
+    "originalHeight": 450,
+    "author": "Talledega",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/b/b3/11_Ethel_Pope_Aud_front.jpg",
+    "widthSmall": 960,
+    "heightSmall": 645,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

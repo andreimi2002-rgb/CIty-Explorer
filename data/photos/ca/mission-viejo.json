@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q506428",
+    "label": "Mission Viejo",
+    "description": "city in Orange County, California, United States"
+  },
+  "hero": {
+    "file": "Snow at Lake Mission Viejo 005.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Snow_at_Lake_Mission_Viejo_005.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Snow_at_Lake_Mission_Viejo_005.jpg/1920px-Snow_at_Lake_Mission_Viejo_005.jpg",
+    "width": 1920,
+    "height": 1437,
+    "originalWidth": 2288,
+    "originalHeight": 1712,
+    "author": "User:Wikpe44",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Snow_at_Lake_Mission_Viejo_005.jpg/960px-Snow_at_Lake_Mission_Viejo_005.jpg",
+    "widthSmall": 960,
+    "heightSmall": 718,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

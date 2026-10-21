@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q2444930",
+    "label": "Colusa",
+    "description": "city in and seat of Colusa County, California, United States"
+  },
+  "hero": {
+    "file": "Colusa, California city hall from NW 2.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Colusa,_California_city_hall_from_NW_2.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Colusa%2C_California_city_hall_from_NW_2.JPG/1920px-Colusa%2C_California_city_hall_from_NW_2.JPG",
+    "width": 1920,
+    "height": 1032,
+    "originalWidth": 2515,
+    "originalHeight": 1352,
+    "author": "Ammodramus",
+    "licence": "CC0",
+    "licenceCode": "cc0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Colusa%2C_California_city_hall_from_NW_2.JPG/960px-Colusa%2C_California_city_hall_from_NW_2.JPG",
+    "widthSmall": 960,
+    "heightSmall": 516,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

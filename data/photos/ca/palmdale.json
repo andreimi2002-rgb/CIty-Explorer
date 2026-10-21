@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q488940",
+    "label": "Palmdale",
+    "description": "city in Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "Palmdale and Mountains.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Palmdale_and_Mountains.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Palmdale_and_Mountains.jpg",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 1296,
+    "originalHeight": 972,
+    "author": "Jamesb01 at English Wikipedia",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Palmdale_and_Mountains.jpg/960px-Palmdale_and_Mountains.jpg",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

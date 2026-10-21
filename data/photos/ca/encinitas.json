@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q532711",
+    "label": "Encinitas",
+    "description": "city in San Diego County, California, United States"
+  },
+  "hero": {
+    "file": "MoonlightBeach EncinitasCA.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:MoonlightBeach_EncinitasCA.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/c/c6/MoonlightBeach_EncinitasCA.jpg",
+    "width": 1920,
+    "height": 1440,
+    "originalWidth": 1600,
+    "originalHeight": 1200,
+    "author": "Original uploader was Ohnoitsjamie at en.wikipedia",
+    "licence": "CC BY 2.0",
+    "licenceCode": "cc-by-2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/MoonlightBeach_EncinitasCA.jpg/960px-MoonlightBeach_EncinitasCA.jpg",
+    "widthSmall": 960,
+    "heightSmall": 720,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

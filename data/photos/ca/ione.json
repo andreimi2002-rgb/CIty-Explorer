@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q953598",
+    "label": "Ione",
+    "description": "city in Amador County, California, United States"
+  },
+  "hero": {
+    "file": "Ione City Centenary Church.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ione_City_Centenary_Church.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Ione_City_Centenary_Church.jpg/1920px-Ione_City_Centenary_Church.jpg",
+    "width": 1920,
+    "height": 2899,
+    "originalWidth": 3264,
+    "originalHeight": 4928,
+    "author": "LPS.1",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Ione_City_Centenary_Church.jpg/960px-Ione_City_Centenary_Church.jpg",
+    "widthSmall": 960,
+    "heightSmall": 1449,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

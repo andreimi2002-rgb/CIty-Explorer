@@ -1,0 +1,23 @@
+{
+  "city": {
+    "qid": "Q695715",
+    "label": "Avalon",
+    "description": "city on Santa Catalina Island in California, United States"
+  },
+  "hero": null,
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

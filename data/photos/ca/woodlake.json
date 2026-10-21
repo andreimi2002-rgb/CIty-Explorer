@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q986884",
+    "label": "Woodlake",
+    "description": "city in Tulare County, California, United States"
+  },
+  "hero": {
+    "file": "Bravo Lake.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Bravo_Lake.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Bravo_Lake.jpg/1920px-Bravo_Lake.jpg",
+    "width": 1920,
+    "height": 1311,
+    "originalWidth": 3983,
+    "originalHeight": 2720,
+    "author": "Fruitianslip",
+    "licence": "CC0",
+    "licenceCode": "cc0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Bravo_Lake.jpg/960px-Bravo_Lake.jpg",
+    "widthSmall": 960,
+    "heightSmall": 656,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

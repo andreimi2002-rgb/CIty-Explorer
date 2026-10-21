@@ -48,6 +48,9 @@ test('excluded categories: maps, flags, seals, logos, collages', () => {
   assert.ok(excludedCategory('Photo collages of San Francisco'));
   assert.ok(excludedCategory('AI-generated images'));
   assert.equal(excludedCategory('Mapleton|Sealand Avenue'), null);
+  assert.equal(excludedCategory('Seal Beach Municipal Pier|Seal Slough'), null);
+  assert.ok(excludedCategory('Locator maps of cities in California'));
+  assert.ok(excludedCategory('Photographs of flags of the United States in California'));
   assert.equal(excludedCategory(undefined), null);
 });
 

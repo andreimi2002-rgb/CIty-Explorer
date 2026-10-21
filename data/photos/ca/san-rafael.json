@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q631915",
+    "label": "San Rafael",
+    "description": "city and the county seat of Marin County, California, United States"
+  },
+  "hero": {
+    "file": "Saint Raphael Church San Rafael CA.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Saint_Raphael_Church_San_Rafael_CA.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Saint_Raphael_Church_San_Rafael_CA.jpg/1920px-Saint_Raphael_Church_San_Rafael_CA.jpg",
+    "width": 1920,
+    "height": 2457,
+    "originalWidth": 2336,
+    "originalHeight": 2989,
+    "author": "Xyrrus 05:39, 19 May 2006 (UTC)",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Saint_Raphael_Church_San_Rafael_CA.jpg/960px-Saint_Raphael_Church_San_Rafael_CA.jpg",
+    "widthSmall": 960,
+    "heightSmall": 1228,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

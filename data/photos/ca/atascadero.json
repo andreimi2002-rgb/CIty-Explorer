@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q653827",
+    "label": "Atascadero",
+    "description": "city in San Luis Obispo County, California, United States"
+  },
+  "hero": {
+    "file": "Atascadero City Hall - Atascadero, CA - DSC05365.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Atascadero_City_Hall_-_Atascadero,_CA_-_DSC05365.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Atascadero_City_Hall_-_Atascadero%2C_CA_-_DSC05365.JPG/1920px-Atascadero_City_Hall_-_Atascadero%2C_CA_-_DSC05365.JPG",
+    "width": 1920,
+    "height": 1280,
+    "originalWidth": 5472,
+    "originalHeight": 3648,
+    "author": "Daderot",
+    "licence": "CC0",
+    "licenceCode": "cc0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Atascadero_City_Hall_-_Atascadero%2C_CA_-_DSC05365.JPG/960px-Atascadero_City_Hall_-_Atascadero%2C_CA_-_DSC05365.JPG",
+    "widthSmall": 960,
+    "heightSmall": 640,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

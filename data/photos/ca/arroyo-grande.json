@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q703206",
+    "label": "Arroyo Grande",
+    "description": "city in San Luis Obispo County, California, United States"
+  },
+  "hero": {
+    "file": "ArroyoGrandeVillage2012.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:ArroyoGrandeVillage2012.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/ArroyoGrandeVillage2012.jpg/1920px-ArroyoGrandeVillage2012.jpg",
+    "width": 1920,
+    "height": 1256,
+    "originalWidth": 5854,
+    "originalHeight": 3831,
+    "author": "Allie Caulfield",
+    "licence": "CC BY 2.0",
+    "licenceCode": "cc-by-2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/ArroyoGrandeVillage2012.jpg/960px-ArroyoGrandeVillage2012.jpg",
+    "widthSmall": 960,
+    "heightSmall": 628,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q3476276",
+    "label": "Menifee",
+    "description": "city in Riverside County, California, United States"
+  },
+  "hero": {
+    "file": "San jacinto 3 from menifee (cropped).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:San_jacinto_3_from_menifee_(cropped).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/San_jacinto_3_from_menifee_%28cropped%29.jpg/1920px-San_jacinto_3_from_menifee_%28cropped%29.jpg",
+    "width": 1920,
+    "height": 1057,
+    "originalWidth": 4095,
+    "originalHeight": 2255,
+    "author": "Seauton",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/San_jacinto_3_from_menifee_%28cropped%29.jpg/960px-San_jacinto_3_from_menifee_%28cropped%29.jpg",
+    "widthSmall": 960,
+    "heightSmall": 529,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

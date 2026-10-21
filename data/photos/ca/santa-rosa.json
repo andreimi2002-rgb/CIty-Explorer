@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q212991",
+    "label": "Santa Rosa",
+    "description": "city in and county seat of Sonoma County, California, United States"
+  },
+  "hero": {
+    "file": "Old Courthouse Square, Downtown Santa Rosa (Smaller Version).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Old_Courthouse_Square,_Downtown_Santa_Rosa_(Smaller_Version).jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Old_Courthouse_Square%2C_Downtown_Santa_Rosa_%28Smaller_Version%29.jpg",
+    "width": 1920,
+    "height": 1577,
+    "originalWidth": 800,
+    "originalHeight": 657,
+    "author": "Wulfnoth",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Old_Courthouse_Square%2C_Downtown_Santa_Rosa_%28Smaller_Version%29.jpg",
+    "widthSmall": 960,
+    "heightSmall": 788,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

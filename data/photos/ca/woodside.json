@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q984177",
+    "label": "Woodside",
+    "description": "town in San Mateo County, California, United States"
+  },
+  "hero": {
+    "file": "Woodside California 2004.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Woodside_California_2004.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Woodside_California_2004.jpg/1920px-Woodside_California_2004.jpg",
+    "width": 1920,
+    "height": 1028,
+    "originalWidth": 2944,
+    "originalHeight": 1576,
+    "author": "Users Jawed, Jawed on en.wikipedia",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Woodside_California_2004.jpg/960px-Woodside_California_2004.jpg",
+    "widthSmall": 960,
+    "heightSmall": 514,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

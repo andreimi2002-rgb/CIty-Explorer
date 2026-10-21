@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q486868",
+    "label": "Pomona",
+    "description": "city in Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "L.A. County Fair at Dusk.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:L.A._County_Fair_at_Dusk.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/L.A._County_Fair_at_Dusk.JPG/1920px-L.A._County_Fair_at_Dusk.JPG",
+    "width": 1920,
+    "height": 2311,
+    "originalWidth": 2400,
+    "originalHeight": 2889,
+    "author": "TheRealThummer",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/L.A._County_Fair_at_Dusk.JPG/960px-L.A._County_Fair_at_Dusk.JPG",
+    "widthSmall": 960,
+    "heightSmall": 1156,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

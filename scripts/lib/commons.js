@@ -16,13 +16,20 @@ export function licenceCheck(meta) {
   return { ok: true, code, short: short || code, url: url || null };
 }
 
-// Maps, flags, seals, logos and collages are never used as photos.
-const EXCLUDED = /\b(maps?|flags?|seals?|coats? of arms|logos?|collages?|diagrams?|ai[- ]generated)\b/i;
+// Maps, flags, seals, logos and collages are never used as photos. Matched as category kinds
+// ("Maps of X", "Flags of X", "Locator maps", "Logos"), so places like Seal Beach are not excluded.
+const EXCLUDED = [
+  /^(maps|flags|seals|logos|coats of arms|collages|diagrams)\b/i,
+  /^(map|flag|seal|logo|coat of arms|collage|diagram) of\b/i,
+  /\b(maps|flags|seals|logos|collages|diagrams|coats of arms) (of|in|by)\b/i,
+  /\b(locator|location|street|topographic|historical) maps\b/i,
+  /\bai[- ]generated\b/i,
+];
 
 export function excludedCategory(categories) {
   const hit = String(categories || '')
     .split('|')
-    .find((c) => EXCLUDED.test(c));
+    .find((c) => EXCLUDED.some((re) => re.test(c)));
   return hit || null;
 }
 
@@ -44,7 +51,8 @@ export function cleanThumbUrl(url) {
   return u.href;
 }
 
-const ALLOWED_MIME = new Set(['image/jpeg', 'image/png', 'image/webp']);
+// TIFF scans are allowed: the thumbnail the page shows is a JPEG.
+const ALLOWED_MIME = new Set(['image/jpeg', 'image/png', 'image/webp', 'image/tiff']);
 
 /** Problems with a Commons file for use as a photo; empty means usable. */
 export function photoProblems(info) {

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q2836799",
+    "label": "Newman",
+    "description": "city in Stanislaus County, California, United States"
+  },
+  "hero": {
+    "file": "Newman-02.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Newman-02.JPG",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Newman-02.JPG",
+    "width": 1920,
+    "height": 999,
+    "originalWidth": 857,
+    "originalHeight": 446,
+    "author": "Mrwrite at English Wikipedia",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Newman-02.JPG",
+    "widthSmall": 960,
+    "heightSmall": 500,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

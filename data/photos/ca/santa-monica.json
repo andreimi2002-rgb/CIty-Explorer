@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q47164",
+    "label": "Santa Monica",
+    "description": "beachfront city in Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "Ocean Avenue.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ocean_Avenue.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Ocean_Avenue.jpg/1920px-Ocean_Avenue.jpg",
+    "width": 1920,
+    "height": 1437,
+    "originalWidth": 2512,
+    "originalHeight": 1880,
+    "author": "Mike Gonzalez (TheCoffee)",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Ocean_Avenue.jpg/960px-Ocean_Avenue.jpg",
+    "widthSmall": 960,
+    "heightSmall": 718,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

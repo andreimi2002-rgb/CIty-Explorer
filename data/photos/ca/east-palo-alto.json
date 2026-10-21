@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q988697",
+    "label": "East Palo Alto",
+    "description": "city in San Mateo County, California, United States"
+  },
+  "hero": {
+    "file": "East Palo Alto aerial view with Dumbarton Bridge.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:East_Palo_Alto_aerial_view_with_Dumbarton_Bridge.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/East_Palo_Alto_aerial_view_with_Dumbarton_Bridge.jpg/1920px-East_Palo_Alto_aerial_view_with_Dumbarton_Bridge.jpg",
+    "width": 1920,
+    "height": 1297,
+    "originalWidth": 4131,
+    "originalHeight": 2790,
+    "author": "Alfred Twu",
+    "licence": "CC0",
+    "licenceCode": "cc0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/East_Palo_Alto_aerial_view_with_Dumbarton_Bridge.jpg/960px-East_Palo_Alto_aerial_view_with_Dumbarton_Bridge.jpg",
+    "widthSmall": 960,
+    "heightSmall": 648,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q977395",
+    "label": "McFarland",
+    "description": "city in Kern County, California, United States"
+  },
+  "hero": {
+    "file": "McFarland, Kern County, California. Homes in McFarland shacktown. - NARA - 521686.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:McFarland,_Kern_County,_California._Homes_in_McFarland_shacktown._-_NARA_-_521686.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/McFarland%2C_Kern_County%2C_California._Homes_in_McFarland_shacktown._-_NARA_-_521686.jpg/1920px-McFarland%2C_Kern_County%2C_California._Homes_in_McFarland_shacktown._-_NARA_-_521686.jpg",
+    "width": 1920,
+    "height": 1388,
+    "originalWidth": 3000,
+    "originalHeight": 2168,
+    "author": "Dorothea Lange",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/McFarland%2C_Kern_County%2C_California._Homes_in_McFarland_shacktown._-_NARA_-_521686.jpg/960px-McFarland%2C_Kern_County%2C_California._Homes_in_McFarland_shacktown._-_NARA_-_521686.jpg",
+    "widthSmall": 960,
+    "heightSmall": 694,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

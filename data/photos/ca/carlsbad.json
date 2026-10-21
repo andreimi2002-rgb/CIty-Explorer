@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q491099",
+    "label": "Carlsbad",
+    "description": "coastal city in the North County region of San Diego County, California, United States"
+  },
+  "hero": {
+    "file": "CarlsbadSignDowntownJune2020.jpeg",
+    "page": "https://commons.wikimedia.org/wiki/File:CarlsbadSignDowntownJune2020.jpeg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/CarlsbadSignDowntownJune2020.jpeg/1920px-CarlsbadSignDowntownJune2020.jpeg",
+    "width": 1920,
+    "height": 1395,
+    "originalWidth": 2715,
+    "originalHeight": 1972,
+    "author": "Zzannoni1956",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/CarlsbadSignDowntownJune2020.jpeg/960px-CarlsbadSignDowntownJune2020.jpeg",
+    "widthSmall": 960,
+    "heightSmall": 697,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

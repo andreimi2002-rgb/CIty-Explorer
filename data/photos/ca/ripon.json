@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q986098",
+    "label": "Ripon",
+    "description": "city in California, United States"
+  },
+  "hero": {
+    "file": "Ripon.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ripon.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Ripon.jpg",
+    "width": 1920,
+    "height": 1081,
+    "originalWidth": 1600,
+    "originalHeight": 901,
+    "author": "Tommaso Trentani",
+    "licence": "CC BY-SA 4.0",
+    "licenceCode": "cc-by-sa-4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Ripon.jpg/960px-Ripon.jpg",
+    "widthSmall": 960,
+    "heightSmall": 541,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

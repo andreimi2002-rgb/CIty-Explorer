@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q491350",
+    "label": "Orange",
+    "description": "city in Orange County, California, United States"
+  },
+  "hero": {
+    "file": "Orange Circle 5-21-05 4642.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Orange_Circle_5-21-05_4642.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Orange_Circle_5-21-05_4642.JPG/1920px-Orange_Circle_5-21-05_4642.JPG",
+    "width": 1920,
+    "height": 1280,
+    "originalWidth": 2580,
+    "originalHeight": 1720,
+    "author": "The original uploader was Lordkinbote at English Wikipedia.",
+    "licence": "CC BY-SA 2.0",
+    "licenceCode": "cc-by-sa-2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Orange_Circle_5-21-05_4642.JPG/960px-Orange_Circle_5-21-05_4642.JPG",
+    "widthSmall": 960,
+    "heightSmall": 640,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

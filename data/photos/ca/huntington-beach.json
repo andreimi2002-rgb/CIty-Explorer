@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q5917",
+    "label": "Huntington Beach",
+    "description": "seaside city in Orange County, California, United States"
+  },
+  "hero": {
+    "file": "Huntington Beach CA Aerial by Don Ramey Logan.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Huntington_Beach_CA_Aerial_by_Don_Ramey_Logan.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Huntington_Beach_CA_Aerial_by_Don_Ramey_Logan.jpg/1920px-Huntington_Beach_CA_Aerial_by_Don_Ramey_Logan.jpg",
+    "width": 1920,
+    "height": 1240,
+    "originalWidth": 2941,
+    "originalHeight": 1899,
+    "author": "Don Ramey Logan",
+    "licence": "CC BY-SA 3.0",
+    "licenceCode": "cc-by-sa-3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Huntington_Beach_CA_Aerial_by_Don_Ramey_Logan.jpg/960px-Huntington_Beach_CA_Aerial_by_Don_Ramey_Logan.jpg",
+    "widthSmall": 960,
+    "heightSmall": 620,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

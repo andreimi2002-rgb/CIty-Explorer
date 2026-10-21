@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q984603",
+    "label": "Tiburon",
+    "description": "town in Marin County, California, United States"
+  },
+  "hero": {
+    "file": "TiburonDowntown.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:TiburonDowntown.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/TiburonDowntown.jpg",
+    "width": 1920,
+    "height": 1488,
+    "originalWidth": 1000,
+    "originalHeight": 775,
+    "author": "Rich Shelton",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/TiburonDowntown.jpg/960px-TiburonDowntown.jpg",
+    "widthSmall": 960,
+    "heightSmall": 744,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

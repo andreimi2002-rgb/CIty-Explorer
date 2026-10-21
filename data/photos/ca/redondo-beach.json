@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q840678",
+    "label": "Redondo Beach",
+    "description": "city in Los Angeles County, California, United States"
+  },
+  "hero": {
+    "file": "RedondoBeachKingHarborSign.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:RedondoBeachKingHarborSign.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/8/8a/RedondoBeachKingHarborSign.jpg",
+    "width": 1920,
+    "height": 1021,
+    "originalWidth": 1423,
+    "originalHeight": 757,
+    "author": "Funhistory at English Wikipedia",
+    "licence": "Public domain",
+    "licenceCode": "pd",
+    "licenceUrl": null,
+    "assessment": null,
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/RedondoBeachKingHarborSign.jpg/960px-RedondoBeachKingHarborSign.jpg",
+    "widthSmall": 960,
+    "heightSmall": 511,
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "chosenBy": "wikidata-p18",
+    "chosenOn": null
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "qid": "Q17042",
+    "label": "Oakland",
+    "description": "city in and county seat of Alameda County, California, United States"
+  },
+  "hero": {
+    "file": "Oaklandatnight02192006.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Oaklandatnight02192006.JPG",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Oaklandatnight02192006.JPG/1920px-Oaklandatnight02192006.JPG",
+    "width": 1920,
+    "height": 1280,
+    "originalWidth": 3456,
+    "originalHeight": 2304,
+    "author": "David Corby",
+    "licence": "CC BY 2.5",
+    "licenceCode": "cc-by-2.5",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.5",
+    "assessment": "featured",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Oaklandatnight02192006.JPG/960px-Oaklandatnight02192006.JPG",
+    "widthSmall": 960,
+    "heightSmall": 640,
+    "focus": [
+      0.45,
+      0.45
+    ],
+    "chosenBy": "claude",
+    "chosenOn": "2026-10-21"
+  },
+  "highlights": [],
+  "source": {
+    "wikidata": {
+      "name": "Wikidata",
+      "licence": "CC0 1.0",
+      "url": "https://www.wikidata.org/",
+      "retrieved": "2026-10-21"
+    },
+    "commons": {
+      "name": "Wikimedia Commons",
+      "licence": "per file (see each photo)",
+      "url": "https://commons.wikimedia.org/",
+      "retrieved": "2026-10-21"
+    }
+  }
+}
