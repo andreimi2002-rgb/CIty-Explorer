@@ -12,6 +12,9 @@ Stage 3: search, comparisons, City DNA and saved cities (plan: `docs/STAGE-3-PLA
 - City DNA: bars scaled to the highest value among the cities shown (no scores or rankings).
 - "Save city", "Copy link" and "Compare" in the hero; "Your saved cities" on the home page, kept only in the browser.
 
+### Fixed
+- Live weather: the function tries MET Norway twice (timeout, 5xx or 429 on the first try), errors are no longer cached, and the page retries once after 4 seconds before showing "unavailable". The time shown is when MET issued the forecast.
+
 ## [0.3.0] - 2026-10-21
 
 Stage 2: every California city has a page with real figures (plan: `docs/STAGE-2-PLAN.md`).

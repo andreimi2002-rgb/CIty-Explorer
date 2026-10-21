@@ -76,7 +76,7 @@ test('function: bad input is refused without calling MET', async () => {
   assert.equal(res.headers.get('cache-control'), 'no-store');
 });
 
-test('function: MET errors become 502/504 with short caching', async () => {
+test('function: MET errors become 502/504 and are not cached', async () => {
   globalThis.fetch = async () => new Response('busy', { status: 503 });
   let res = await handler(new Request('https://x.test/api/weather?lat=1&lon=1'));
   assert.equal(res.status, 502);
@@ -91,5 +91,24 @@ test('function: MET errors become 502/504 with short caching', async () => {
   };
   res = await handler(new Request('https://x.test/api/weather?lat=1&lon=1'));
   assert.equal(res.status, 504);
-  assert.equal(res.headers.get('cache-control'), 'public, max-age=30');
+  assert.equal(res.headers.get('cache-control'), 'no-store');
+});
+
+test('function: one retry after a timeout, a 5xx or a 429; none after a 4xx', async () => {
+  const run = async (answers) => {
+    let calls = 0;
+    globalThis.fetch = async () => {
+      const a = answers[calls++];
+      if (a === 'throw') throw new Error('timeout');
+      return a === 200 ? new Response(JSON.stringify(fixture), { status: 200 }) : new Response('x', { status: a });
+    };
+    const res = await handler(new Request('https://x.test/api/weather?lat=1&lon=1'));
+    return { status: res.status, calls };
+  };
+  assert.deepEqual(await run(['throw', 200]), { status: 200, calls: 2 });
+  assert.deepEqual(await run([503, 200]), { status: 200, calls: 2 });
+  assert.deepEqual(await run([429, 429]), { status: 502, calls: 2 });
+  assert.deepEqual(await run(['throw', 'throw']), { status: 504, calls: 2 });
+  assert.deepEqual(await run([404]), { status: 502, calls: 1 });
+  assert.deepEqual(await run([200]), { status: 200, calls: 1 });
 });

@@ -49,7 +49,7 @@
   "weather.unavailableReason": "The forecast service did not answer. Try again in a few minutes.",
   "weather.wind": "Wind {value}",
   "weather.precipNextHour": "Precipitation next hour: {value}",
-  "weather.updated": "Forecast updated {when}",
+  "weather.updated": "Forecast issued {when}",
   "weather.sourceShort": "MET Norway",
   "weather.converted": "converted from metric",
   "map.label": "Map of {name}",
