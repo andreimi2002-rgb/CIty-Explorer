@@ -2,12 +2,10 @@
   "title.home": "City Explorer · Cities, measured the same way",
   "title.city": "{name} · City Explorer",
   "title.notFound": "City not found · City Explorer",
-
   "a11y.skip": "Skip to content",
   "app.name": "City Explorer",
   "app.tagline": "Explore. Compare. Understand.",
   "brand.home": "City Explorer, start page",
-
   "nav.label": "City sections",
   "nav.overview": "Overview",
   "nav.map": "Map & places",
@@ -17,7 +15,6 @@
   "nav.history": "History",
   "nav.compare": "Compare",
   "nav.sources": "Data & sources",
-
   "tabs.label": "Sections",
   "tab.overview": "Overview",
   "tab.map": "Map",
@@ -27,28 +24,23 @@
   "tab.history": "History",
   "tab.compare": "Compare",
   "tab.sources": "Sources",
-
   "coverage.title": "Coverage",
   "coverage.text": "First release: California cities (Census incorporated places), all measured on the same definitions.",
-
   "search.label": "Search a city",
   "search.soon": "City search is coming soon",
   "units.label": "Units",
   "units.us": "US",
   "units.metric": "Metric",
   "theme.toggle": "Switch light or dark theme",
-
   "home.eyebrow": "Visual encyclopedia of cities",
   "home.title": "Cities, measured the same way",
   "home.lede": "One page per city: population, geography, climate, transport, places and history. Every number shows its source, its year and its definition.",
   "home.statusTitle": "Early build",
   "home.status": "The design and the page structure are in place. City data is added in the next stages.",
-
   "hero.nameNote": "Name shown from the page address. The official Census name is added with the city data.",
   "hero.localTime": "Local time",
   "hero.localTimeReason": "The time zone is added with the city data.",
   "photo.missing": "Photo not available yet. City photos come from Wikimedia Commons, with author and licence.",
-
   "kpi.population": "Population",
   "kpi.area": "Land area",
   "kpi.density": "Density",
@@ -56,7 +48,6 @@
   "kpi.timezone": "Time zone",
   "kpi.unitNote": "Shown in {unit}",
   "kpi.perUnitNote": "People per {unit} of land",
-
   "unit.mi2": "mi²",
   "unit.km2": "km²",
   "unit.ft": "ft",
@@ -67,12 +58,13 @@
   "unit.mm": "mm",
   "unit.degF": "°F",
   "unit.degC": "°C",
+  "unit.ms": "m/s",
+  "unit.mph": "mph",
+  "unit.kmh": "km/h",
   "value.withUnit": "{n} {unit}",
-
   "na.value": "Not available yet",
   "na.reason.data": "Added with the Census data in a later stage.",
   "highlights.reason": "Highlights are added together with their photos and sources.",
-
   "section.map.title": "City map",
   "section.map.desc": "Landmarks, neighborhoods and stations inside city limits.",
   "section.map.pending": "The map and the city boundary are added in the next stage.",
@@ -94,10 +86,8 @@
   "section.sources.title": "Data & sources",
   "section.sources.desc": "Where every number on this page comes from.",
   "section.sources.pending": "No data is shown on this page yet, so there are no sources to list.",
-
   "notFound.title": "City not found",
   "notFound.text": "This address does not match a city page. City pages use the form /city/<state>/<city>, for example /city/ca/<city-name>.",
   "notFound.home": "Back to the start page",
-
   "footer.text": "City Explorer · early build · every number will show its source, year and definition."
 }
