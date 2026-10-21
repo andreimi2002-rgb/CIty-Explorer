@@ -27,6 +27,7 @@ Never present a computed or estimated value as sourced. Never invent numbers, da
 
 ## Images
 - No AI-generated images, ever. Photos only from Wikimedia Commons with a free licence (public domain, CC0, CC BY, CC BY-SA), each with author, licence and link to the file page, and with a checked URL. Maps, flags, seals, logos and collages are excluded.
+- A city's main (hero) photo is the best available photo of its downtown or skyline: a script ranks Commons candidates (Featured picture > Quality image > Valued image, then resolution, then recency; landscape, at least 2400 px wide), a person chooses, and the choice is recorded with its focus point in the city's curation file. Without candidates, the Wikidata image (P18) is used.
 - Every photo has a styled fallback panel when it is missing or fails to load.
 - No satellite layer until the imagery licence is verified (USDA NAIP is public domain and is the first candidate).
 

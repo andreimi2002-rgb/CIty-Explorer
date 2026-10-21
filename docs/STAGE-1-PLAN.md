@@ -11,7 +11,9 @@ Scop (din `DEVELOPMENT_PLAN.md`, cu decizia din 21 octombrie 2026): pagina San F
 | Ordinea etapelor | Etapa 1 = poze, hartă, vreme; cifrele în Etapa 2 |
 | MapLibre | **6.13.0**, găzduit local în `vendor/` (licență BSD-3) |
 | Poze | încărcate **direct de pe Wikimedia** (miniaturi), verificate offline de script |
-| Ce poze | hero (imaginea oficială din Wikidata) + **4 carduri**: Golden Gate Bridge, Alcatraz Island, cable cars, Bay Bridge |
+| Poza principală (hero) | **cea mai bună poză cu downtown-ul orașului**: scriptul propune candidate clasate, un om alege (detalii la 1c) |
+| Hero SF | „San Francisco from Twin Peaks September 2013 panorama 5 edit.jpg" (Featured picture, 7800×3250, CC BY-SA 3.0, King of Hearts) |
+| Carduri SF | **4 repere**: Golden Gate Bridge, Alcatraz Island, cable cars, Bay Bridge |
 | Contact MET Norway | `CityExplorer/0.2 city-explorer-pro.netlify.app github.com/andreimi2002-rgb/CIty-Explorer` (fără email) |
 
 Toate sursele au fost verificate pe 21 octombrie 2026 (răspund, au licența de mai jos).
@@ -23,8 +25,12 @@ Nicio listă de orașe în cod. Ce oraș primește ce date stă într-un fișier
 ```
 data/curation/ca/san-francisco.json
 { "geoid": "0667000", "wikidata": "Q62",
+  "hero": { "file": "San Francisco from Twin Peaks September 2013 panorama 5 edit.jpg",
+            "focus": [0.45, 0.5], "chosenBy": "owner", "chosenOn": "2026-10-21" },
   "highlights": ["Q44440", "Q131354", "Q374956", "Q771404"] }
 ```
+
+`focus` = punctul care trebuie să rămână vizibil când poza se decupează (pe telefon hero-ul e aproape pătrat): x și y între 0 și 1.
 
 Identificatori exacți, nu căutare după nume: la cercetare, căutarea „Painted Ladies" a întors un episod de serial.
 
@@ -41,12 +47,22 @@ Identificatori exacți, nu căutare după nume: la cercetare, căutarea „Paint
 - Scrie `data/photos/ca/san-francisco.json`.
 - Respectă regulile Wikimedia: User-Agent cu contact, cereri una câte una, cu pauză.
 
-Rezultatul curent verificat: Golden Gate Bridge (CC BY 2.5, Rich Niewiroski Jr.), Alcatraz (CC BY-SA 4.0, Frank Schulenburg), cable car pe Hyde Street (CC BY-SA 4.0, 2023), Bay Bridge (CC BY-SA 3.0, Frank Schulenburg), hero SF din Marin Headlands (CC BY-SA 4.0, Lightandtruth).
+- Poza hero vine din câmpul `hero.file` al fișierului de curare (trece aceleași verificări de licență); dacă lipsește, se folosește imaginea Wikidata (P18).
+
+### c) `scripts/suggest-hero.js <state> <slug>` — candidate pentru poza principală
+- Caută pe Commons în categoriile de skyline și downtown ale orașului (ex. „San Francisco skylines", „Downtown <oraș>", „Skylines of <oraș>"; numele categoriilor vin din Commons, nu din cod).
+- Păstrează doar poze orizontale, de cel puțin 2400 px lățime, cu licență permisă și fără categoriile excluse.
+- Clasează: **Featured picture > Quality image > Valued image > restul**, apoi rezoluție, apoi an (mai nouă e mai bună).
+- Scrie o pagină de previzualizare locală (miniaturi + autor + licență + link) cu primele candidate. Un om alege și trece fișierul + `focus` în fișierul de curare. Scriptul **nu scrie singur** în curare.
+- Fără nicio candidată → rămâne imaginea Wikidata; dacă nici aceea nu există → panoul de rezervă.
+- Pentru SF a fost rulat manual la cercetare: 5 Featured + 16 Quality în „San Francisco skylines"; proprietarul a ales Twin Peaks 2013.
+
+Rezultatul curent verificat: Golden Gate Bridge (CC BY 2.5, Rich Niewiroski Jr.), Alcatraz (CC BY-SA 4.0, Frank Schulenburg), cable car pe Hyde Street (CC BY-SA 4.0, 2023), Bay Bridge (CC BY-SA 3.0, Frank Schulenburg); hero: Twin Peaks 2013 (CC BY-SA 3.0, King of Hearts, Featured picture).
 
 ## 2. Pagina orașului
 
 - **Numele**: hero afișează numele oficial Census (sursă: TIGERweb) în locul numelui din adresă; nota „nume din adresă" dispare când există date. Orașele fără date rămân ca în Etapa 0.
-- **Hero**: poza mare, cu linie de credit vizibilă: „Photo: autor · licență · Wikimedia Commons" (link). Dacă poza nu se încarcă → panoul de rezervă din Etapa 0.
+- **Hero**: poza mare aleasă (downtown), decupată în jurul punctului `focus`, cu linie de credit vizibilă: „Photo: autor · licență · Wikimedia Commons" (link). Dacă poza nu se încarcă → panoul de rezervă din Etapa 0.
 - **Carduri**: poza (încărcare amânată, „lazy"), numele și descrierea din Wikidata, credit. Fără cifre.
 - **Harta** (secțiunea Map):
   - MapLibre 6.13.0 local + stiluri OpenFreeMap: **„liberty"** (temă deschisă, cel mai aproape de prototip) și **„dark"** (temă închisă); se schimbă odată cu tema.
@@ -72,12 +88,12 @@ Adresele cu `/City/...` (majusculă) dau 404 și pe Netlify (verificat). Adaug `
 
 ## 4. Fișiere noi / modificate (pe scurt)
 
-`vendor/maplibre-gl-6.13.0/` (js, css, LICENSE), `icons/weather/` (SVG MET + LICENSE), `data/curation/`, `data/boundaries/`, `data/photos/`, `scripts/fetch-boundary.js`, `scripts/fetch-photos.js`, `scripts/lib/` (funcții pure), `netlify/functions/weather.js`, `js/components/map.js`, `js/components/weather.js`, `js/components/photo.js`, `js/components/sources.js`, `404.html`, `i18n/en.json`, `DATA-LICENSES.md`, `CHANGELOG.md` (0.2.0).
+`vendor/maplibre-gl-6.13.0/` (js, css, LICENSE), `icons/weather/` (SVG MET + LICENSE), `data/curation/`, `data/boundaries/`, `data/photos/`, `scripts/fetch-boundary.js`, `scripts/fetch-photos.js`, `scripts/suggest-hero.js`, `scripts/lib/` (funcții pure), `netlify/functions/weather.js`, `js/components/map.js`, `js/components/weather.js`, `js/components/photo.js`, `js/components/sources.js`, `404.html`, `i18n/en.json`, `DATA-LICENSES.md`, `CHANGELOG.md` (0.2.0).
 
 ## 5. Teste noi (`node --test`, fără internet)
 
 1. Limită: validare (GEOID, California, punct intern în poligon, nr. puncte), rotunjire coordonate, alegerea poligonului principal pentru cadrare — pe date de test.
-2. Poze: lista de licențe permise/refuzate, categorii excluse, curățarea autorului din HTML, construirea creditului.
+2. Poze: lista de licențe permise/refuzate, categorii excluse, curățarea autorului din HTML, construirea creditului; clasamentul candidatelor hero (Featured > Quality > Valued, lățime minimă, orientare); `focus` valid (0–1).
 3. Funcția de vreme: validarea lat/lon, extragerea datelor din răspunsul MET (salvat ca exemplu), antetul de cache din „Expires", erori MET (500, timeout).
 4. Unități: viteză (m/s → mph, km/h).
 5. Fișierele din `data/`: fiecare poză are autor, licență permisă, link Commons, miniatură pe domeniul Wikimedia; fiecare limită e validă; fiecare fișier de curare are limita și pozele generate.
