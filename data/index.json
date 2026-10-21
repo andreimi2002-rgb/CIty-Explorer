@@ -1,0 +1,29 @@
+{
+  "states": [
+    {
+      "code": "ca",
+      "name": "California",
+      "cities": [
+        {
+          "slug": "san-francisco",
+          "path": "/city/ca/san-francisco",
+          "name": "San Francisco",
+          "description": "city and county in California, United States",
+          "photo": {
+            "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/View_of_the_Ferry_Building_from_Pier_1%2C_San_Francisco_dllu.jpg/960px-View_of_the_Ferry_Building_from_Pier_1%2C_San_Francisco_dllu.jpg",
+            "width": 960,
+            "height": 540,
+            "focus": [
+              0.7,
+              0.45
+            ],
+            "author": "Dllu",
+            "licence": "CC BY-SA 4.0",
+            "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+            "page": "https://commons.wikimedia.org/wiki/File:View_of_the_Ferry_Building_from_Pier_1,_San_Francisco_dllu.jpg"
+          }
+        }
+      ]
+    }
+  ]
+}

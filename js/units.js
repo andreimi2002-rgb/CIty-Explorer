@@ -12,6 +12,7 @@ export const UNIT_FOR = {
   distance: { us: 'mi', metric: 'km' },
   temperature: { us: 'degF', metric: 'degC' },
   precipitation: { us: 'in', metric: 'mm' },
+  speed: { us: 'mph', metric: 'kmh' },
 };
 
 /** i18n keys for unit symbols, spelled out so tests can check every key exists. */
@@ -26,9 +27,12 @@ export const UNIT_KEYS = {
   mm: 'unit.mm',
   degF: 'unit.degF',
   degC: 'unit.degC',
+  ms: 'unit.ms',
+  mph: 'unit.mph',
+  kmh: 'unit.kmh',
 };
 
-// Exact factors to a base unit (km² for area, metres for length).
+// Exact factors to a base unit (km² for area, metres for length, m/s for speed).
 const LINEAR = {
   mi2: { dim: 'area', toBase: 2.589988110336 },
   km2: { dim: 'area', toBase: 1 },
@@ -38,11 +42,14 @@ const LINEAR = {
   km: { dim: 'length', toBase: 1000 },
   in: { dim: 'length', toBase: 0.0254 },
   mm: { dim: 'length', toBase: 0.001 },
+  ms: { dim: 'speed', toBase: 1 },
+  mph: { dim: 'speed', toBase: 0.44704 },
+  kmh: { dim: 'speed', toBase: 1 / 3.6 },
 };
 const TEMPERATURE = new Set(['degF', 'degC']);
 
 /** Default decimals per display unit. */
-export const DIGITS = { mi2: 1, km2: 1, ft: 0, m: 0, mi: 1, km: 1, in: 1, mm: 0, degF: 0, degC: 1 };
+export const DIGITS = { mi2: 1, km2: 1, ft: 0, m: 0, mi: 1, km: 1, in: 1, mm: 0, degF: 0, degC: 1, ms: 1, mph: 0, kmh: 0 };
 
 export function isSystem(value) {
   return SYSTEMS.includes(value);

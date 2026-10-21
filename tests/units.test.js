@@ -28,6 +28,15 @@ test('length conversions', () => {
   close(convert(304.8, 'm', 'ft'), 1000);
 });
 
+test('speed conversions (wind from MET in m/s)', () => {
+  close(convert(10, 'ms', 'mph'), 22.369362920544024);
+  close(convert(10, 'ms', 'kmh'), 36);
+  close(convert(1, 'mph', 'kmh'), 1.609344);
+  assert.deepEqual(formatQuantity(4, 'ms', 'speed', 'us'), { text: '9', unit: 'mph', computed: true });
+  assert.deepEqual(formatQuantity(4, 'ms', 'speed', 'metric'), { text: '14', unit: 'kmh', computed: true });
+  assert.throws(() => convert(1, 'ms', 'm'));
+});
+
 test('temperature conversions', () => {
   close(convert(32, 'degF', 'degC'), 0);
   close(convert(212, 'degF', 'degC'), 100);
@@ -50,7 +59,7 @@ test('refuses to mix dimensions or unknown units', () => {
   assert.throws(() => convert(1, 'degF', 'm'));
   assert.throws(() => convert(1, 'acre', 'km2'));
   assert.throws(() => unitFor('area', 'imperial'));
-  assert.throws(() => unitFor('speed', 'us'));
+  assert.throws(() => unitFor('pressure', 'us'));
 });
 
 test('per-unit values convert the other way', () => {

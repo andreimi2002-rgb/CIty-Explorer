@@ -20,4 +20,4 @@ export function listFiles(dir, ext) {
   return out;
 }
 
-export const PAGES = ['index.html', 'city.html'];
+export const PAGES = ['index.html', 'city.html', '404.html'];

@@ -40,14 +40,17 @@
 
     <div class="stack" id="cityContent">
       <section class="hero" id="overview">
-        <div class="hero-bg photo-fallback"><span class="photo-note" id="heroNote"><span data-i18n="photo.missing"></span></span></div>
+        <div class="hero-bg photo-fallback" id="heroBg"></div>
         <div class="hero-in">
           <div>
             <div class="crumbs" id="crumbs"></div>
             <h1 id="cityName"></h1>
-            <p class="sub" data-i18n="hero.nameNote"></p>
+            <p class="sub" id="heroSub" data-i18n="hero.nameNote"></p>
+            <p class="lede" id="heroLede" hidden></p>
           </div>
           <div class="wx">
+            <div class="wx-weather" id="weather" aria-live="polite"></div>
+            <hr>
             <div class="label" data-i18n="hero.localTime"></div>
             <div class="clock" data-i18n="na.value"></div>
             <small data-i18n="hero.localTimeReason"></small>
