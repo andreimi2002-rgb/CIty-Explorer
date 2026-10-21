@@ -12,6 +12,8 @@ test('people, area and density in both systems; conversions are flagged', () => 
   assert.deepEqual(formatFact({ value: 826079, unit: 'people' }, us), { text: '826,079', converted: false });
   assert.deepEqual(formatFact({ value: 46.685, unit: 'mi2' }, us), { text: '46.7 mi²', converted: false });
   assert.deepEqual(formatFact({ value: 46.685, unit: 'mi2' }, metric), { text: '120.9 km²', converted: true });
+  // Formula inputs keep the precision of the source, so the computation can be redone by hand.
+  assert.deepEqual(formatFact({ value: 46.685, unit: 'mi2' }, { ...us, exact: true }), { text: '46.685 mi²', converted: false });
   assert.deepEqual(formatFact({ value: 17694.7, unit: 'people/mi2' }, us), { text: '17,695 per mi²', converted: false });
   assert.deepEqual(formatFact({ value: 17694.7, unit: 'people/mi2' }, metric), { text: '6,832 per km²', converted: true });
 });

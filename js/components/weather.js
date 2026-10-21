@@ -38,7 +38,10 @@ export function renderWeather(container, data, { t, system, locale = 'en-US' }) 
   const ago = data.updatedAt ? minutesAgo(data.updatedAt) : null;
   const rel = ago === null ? null : new Intl.RelativeTimeFormat(locale, { numeric: 'auto' }).format(-ago, 'minute');
 
-  container.replaceChildren(
+  // A wrapper element skips missing parts (null/false), like every el() call.
+  const parts = el(
+    'div',
+    {},
     el('div', { class: 'label' }, t('weather.now')),
     el(
       'div',
@@ -62,4 +65,5 @@ export function renderWeather(container, data, { t, system, locale = 'en-US' }) 
       temp.computed && ` · ${t('weather.converted')}`,
     ),
   );
+  container.replaceChildren(...parts.childNodes);
 }

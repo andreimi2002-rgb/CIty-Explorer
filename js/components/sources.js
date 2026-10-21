@@ -68,7 +68,9 @@ export function renderSources(container, { boundary, photos, city, hasWeather, t
 
   if (!boundary && !city) return;
   container.replaceChildren(
-    el('ul', { class: 'sources' }, items),
-    city?.conflicts?.length ? el('div', {}, el('h3', {}, t('sources.conflicts')), el('ul', { class: 'notes' }, city.conflicts.map((c) => el('li', {}, c.text)))) : null,
+    ...[
+      el('ul', { class: 'sources' }, items),
+      city?.conflicts?.length && el('div', {}, el('h3', {}, t('sources.conflicts')), el('ul', { class: 'notes' }, city.conflicts.map((c) => el('li', {}, c.text)))),
+    ].filter(Boolean),
   );
 }

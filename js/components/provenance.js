@@ -54,7 +54,7 @@ export function showProvenance(city, key, { t, system, locale = 'en-US' }) {
         {},
         fact.inputs.map((k) => {
           const input = city.facts[k];
-          const v = input ? formatFact(input, { ...ctx, system: 'us' }) : null;
+          const v = input ? formatFact(input, { ...ctx, system: 'us', exact: true }) : null;
           return el('li', {}, `${t(FACT_LABEL_KEYS[k])}: `, v ? v.text : t('provenance.seeSection'), input?.source ? ` (${city.sources[input.source]?.name ?? input.source})` : '');
         }),
       ),

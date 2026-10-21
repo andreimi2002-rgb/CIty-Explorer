@@ -123,7 +123,6 @@ export function renderClimate(container, city, ctx) {
         annualBtn,
       ),
     ),
-    el('p', { class: 'notes' }, stationBtn),
-    far && el('p', { class: 'prov-warn' }, t('climate.farStation')),
+    ...[el('p', { class: 'notes' }, stationBtn), far && el('p', { class: 'prov-warn' }, t('climate.farStation'))].filter(Boolean),
   );
 }

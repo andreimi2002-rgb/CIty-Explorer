@@ -5,8 +5,13 @@ import { convert, convertPer, formatNumber, unitFor, UNIT_KEYS, DIGITS } from '.
 
 const QUANTITY = { mi2: 'area', m: 'elevation', ft: 'elevation', degF: 'temperature', in: 'precipitation' };
 
-/** { text, converted } for a fact, or null when the value is missing. */
-export function formatFact(fact, { t, system, locale = 'en-US' }) {
+const decimalsOf = (n) => Math.min(3, (String(n).split('.')[1] || '').length);
+
+/**
+ * { text, converted } for a fact, or null when the value is missing.
+ * exact: show the value with the precision of its source (used for formula inputs).
+ */
+export function formatFact(fact, { t, system, locale = 'en-US', exact = false }) {
   if (!fact || fact.value === null || fact.value === undefined) return null;
   const v = fact.value;
   const num = (n, digits = 0) => formatNumber(n, { locale, digits });
@@ -17,7 +22,8 @@ export function formatFact(fact, { t, system, locale = 'en-US' }) {
     case 'm': {
       const target = unitFor(QUANTITY[fact.unit], system);
       const value = convert(v, fact.unit, target);
-      return { text: t('value.withUnit', { n: num(value, DIGITS[target]), unit: t(UNIT_KEYS[target]) }), converted: target !== fact.unit };
+      const digits = exact && target === fact.unit ? decimalsOf(v) : DIGITS[target];
+      return { text: t('value.withUnit', { n: num(value, digits), unit: t(UNIT_KEYS[target]) }), converted: target !== fact.unit };
     }
     case 'people/mi2': {
       const target = unitFor('area', system);
