@@ -18,10 +18,11 @@ export function licenceCheck(meta) {
 
 // Maps, flags, seals, logos and collages are never used as photos. Matched as category kinds
 // ("Maps of X", "Flags of X", "Locator maps", "Logos"), so places like Seal Beach are not excluded.
+// Collages are usually categorized as "Montages of ..." or "Photomontages of ...".
 const EXCLUDED = [
-  /^(maps|flags|seals|logos|coats of arms|collages|diagrams)\b/i,
-  /^(map|flag|seal|logo|coat of arms|collage|diagram) of\b/i,
-  /\b(maps|flags|seals|logos|collages|diagrams|coats of arms) (of|in|by)\b/i,
+  /^(maps|flags|seals|logos|coats of arms|collages|montages|photomontages|diagrams)\b/i,
+  /^(map|flag|seal|logo|coat of arms|collage|montage|photomontage|diagram) of\b/i,
+  /\b(maps|flags|seals|logos|collages|montages|photomontages|diagrams|coats of arms) (of|in|by)\b/i,
   /\b(locator|location|street|topographic|historical) maps\b/i,
   /\bai[- ]generated\b/i,
 ];
@@ -54,10 +55,12 @@ export function cleanThumbUrl(url) {
 // TIFF scans are allowed: the thumbnail the page shows is a JPEG.
 const ALLOWED_MIME = new Set(['image/jpeg', 'image/png', 'image/webp', 'image/tiff']);
 
-/** Problems with a Commons file for use as a photo; empty means usable. */
-export function photoProblems(info) {
+/** Problems with a Commons file for use as a photo; empty means usable. title: "File:..." (optional). */
+export function photoProblems(info, title = '') {
   if (!info) return ['file not found on Commons'];
   const problems = [];
+  // Backup for uncategorized collages: the file name says so.
+  if (/collage|montage/i.test(title)) problems.push('file name says it is a collage');
   const meta = info.extmetadata || {};
   const lic = licenceCheck(meta);
   if (!lic.ok) problems.push(lic.reason);

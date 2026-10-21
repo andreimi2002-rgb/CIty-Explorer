@@ -4,29 +4,7 @@
     "label": "Morgan Hill",
     "description": "city in Santa Clara County, California, United States"
   },
-  "hero": {
-    "file": "Morgan Hill Montage.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Morgan_Hill_Montage.jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Morgan_Hill_Montage.jpg",
-    "width": 1920,
-    "height": 2765,
-    "originalWidth": 1372,
-    "originalHeight": 1976,
-    "author": "Cristiano Tomás",
-    "licence": "CC BY-SA 4.0",
-    "licenceCode": "cc-by-sa-4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "assessment": null,
-    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Morgan_Hill_Montage.jpg/960px-Morgan_Hill_Montage.jpg",
-    "widthSmall": 960,
-    "heightSmall": 1383,
-    "focus": [
-      0.5,
-      0.5
-    ],
-    "chosenBy": "wikidata-p18",
-    "chosenOn": null
-  },
+  "hero": null,
   "highlights": [],
   "source": {
     "wikidata": {

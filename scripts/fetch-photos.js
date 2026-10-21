@@ -39,7 +39,7 @@ async function imageInfo(files, width) {
 /** A checked photo record, or { problems }. */
 async function checked(found, label) {
   if (!found) return { problems: [`${label}: file not found on Commons`] };
-  const p = photoProblems(found.info);
+  const p = photoProblems(found.info, found.title);
   if (p.length) return { problems: p.map((x) => `${label}: ${x}`) };
   const record = photoRecord(found.title, found.info);
   const check = await checkUrl(record.src, 'image/', { delayMs: 300 });
@@ -50,10 +50,11 @@ const state = stateFromArg(process.argv[2]);
 const cities = citiesFor(state.code, process.argv.slice(3));
 const ents = await entities(cities.flatMap((c) => [c.wikidata, ...(c.highlights || [])]).filter(Boolean));
 
-const heroFile = (c) => c.hero?.file || ents[c.wikidata]?.image || null;
-const heroFiles = cities.map(heroFile).filter(Boolean);
-const big = await imageInfo(heroFiles, HERO_WIDTH);
-const small = await imageInfo(heroFiles, CARD_WIDTH);
+// Curated hero file, otherwise every Wikidata image (P18) in order: the first usable one wins.
+const heroFiles = (c) => (c.hero?.file ? [c.hero.file] : ents[c.wikidata]?.images ?? []);
+const allHeroFiles = cities.flatMap(heroFiles);
+const big = await imageInfo(allHeroFiles, HERO_WIDTH);
+const small = await imageInfo(allHeroFiles, CARD_WIDTH);
 const cardFiles = cities.flatMap((c) => (c.highlights || []).map((id) => ents[id]?.image)).filter(Boolean);
 const cards = cardFiles.length ? await imageInfo(cardFiles, CARD_WIDTH) : {};
 
@@ -71,13 +72,14 @@ for (const [i, c] of cities.entries()) {
   if (!validFocus(focus)) problems.push(`${c.slug}: hero focus must be two numbers between 0 and 1`);
 
   let hero = null;
-  const file = heroFile(c);
-  if (file) {
+  for (const file of heroFiles(c)) {
     const a = await checked(big[file], `${c.slug} hero "${file}"`);
     const b = a.record ? await checked(small[file], `${c.slug} hero "${file}" (small)`) : a;
     if (a.record && b.record) {
       hero = { ...a.record, srcSmall: b.record.src, widthSmall: b.record.width, heightSmall: b.record.height, focus, chosenBy: curated ? c.hero.chosenBy : 'wikidata-p18', chosenOn: curated ? c.hero.chosenOn ?? null : null };
-    } else if (curated) problems.push(...(b.problems || a.problems));
+      break;
+    }
+    if (curated) problems.push(...(b.problems || a.problems));
     else skipped.push(...(b.problems || a.problems));
   }
 

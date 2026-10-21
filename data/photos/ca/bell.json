@@ -4,29 +4,7 @@
     "label": "Bell",
     "description": "city in Los Angeles County, California, United States"
   },
-  "hero": {
-    "file": "BellMontageCA.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:BellMontageCA.jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/d/d8/BellMontageCA.jpg",
-    "width": 1920,
-    "height": 3147,
-    "originalWidth": 670,
-    "originalHeight": 1098,
-    "author": "Justefrain",
-    "licence": "CC BY-SA 3.0",
-    "licenceCode": "cc-by-sa-3.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "assessment": null,
-    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/d/d8/BellMontageCA.jpg",
-    "widthSmall": 960,
-    "heightSmall": 1573,
-    "focus": [
-      0.5,
-      0.5
-    ],
-    "chosenBy": "wikidata-p18",
-    "chosenOn": null
-  },
+  "hero": null,
   "highlights": [],
   "source": {
     "wikidata": {

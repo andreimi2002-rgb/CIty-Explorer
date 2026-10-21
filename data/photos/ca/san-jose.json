@@ -5,27 +5,27 @@
     "description": "city and county seat of Santa Clara County, California, United States"
   },
   "hero": {
-    "file": "SanJose Infobox Pic Montage.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:SanJose_Infobox_Pic_Montage.jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/1/1c/SanJose_Infobox_Pic_Montage.jpg",
+    "file": "SJ skyline at night horizontal (cropped).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:SJ_skyline_at_night_horizontal_(cropped).jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/SJ_skyline_at_night_horizontal_%28cropped%29.jpg/1920px-SJ_skyline_at_night_horizontal_%28cropped%29.jpg",
     "width": 1920,
-    "height": 2697,
-    "originalWidth": 1230,
-    "originalHeight": 1728,
-    "author": "Sanjosecalifornia, EugeneZelenko, Luiz Eduardo, David Sawyer, Michael",
-    "licence": "CC BY-SA 3.0",
-    "licenceCode": "cc-by-sa-3.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "height": 717,
+    "originalWidth": 3490,
+    "originalHeight": 1304,
+    "author": "Ben Loomis",
+    "licence": "CC BY 2.0",
+    "licenceCode": "cc-by-2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
     "assessment": null,
-    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/SanJose_Infobox_Pic_Montage.jpg/960px-SanJose_Infobox_Pic_Montage.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/SJ_skyline_at_night_horizontal_%28cropped%29.jpg/960px-SJ_skyline_at_night_horizontal_%28cropped%29.jpg",
     "widthSmall": 960,
-    "heightSmall": 1349,
+    "heightSmall": 359,
     "focus": [
       0.5,
-      0.5
+      0.4
     ],
-    "chosenBy": "wikidata-p18",
-    "chosenOn": null
+    "chosenBy": "claude",
+    "chosenOn": "2026-10-21"
   },
   "highlights": [],
   "source": {
