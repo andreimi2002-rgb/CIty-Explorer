@@ -1,6 +1,6 @@
 # Etapa 1 — plan
 
-Stare: **de aprobat de proprietar**. Branch: `feature/stage-1`. Versiune țintă: 0.2.0.
+Stare: **aprobat de proprietar pe 21 octombrie 2026**. Branch: `feature/stage-1`. Versiune țintă: 0.2.0.
 
 Scop (din `DEVELOPMENT_PLAN.md`, cu decizia din 21 octombrie 2026): pagina San Francisco primește **poze reale, hartă și vreme live**. Cifrele (populație, suprafață, climă, fus orar) rămân „Not available yet" și vin în Etapa 2.
 
